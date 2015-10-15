@@ -1,0 +1,263 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('/wp-content/themes/integrative-wisdom/fonts/icomoon.eot');
+	src: url('/wp-content/themes/integrative-wisdom/fonts/icomoon.eot#iefix') format('embedded-opentype'),
+	url('/wp-content/themes/integrative-wisdom/fonts/icomoon.ttf') format('truetype'),
+	url('/wp-content/themes/integrative-wisdom/fonts/icomoon.woff') format('woff'),
+	url('/wp-content/themes/integrative-wisdom/fonts/icomoon.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic);
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+	content: "\e986";
+}
+
+.icon-google-plus:before {
+	content: "\ea88";
+}
+
+.icon-facebook:before {
+	content: "\ea8c";
+}
+
+.icon-instagram:before {
+	content: "\ea90";
+}
+
+.icon-twitter:before {
+	content: "\ea91";
+}
+
+.icon-youtube3:before {
+	content: "\ea99";
+}
+
+//Clearfix Hack:
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+div:focus {
+	outline: 0;
+}
+
+#page {
+	border-top: 9px solid #fec630;
+}
+
+.site-header {
+	height: 90px;
+
+	.site-branding {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+
+		.site-title {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.main-navigation {
+		position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+		clear: none;
+		text-align: right;
+
+		.menu-primary-menu-container {
+			display: inline-block;
+
+			ul li {
+				display: inline-block;
+				float: none;
+				margin-right: 32px;
+				font-size: 12px;
+
+				a:link, a:visited, a:active {
+					transition: color .25s ease;
+					color: #4c4c4c;
+				}
+
+				a:hover {
+					color: #fec630;
+				}
+			}
+		}
+
+		.search-wrapper {
+			display: inline-block;
+
+			.search-form {
+				display: block;
+				float: left;
+				margin-right: 2px;
+			}
+
+			.search-field {
+				margin: 0;
+				color: #4c4c4c;
+				width: 175px;
+				height: 24px;
+				border-radius: 3px;
+				border: 1px solid #dcdcdc;
+				background: #f7f7f7;
+			}
+
+			.search-submit {
+				display: none;
+			}
+
+			.search-button {
+				color: #4c4c4c;
+				margin: 0;
+				padding: 0;
+				width: 24px;
+				height: 24px;
+				border-radius: 3px;
+				border: 1px solid #dcdcdc;
+				background: #f7f7f7;
+
+				&:before {
+					font-weight: bold;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+.homepage-video-wrapper {
+	background: #1D1D1D;
+
+	.embed-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		//max-width: 100%;
+
+		iframe, object, embed {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.site-main {
+	padding: 80px 0;
+
+	.title-wrapper {
+		padding-bottom: 35px;
+
+		.title-ornament {
+			background: transparent url('/wp-content/themes/integrative-wisdom/img/titleOrnaments.png') repeat-x center;
+			line-height: 26px;
+		}
+
+		.homepage-title {
+			margin: 0;
+			padding: 0;
+			clear: none;
+			text-align: center;
+			font: 26px/26px 'Lato', sans-serif;
+			color: #4c4c4c;
+			text-transform: uppercase;
+		}
+	}
+
+	.video-slider {
+		.slick-prev, .slick-next {
+			margin-top: 0;
+			transform: translateY(-50%);
+		}
+
+		.slick-prev {
+			left: -45px;
+		}
+
+		.slick-next {
+			right: -13px;
+		}
+
+		.slick-prev::before, .slick-next::before {
+			content: "";
+			display: block;
+			width: 52px;
+			height: 49px;
+		}
+
+		.slick-prev::before {
+			background: url('/wp-content/themes/integrative-wisdom/img/slider-prev.png');
+		}
+
+		.slick-next::before {
+			background: url('/wp-content/themes/integrative-wisdom/img/slider-next.png');
+		}
+
+		.video-slide {
+			padding-top: 3px;
+			padding-bottom: 3px;
+			
+			img {
+				border: 2px solid #ffffff;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				-webkit-box-shadow: 0 1px 3px #4c4c4c;
+				-moz-box-shadow: 0 1px 3px #4c4c4c;
+				box-shadow: 0 1px 3px #4c4c4c;
+			}
+		}
+	}
+}
+
+.site-footer-wrapper {
+	border-top: 9px solid #fec630;
+	background: #1D1D1D;
+
+	.site-footer {
+
+	}
+}
+
+.site-info-wrapper {
+	background: #ffffff;
+
+	.site-info {
+		.copyright {
+			text-align: right;
+		}
+	}
+}

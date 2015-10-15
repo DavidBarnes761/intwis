@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d3607e84-cd45-442c-9a98-b209509bd56f" name="Integrative Wisdom" url="http://intwis.klosenuf.com">
+        <fileTransfer host="192.31.237.20" port="22" rootFolder="/var/www/wordpress/intwis" accessType="SFTP" password="dfffdfc7dfe1dfc2df92df98df9cdf9e" username="tklose">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

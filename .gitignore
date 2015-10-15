@@ -10,4 +10,5 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
+/wp-content/themes/integrative-wisdom/.sass-cache
 wp-content/wp-cache-config.php
