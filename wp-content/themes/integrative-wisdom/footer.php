@@ -15,13 +15,15 @@
 
 	<footer id="colophon" class="site-footer-wrapper" role="contentinfo">
 		<div class="site-footer row">
-			<div class="email-signup large-6 columns">
-				<h1>Subscribe to Email List</h1>
-				<p>Lorem ipsum bla bla bla...</p>
-				<form>
-					<input type="text" name="email" />
-					<input type="submit" value="Submit" />
-				</form>
+			<div class="email-signup-wrapper large-6 columns">
+				<div class="email-signup">
+					<h2>Subscribe to Email List</h2>
+					<p>Please enter your email address to be notified when new videos are added.</p>
+					<form class="group">
+						<input type="text" name="email" placeholder="Your email" />
+						<input type="submit" value="Submit" />
+					</form>
+				</div>
 			</div>
 			<div class="additional-resources large-3 columns">
 

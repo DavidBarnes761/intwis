@@ -22,19 +22,26 @@
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'integrative-wisdom'); ?></a>
 		<header id="masthead" class="site-header row" role="banner">
-			<div class="site-branding small-12 large-3 columns">
+			<div class="site-branding middle small-12 large-3 columns">
 				<?php if (is_front_page() && is_home()) : ?>
 					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img title="Integrative Wisdom Home" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a></h1>
 				<?php else : ?>
 					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img title="Integrative Wisdom Home" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a></p>
 				<?php endif; ?>
 			</div>
-			<nav id="site-navigation" class="main-navigation large-9 columns" role="navigation">
+			<nav id="site-navigation" class="main-navigation middle large-9 columns" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'integrative-wisdom'); ?></button>
 				<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 				<div class="search-wrapper">
-					<?php get_search_form( true ); ?>
-					<button class="search-button"><span aria-hidden="true" class="icon-search"></span></button>
+					<form role="search" method="get" class="search-form" action="/">
+						<label>
+							<input type="search" class="search-field" value="" name="s" title="Search for:">
+							<button class="search-button">
+								<span aria-hidden="true" class="icon-search"></span>
+							</button>
+						</label>
+						<input type="submit" class="search-submit" value="Search">
+					</form>
 				</div>
 			</nav>
 		</header>

@@ -4,15 +4,14 @@
 	 *
 	 * Template Name: Homepage
 	 */
+
 	$videoID = get_option( 'site_settings_homepage_video_id' );
-
-	get_header();
 ?>
-
-	<div class="homepage-video-wrapper">
-		<div id="homepage-video-section" class="row">
+<?php get_header(); ?>
+	<div class="hero-wrapper dark">
+		<div class="homepage-video-section row">
 			<div class="embed-container large-10 large-centered columns">
-				<iframe src='http://www.youtube.com/embed/<?php echo $videoID; ?>?autoplay=0&controls=2&iv_load_policy=3&modestbranding=0&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>
+				<iframe src="http://www.youtube.com/embed/<?php echo $videoID; ?>?autoplay=0&controls=2&iv_load_policy=3&modestbranding=0&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -36,11 +35,12 @@
 			</div>
 		</main>
 	</div>
+	<script>
+		$('.video-slider').slick({
+			autoplay: true,
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1
+		});
+	</script>
 <?php get_footer(); ?>
-<script>
-	jQuery('.video-slider').slick({
-		infinite: true,
-		slidesToShow: 4,
-		slidesToScroll: 1
-	});
-</script>

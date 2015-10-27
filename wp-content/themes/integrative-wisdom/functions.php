@@ -45,6 +45,8 @@ function integrative_wisdom_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'integrative-wisdom' ),
+		'secondary' => esc_html__( 'Secondary Menu', 'integrative-wisdom' ),
+		'video-menu' => esc_html__( 'Video Menu', 'integrative-wisdom' ),
 	) );
 
 	/*
@@ -76,6 +78,12 @@ function integrative_wisdom_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	/*
+	 * Adding thumbnail sizes
+	 */
+	add_image_size( 'speaker-bio-image', 310, 310, true );
+	add_image_size( 'other-speakers-thumbnail', 100, 98, true );
 }
 endif; // integrative_wisdom_setup
 add_action( 'after_setup_theme', 'integrative_wisdom_setup' );
@@ -114,25 +122,23 @@ add_action( 'widgets_init', 'integrative_wisdom_widgets_init' );
  * Enqueue scripts and styles.
  */
 function integrative_wisdom_scripts() {
-	wp_enqueue_style( 'integrative-wisdom-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'integrative-wisdom-slick', get_stylesheet_directory_uri() . '/slick/slick/slick.css');
-	wp_enqueue_style( 'integrative-wisdom-slick-theme', get_stylesheet_directory_uri() . '/slick/slick/slick-theme.css');
-
-
 	/* Add Foundation CSS */
 	wp_enqueue_style( 'foundation-normalize', get_template_directory_uri() . '/foundation/css/normalize.css' );
 	wp_enqueue_style( 'foundation', get_template_directory_uri() . '/foundation/css/foundation.css' );
 
-	wp_enqueue_script( 'integrative-wisdom-jquery', get_template_directory_uri() . '/js/jquery-2.1.4.min.js', array(), '20151014', true );
+	wp_enqueue_style( 'integrative-wisdom-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'integrative-wisdom-slick', get_stylesheet_directory_uri() . '/slick/slick/slick.css');
+	wp_enqueue_style( 'integrative-wisdom-slick-theme', get_stylesheet_directory_uri() . '/slick/slick/slick-theme.css');
+
+	/* Head Scripts */
+	wp_enqueue_script( 'integrative-wisdom-jquery', get_template_directory_uri() . '/js/jquery-2.1.4.min.js', array(), '20151014', false );
+	wp_enqueue_script( 'integrative-wisdom-slick-js', get_template_directory_uri() . '/slick/slick/slick.min.js', array(), '20151014', false );
+
+	/* Footer Scripts */
 	wp_enqueue_script( 'integrative-wisdom-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'integrative-wisdom-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	wp_enqueue_script( 'integrative-wisdom-slick-js', get_template_directory_uri() . '/slick/slick/slick.min.js', array(), '20151014', true );
-
-	/* Add Foundation JS */
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'foundation-modernizr-js', get_template_directory_uri() . '/foundation/js/vendor/modernizr.js', array( 'jquery' ), '1', true );
-
-	/* Foundation Init JS */
 	wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/js/foundation-init.js', array( 'jquery' ), '1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

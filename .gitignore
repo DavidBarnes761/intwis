@@ -1,5 +1,4 @@
 *.log
-.htaccess
 sitemap.xml
 sitemap.xml.gz
 wp-config.php
@@ -11,4 +10,5 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 /wp-content/themes/integrative-wisdom/.sass-cache
+/.htaccess
 wp-content/wp-cache-config.php

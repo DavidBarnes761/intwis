@@ -962,6 +962,12 @@ object {
   font-style: normal;
 }
 /* line 14, sass/_custom.scss */
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Icon fonts */
+/* line 19, sass/_custom.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -970,135 +976,165 @@ object {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  /* Better Font Rendering */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, sass/_custom.scss */
+/* line 33, sass/_custom.scss */
 .icon-search:before {
   content: "\e986";
 }
 
-/* line 32, sass/_custom.scss */
+/* line 37, sass/_custom.scss */
 .icon-google-plus:before {
   content: "\ea88";
 }
 
-/* line 36, sass/_custom.scss */
+/* line 41, sass/_custom.scss */
 .icon-facebook:before {
   content: "\ea8c";
 }
 
-/* line 40, sass/_custom.scss */
+/* line 45, sass/_custom.scss */
 .icon-instagram:before {
   content: "\ea90";
 }
 
-/* line 44, sass/_custom.scss */
+/* line 49, sass/_custom.scss */
 .icon-twitter:before {
   content: "\ea91";
 }
 
-/* line 48, sass/_custom.scss */
+/* line 53, sass/_custom.scss */
 .icon-youtube3:before {
   content: "\ea99";
 }
 
-/* line 53, sass/_custom.scss */
+/* Clearfix hack: */
+/* line 58, sass/_custom.scss */
 .group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 59, sass/_custom.scss */
+/* Get rid of blue box on chrome */
+/* line 65, sass/_custom.scss */
 div:focus {
   outline: 0;
 }
 
-/* line 63, sass/_custom.scss */
+/* Vertical align hack */
+/* line 70, sass/_custom.scss */
+.middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 80, sass/_custom.scss */
 #page {
   border-top: 9px solid #fec630;
 }
 
-/* line 67, sass/_custom.scss */
+/* Navigation Menus */
+/* line 85, sass/_custom.scss */
+.menu-primary-menu-container, .menu-video-menu-container {
+  display: block;
+  float: left;
+}
+/* line 89, sass/_custom.scss */
+.menu-primary-menu-container ul li, .menu-video-menu-container ul li {
+  display: inline-block;
+  float: none;
+  font-size: 12px;
+}
+/* line 94, sass/_custom.scss */
+.menu-primary-menu-container ul li a:link, .menu-primary-menu-container ul li a:visited, .menu-primary-menu-container ul li a:active, .menu-video-menu-container ul li a:link, .menu-video-menu-container ul li a:visited, .menu-video-menu-container ul li a:active {
+  transition: color .25s ease;
+  color: #4c4c4c;
+}
+/* line 99, sass/_custom.scss */
+.menu-primary-menu-container ul li a:hover, .menu-video-menu-container ul li a:hover {
+  color: #fec630;
+}
+
+/* line 105, sass/_custom.scss */
+.menu-primary-menu-container ul li {
+  margin-right: 28px;
+}
+/* line 108, sass/_custom.scss */
+.menu-primary-menu-container ul li.current-menu-item {
+  border-bottom: 5px solid #fec630;
+}
+
+/* line 113, sass/_custom.scss */
+.menu-video-menu-container ul {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+/* line 118, sass/_custom.scss */
+.menu-video-menu-container ul li {
+  margin-right: 20px;
+}
+/* line 121, sass/_custom.scss */
+.menu-video-menu-container ul li a:link, .menu-video-menu-container ul li a:visited {
+  color: #ffffff;
+}
+/* line 125, sass/_custom.scss */
+.menu-video-menu-container ul li a:hover {
+  color: #fec630;
+}
+/* line 129, sass/_custom.scss */
+.menu-video-menu-container ul li.current-menu-item {
+  color: #F00;
+}
+
+/* Header */
+/* line 136, sass/_custom.scss */
 .site-header {
   height: 90px;
 }
-/* line 70, sass/_custom.scss */
-.site-header .site-branding {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-/* line 79, sass/_custom.scss */
+/* line 140, sass/_custom.scss */
 .site-header .site-branding .site-title {
   padding: 0;
   margin: 0;
 }
-/* line 85, sass/_custom.scss */
+/* line 146, sass/_custom.scss */
 .site-header .main-navigation {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
   clear: none;
   text-align: right;
+  width: auto;
 }
-/* line 96, sass/_custom.scss */
-.site-header .main-navigation .menu-primary-menu-container {
-  display: inline-block;
-}
-/* line 99, sass/_custom.scss */
-.site-header .main-navigation .menu-primary-menu-container ul li {
-  display: inline-block;
-  float: none;
-  margin-right: 32px;
-  font-size: 12px;
-}
-/* line 105, sass/_custom.scss */
-.site-header .main-navigation .menu-primary-menu-container ul li a:link, .site-header .main-navigation .menu-primary-menu-container ul li a:visited, .site-header .main-navigation .menu-primary-menu-container ul li a:active {
-  transition: color .25s ease;
-  color: #4c4c4c;
-}
-/* line 110, sass/_custom.scss */
-.site-header .main-navigation .menu-primary-menu-container ul li a:hover {
-  color: #fec630;
-}
-/* line 116, sass/_custom.scss */
+/* line 151, sass/_custom.scss */
 .site-header .main-navigation .search-wrapper {
-  display: inline-block;
+  float: right;
 }
-/* line 119, sass/_custom.scss */
-.site-header .main-navigation .search-wrapper .search-form {
+/* line 154, sass/_custom.scss */
+.site-header .main-navigation .search-wrapper .search-field {
   display: block;
   float: left;
-  margin-right: 2px;
-}
-/* line 125, sass/_custom.scss */
-.site-header .main-navigation .search-wrapper .search-field {
-  margin: 0;
+  margin: 0 2px;
   color: #4c4c4c;
-  width: 175px;
+  width: 150px;
   height: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 3px;
   border: 1px solid #dcdcdc;
   background: #f7f7f7;
 }
-/* line 135, sass/_custom.scss */
-.site-header .main-navigation .search-wrapper .search-submit {
-  display: none;
-}
-/* line 139, sass/_custom.scss */
+/* line 169, sass/_custom.scss */
 .site-header .main-navigation .search-wrapper .search-button {
+  display: block;
+  float: right;
   color: #4c4c4c;
   margin: 0;
   padding: 0;
@@ -1108,46 +1144,55 @@ div:focus {
   border: 1px solid #dcdcdc;
   background: #f7f7f7;
 }
-/* line 149, sass/_custom.scss */
+/* line 181, sass/_custom.scss */
 .site-header .main-navigation .search-wrapper .search-button:before {
   font-weight: bold;
   font-size: 12px;
 }
-
-/* line 158, sass/_custom.scss */
-.homepage-video-wrapper {
-  background: #1D1D1D;
+/* line 187, sass/_custom.scss */
+.site-header .main-navigation .search-wrapper .search-submit {
+  display: none;
 }
-/* line 161, sass/_custom.scss */
-.homepage-video-wrapper .embed-container {
+
+/* Section on top of page with gray sides */
+/* line 195, sass/_custom.scss */
+.hero-wrapper {
+  background: #4c4c4c;
+}
+/* line 198, sass/_custom.scss */
+.hero-wrapper .embed-container {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
-/* line 168, sass/_custom.scss */
-.homepage-video-wrapper .embed-container iframe, .homepage-video-wrapper .embed-container object, .homepage-video-wrapper .embed-container embed {
+/* line 204, sass/_custom.scss */
+.hero-wrapper .embed-container iframe, .hero-wrapper .embed-container object, .hero-wrapper .embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
-/* line 178, sass/_custom.scss */
-.site-main {
-  padding: 80px 0;
+/* line 213, sass/_custom.scss */
+.hero-wrapper.dark {
+  background: #1d1d1d;
 }
-/* line 181, sass/_custom.scss */
+
+/* line 218, sass/_custom.scss */
+.site-main {
+  padding: 50px 0;
+}
+/* line 221, sass/_custom.scss */
 .site-main .title-wrapper {
   padding-bottom: 35px;
 }
-/* line 184, sass/_custom.scss */
+/* line 224, sass/_custom.scss */
 .site-main .title-wrapper .title-ornament {
   background: transparent url("/wp-content/themes/integrative-wisdom/img/titleOrnaments.png") repeat-x center;
   line-height: 26px;
 }
-/* line 189, sass/_custom.scss */
+/* line 229, sass/_custom.scss */
 .site-main .title-wrapper .homepage-title {
   margin: 0;
   padding: 0;
@@ -1157,41 +1202,42 @@ div:focus {
   color: #4c4c4c;
   text-transform: uppercase;
 }
-/* line 201, sass/_custom.scss */
-.site-main .video-slider .slick-prev, .site-main .video-slider .slick-next {
+
+/* line 242, sass/_custom.scss */
+.video-slider .slick-prev, .video-slider .slick-next {
   margin-top: 0;
   transform: translateY(-50%);
 }
-/* line 206, sass/_custom.scss */
-.site-main .video-slider .slick-prev {
-  left: -45px;
+/* line 247, sass/_custom.scss */
+.video-slider .slick-prev {
+  left: -50px;
 }
-/* line 210, sass/_custom.scss */
-.site-main .video-slider .slick-next {
-  right: -13px;
+/* line 251, sass/_custom.scss */
+.video-slider .slick-next {
+  right: -20px;
 }
-/* line 214, sass/_custom.scss */
-.site-main .video-slider .slick-prev::before, .site-main .video-slider .slick-next::before {
+/* line 255, sass/_custom.scss */
+.video-slider .slick-prev::before, .video-slider .slick-next::before {
   content: "";
   display: block;
   width: 52px;
   height: 49px;
 }
-/* line 221, sass/_custom.scss */
-.site-main .video-slider .slick-prev::before {
+/* line 262, sass/_custom.scss */
+.video-slider .slick-prev::before {
   background: url("/wp-content/themes/integrative-wisdom/img/slider-prev.png");
 }
-/* line 225, sass/_custom.scss */
-.site-main .video-slider .slick-next::before {
+/* line 266, sass/_custom.scss */
+.video-slider .slick-next::before {
   background: url("/wp-content/themes/integrative-wisdom/img/slider-next.png");
 }
-/* line 229, sass/_custom.scss */
-.site-main .video-slider .video-slide {
+/* line 270, sass/_custom.scss */
+.video-slider .video-slide {
   padding-top: 3px;
   padding-bottom: 3px;
 }
-/* line 233, sass/_custom.scss */
-.site-main .video-slider .video-slide img {
+/* line 274, sass/_custom.scss */
+.video-slider .video-slide img {
   border: 2px solid #ffffff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1200,18 +1246,146 @@ div:focus {
   -moz-box-shadow: 0 1px 3px #4c4c4c;
   box-shadow: 0 1px 3px #4c4c4c;
 }
+/* line 284, sass/_custom.scss */
+.video-slider .video-slide .video-description {
+  margin: 20px 0 50px;
+  font: 10px/10px 'Lato', sans-serif;
+}
 
-/* line 246, sass/_custom.scss */
+/* line 294, sass/_custom.scss */
+.speaker .speaker-bio .biography-wrapper .biography {
+  font: 14px 'Lato', sans-serif;
+}
+/* line 297, sass/_custom.scss */
+.speaker .speaker-bio .biography-wrapper .biography .attachment-speaker-bio-image {
+  display: block;
+  float: left;
+  margin: 0 30px 25px 0;
+}
+/* line 303, sass/_custom.scss */
+.speaker .speaker-bio .biography-wrapper .biography .speaker-name {
+  clear: none;
+  font: 25px 'Lato', sans-serif;
+  margin-top: 68px;
+  display: block;
+}
+/* line 310, sass/_custom.scss */
+.speaker .speaker-bio .biography-wrapper .biography hr {
+  clear: none;
+  width: 33%;
+  height: 4px;
+  border: none;
+  background: transparent url("/wp-content/themes/integrative-wisdom/img/titleOrnaments.png") repeat-x center;
+}
+/* line 320, sass/_custom.scss */
+.speaker .speaker-bio .additional-videos-title {
+  margin: 50px 0 30px;
+  line-height: 24px;
+  height: 24px;
+  text-align: center;
+  background: transparent url("/wp-content/themes/integrative-wisdom/img/titleOrnaments.png") repeat-x center;
+}
+/* line 327, sass/_custom.scss */
+.speaker .speaker-bio .additional-videos-title span {
+  background: #ffffff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font: 20px/20px 'Lato', sans-serif;
+  vertical-align: top;
+}
+/* line 338, sass/_custom.scss */
+.speaker .speaker-sidebar h2 {
+  line-height: 18px;
+  height: 18px;
+  text-align: center;
+  background: transparent url("/wp-content/themes/integrative-wisdom/img/titleOrnaments.png") repeat-x center;
+}
+/* line 344, sass/_custom.scss */
+.speaker .speaker-sidebar h2 span {
+  background: #ffffff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font: 15px 'Lato', sans-serif;
+  line-height: 15px;
+  vertical-align: top;
+}
+
+/* line 357, sass/_custom.scss */
+.video-thumb .thumbnail::before {
+  content: attr(data-src url);
+}
+
+/* Footer */
+/* line 363, sass/_custom.scss */
 .site-footer-wrapper {
   border-top: 9px solid #fec630;
   background: #1D1D1D;
 }
+/* line 367, sass/_custom.scss */
+.site-footer-wrapper .site-footer {
+  padding-top: 40px;
+}
+/* line 370, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup {
+  background: #ffffff;
+  padding: 0;
+}
+/* line 374, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup h2 {
+  background: #fec630;
+  margin: 0;
+  padding: 5px 30px;
+  color: #ffffff;
+  font: 20px 'Lato', sans-serif;
+}
+/* line 382, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup p {
+  margin: 0;
+  padding: 20px 30px;
+}
+/* line 387, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup form {
+  padding: 5px 30px;
+}
+/* line 390, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup form input {
+  font: 12px 'Lato', sans-serif;
+}
+/* line 393, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup form input[type="text"] {
+  width: 80%;
+  margin-right: 2%;
+  display: block;
+  float: left;
+  color: #4c4c4c;
+  height: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+  background: #f7f7f7;
+}
+/* line 408, sass/_custom.scss */
+.site-footer-wrapper .site-footer .email-signup form input[type="submit"] {
+  width: 18%;
+  background: #fec630;
+  display: block;
+  float: right;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #dcdcdc;
+}
 
-/* line 255, sass/_custom.scss */
+/* Sub-footer */
+/* line 427, sass/_custom.scss */
 .site-info-wrapper {
   background: #ffffff;
 }
-/* line 259, sass/_custom.scss */
+/* line 431, sass/_custom.scss */
 .site-info-wrapper .site-info .copyright {
   text-align: right;
 }
