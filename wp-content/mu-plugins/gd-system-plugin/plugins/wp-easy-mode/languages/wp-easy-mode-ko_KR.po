@@ -1,0 +1,399 @@
+# Copyright (C) 2015 GoDaddy Inc
+# This file is distributed under the same license as the WP Easy Mode package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Easy Mode\n"
+"Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
+"POT-Creation-Date: 2015-11-16 14:57-0600\n"
+"PO-Revision-Date: 2015-11-16 14:57-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
+"_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
+"esc_html_x;_c;_nc\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: content\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+"X-Poedit-SearchPathExcluded-3: tests\n"
+
+#: includes/class-wpem-admin.php:172
+msgid "WP Easy Mode"
+msgstr "워드프레스 쉬운 모드"
+
+#: includes/class-wpem-admin.php:173
+msgid "Easy Mode"
+msgstr "쉬운 모드"
+
+#: includes/class-wpem-admin.php:213
+msgid "Are you sure you want to exit and configure WordPress on your own?"
+msgstr "종료한 후에 워드프레스를 직접 구성하겠습니까?"
+
+#: includes/class-wpem-admin.php:249
+msgid "Expand Sidebar"
+msgstr "사이드바 확장"
+
+#: includes/class-wpem-admin.php:250 includes/class-wpem-step-theme.php:73
+msgid "Collapse Sidebar"
+msgstr "사이드바 축소"
+
+#: includes/class-wpem-customizer.php:46
+msgid "Congratulations!"
+msgstr "축하합니다!"
+
+#: includes/class-wpem-customizer.php:47
+msgid ""
+"You've just created your website! Use the panel to the left to customize the "
+"look &amp; feel of your website's design."
+msgstr ""
+
+#: includes/class-wpem-done.php:66
+msgid "Primary Menu"
+msgstr "주 메뉴"
+
+#: includes/class-wpem-done.php:152
+msgid "Store"
+msgstr "상점"
+
+#: includes/class-wpem-done.php:153
+msgid "store"
+msgstr "상점"
+
+#: includes/class-wpem-done.php:160
+msgid "Cart"
+msgstr "쇼핑 카트"
+
+#: includes/class-wpem-done.php:161
+msgid "cart"
+msgstr "쇼핑 카트"
+
+#: includes/class-wpem-done.php:166
+msgid "Checkout"
+msgstr "체크아웃"
+
+#: includes/class-wpem-done.php:167
+msgid "checkout"
+msgstr "체크아웃"
+
+#: includes/class-wpem-done.php:172
+msgid "My Account"
+msgstr "내 계정"
+
+#: includes/class-wpem-done.php:173
+msgid "account"
+msgstr "계정"
+
+#: includes/class-wpem-done.php:179
+msgid "About Me"
+msgstr "자신 소개"
+
+#: includes/class-wpem-done.php:180 includes/class-wpem-done.php:187
+msgid "about"
+msgstr "소개"
+
+#: includes/class-wpem-done.php:186
+msgid "About Us"
+msgstr "GoDaddy 정보"
+
+#: includes/class-wpem-done.php:194
+msgid "Contact Me"
+msgstr "문의"
+
+#: includes/class-wpem-done.php:195 includes/class-wpem-done.php:202
+msgid "contact"
+msgstr "연락처"
+
+#: includes/class-wpem-done.php:201
+msgid "Contact Us"
+msgstr "연락처"
+
+#: includes/class-wpem-done.php:208
+msgid "FAQs"
+msgstr "FAQ"
+
+#: includes/class-wpem-done.php:209
+msgid "faq"
+msgstr "FAQ"
+
+#: includes/class-wpem-done.php:215
+msgid "Get A Quote"
+msgstr "견적 받기"
+
+#: includes/class-wpem-done.php:216
+msgid "estimates"
+msgstr "견적 금액"
+
+#: includes/class-wpem-done.php:222
+msgid "Testimonials"
+msgstr "체험담"
+
+#: includes/class-wpem-done.php:223
+msgid "testimonials"
+msgstr "고객의 사용 소감"
+
+#: includes/class-wpem-done.php:415
+msgid "Recent Posts"
+msgstr "최근 게시물"
+
+#: includes/class-wpem-done.php:424
+msgid "Archives"
+msgstr "보관"
+
+#: includes/class-wpem-done.php:441
+msgid "Browse Products"
+msgstr "제품 둘러보기"
+
+#: includes/class-wpem-done.php:472
+msgid "Contact Form"
+msgstr "연락 형식"
+
+#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+msgid "Your form has been successfully submitted."
+msgstr "귀하의 양식이 성공적으로 제출되었습니다."
+
+#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+msgid "Thank you so much for contacting us. We will get back to you shortly."
+msgstr "연락해 주셔서 감사합니다. 곧 연락 드리겠습니다."
+
+#: includes/class-wpem-done.php:497
+msgid "Request A Quote Form"
+msgstr "견적서 요청"
+
+#: includes/class-wpem-step-settings.php:18
+#: includes/class-wpem-step-settings.php:19
+msgid "Settings"
+msgstr "설정"
+
+#: includes/class-wpem-step-settings.php:32
+msgid "Please tell us more about your website (all fields are required)"
+msgstr "Please tell us more about your website (all fields are required)"
+
+#: includes/class-wpem-step-settings.php:35
+#: includes/class-wpem-step-settings.php:111
+msgid "Type"
+msgstr "유형"
+
+#: includes/class-wpem-step-settings.php:38
+msgid "- Select a type -"
+msgstr "- Select a type -"
+
+#: includes/class-wpem-step-settings.php:39
+msgid "Standard (Recommended)"
+msgstr "Standard (Recommended)"
+
+#: includes/class-wpem-step-settings.php:40
+msgid "Blog"
+msgstr "블로그"
+
+#: includes/class-wpem-step-settings.php:41
+msgid "Online Store"
+msgstr "온라인 스토어"
+
+#: includes/class-wpem-step-settings.php:43
+msgid "What type of website are you creating?"
+msgstr "What type of website are you creating?"
+
+#: includes/class-wpem-step-settings.php:47
+#: includes/class-wpem-step-settings.php:117
+msgid "Industry"
+msgstr "산업"
+
+#: includes/class-wpem-step-settings.php:50
+msgid "- Select an industry -"
+msgstr "- Select an industry -"
+
+#: includes/class-wpem-step-settings.php:51
+msgid "Business / Finance / Law"
+msgstr "Business / Finance / Law"
+
+#: includes/class-wpem-step-settings.php:52
+msgid "Design / Art / Portfolio"
+msgstr "Design / Art / Portfolio"
+
+#: includes/class-wpem-step-settings.php:53
+msgid "Education"
+msgstr "교육"
+
+#: includes/class-wpem-step-settings.php:54
+msgid "Health / Beauty"
+msgstr "Health / Beauty"
+
+#: includes/class-wpem-step-settings.php:55
+msgid "Home Services / Construction"
+msgstr "Home Services / Construction"
+
+#: includes/class-wpem-step-settings.php:56
+msgid "Music / Movies / Entertainment"
+msgstr "Music / Movies / Entertainment"
+
+#: includes/class-wpem-step-settings.php:57
+msgid "Non-profit / Causes / Religious"
+msgstr "Non-profit / Causes / Religious"
+
+#: includes/class-wpem-step-settings.php:58
+msgid "Other"
+msgstr "기타"
+
+#: includes/class-wpem-step-settings.php:59
+msgid "Personal / Family / Wedding"
+msgstr "Personal / Family / Wedding"
+
+#: includes/class-wpem-step-settings.php:60
+msgid "Pets / Animals"
+msgstr "애완 동물/동물"
+
+#: includes/class-wpem-step-settings.php:61
+msgid "Real Estate"
+msgstr "부동산"
+
+#: includes/class-wpem-step-settings.php:62
+msgid "Restaurant / Food"
+msgstr "Restaurant / Food"
+
+#: includes/class-wpem-step-settings.php:63
+msgid "Sports / Recreation"
+msgstr "Sports / Recreation"
+
+#: includes/class-wpem-step-settings.php:64
+msgid "Transportation / Automotive"
+msgstr "Transportation / Automotive"
+
+#: includes/class-wpem-step-settings.php:65
+msgid "Travel / Hospitality / Leisure"
+msgstr "Travel / Hospitality / Leisure"
+
+#: includes/class-wpem-step-settings.php:67
+msgid "What will your website be about?"
+msgstr "What will your website be about?"
+
+#: includes/class-wpem-step-settings.php:71
+#: includes/class-wpem-step-settings.php:123
+msgid "Title"
+msgstr "제목"
+
+#: includes/class-wpem-step-settings.php:73
+msgid "Enter your website title here"
+msgstr "Enter your website title here"
+
+#: includes/class-wpem-step-settings.php:74
+msgid ""
+"The title of your website appears at the top of all pages and in search "
+"results."
+msgstr "웹사이트의 제목은 모든 페이지의 상단과 검색 결과에 표시됩니다."
+
+#: includes/class-wpem-step-settings.php:78
+#: includes/class-wpem-step-settings.php:129
+msgid "Tagline"
+msgstr "태그라인"
+
+#: includes/class-wpem-step-settings.php:80
+msgid "Enter your website tagline here"
+msgstr "Enter your website tagline here"
+
+#: includes/class-wpem-step-settings.php:81
+msgid ""
+"Think of the tagline as a slogan that describes what makes your website "
+"special. It will also appear in search results."
+msgstr ""
+"태그라인은 웹사이트를 특별하게 만들 수 있는 슬로건입니다. 이것은 검색 결과에"
+"도 표시됩니다."
+
+#: includes/class-wpem-step-settings.php:98
+#: includes/class-wpem-step-start.php:47
+msgid "Continue"
+msgstr "계속"
+
+#: includes/class-wpem-step-settings.php:170
+msgid "All fields are required"
+msgstr "All fields are required"
+
+#: includes/class-wpem-step-start.php:18
+msgid "Start"
+msgstr "시작"
+
+#: includes/class-wpem-step-start.php:19
+msgid "WordPress Setup"
+msgstr "워드프레스 설정"
+
+#: includes/class-wpem-step-start.php:32
+msgid ""
+"Welcome to our WordPress setup wizard. It's designed to help get your site's "
+"basic configurations done quickly and easily so you can get online faster."
+msgstr ""
+"워드프레스 설정 마법사를 시작합니다. 이 도구를 사용하여 사이트의 기본 구성을 "
+"신속하고 쉽게 구성할 수 있습니다."
+
+#: includes/class-wpem-step-start.php:34
+msgid "It's completely optional and will only take a few minutes."
+msgstr "이 도구는 완전히 선택 사항이며 몇 분 밖에 걸리지 않습니다."
+
+#: includes/class-wpem-step-start.php:46
+msgid "No, thanks"
+msgstr "아니요"
+
+#: includes/class-wpem-step-theme.php:18
+msgid "Theme"
+msgstr "테마"
+
+#: includes/class-wpem-step-theme.php:19
+msgid "Choose a Theme"
+msgstr "Choose a Theme"
+
+#: includes/class-wpem-step-theme.php:32
+msgid ""
+"Choose a design for your website (don't worry, you can change this later)"
+msgstr ""
+"Choose a design for your website (don't worry, you can change this later)"
+
+#: includes/class-wpem-step-theme.php:43
+msgid "Preview"
+msgstr "미리 보기"
+
+#: includes/class-wpem-step-theme.php:44 includes/class-wpem-step-theme.php:64
+msgid "By"
+msgstr "작성자"
+
+#: includes/class-wpem-step-theme.php:47 includes/class-wpem-step-theme.php:59
+msgid "Activate"
+msgstr "활성화"
+
+#: includes/class-wpem-step-theme.php:56
+msgid "Close"
+msgstr "닫기"
+
+#: includes/class-wpem-step-theme.php:57
+msgid "Previous"
+msgstr "이전"
+
+#: includes/class-wpem-step-theme.php:58
+msgid "Next"
+msgstr "다음"
+
+#: includes/class-wpem-step-theme.php:67
+msgid "Version:"
+msgstr "버전:"
+
+#: includes/class-wpem-step-theme.php:75
+msgid "Collapse"
+msgstr "축소"
+
+#: includes/functions.php:189
+msgid "Error: WP-CLI not found"
+msgstr "오류: WP-CLI 찾을 수 없음"
+
+#: templates/fullscreen.php:38
+msgid "WordPress"
+msgstr "워드프레스"
+
+#~ msgid ""
+#~ "Yes, I'm interested in hiring a professional to help customize my "
+#~ "WordPress site"
+#~ msgstr ""
+#~ "Yes, I'm interested in hiring a professional to help customize my "
+#~ "WordPress site"

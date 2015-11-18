@@ -1,0 +1,5 @@
+﻿<strong>FÖRETAGSNAMN</strong> har levererat resultat sedan vi öppnade <strong>ÅR</strong>. Vårt mål är att ge våra kunder få både en superb kundupplevelse och ett riktigt bra pris.
+
+<strong>ÄGARNAMN</strong> har över <strong>ANTAL</strong> års erfarenhet inom <strong>BRANSCH</strong> och är passionerat intresserad av att överskrida dina förväntningar.
+
+Vi gillar verkligen våra kunder och blir glada för din feedback och dina förslag. Använd gärna vår sida <a href="/contact/" title="Kontakta oss">Kontakta oss</a> för att berätta för oss vad vi gör rätt och vad vi skulle kunna bli bättre på.

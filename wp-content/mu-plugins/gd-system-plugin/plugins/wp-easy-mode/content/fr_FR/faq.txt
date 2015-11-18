@@ -1,0 +1,7 @@
+﻿Pour un côté pratique, les réponses aux questions les plus fréquemment posées par nos clients se trouvent ici. 
+
+Vous ne trouvez pas ce que vous recherchez ? Contactez-nous directement via notre page <a href="/contact/" title="Contactez-nous">Contactez-nous</a>.
+
+<strong>Q :</strong> <em>Ajoutez des questions ici.</em>
+
+<strong>R :</strong> Ajoutez des réponses ici.

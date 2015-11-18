@@ -22,20 +22,24 @@
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'integrative-wisdom'); ?></a>
 		<header id="masthead" class="site-header row" role="banner">
-			<div class="site-branding middle small-12 large-3 columns">
-				<?php if (is_front_page() && is_home()) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img title="Integrative Wisdom Home" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><img title="Integrative Wisdom Home" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" /></a></p>
-				<?php endif; ?>
+			<div class="site-branding small-12 medium-6 large-3 columns">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<div class="site-title">
+						<img title="Integrative Wisdom Home" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
+					</div>
+				</a>
 			</div>
-			<nav id="site-navigation" class="main-navigation middle large-9 columns" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'integrative-wisdom'); ?></button>
-				<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+			<div class="site-branding small-12 medium-6 large-3 columns">
+				<div class="site-subtitle">
+					<img title="Integrative Therapeutics Logo" src="<?php echo get_template_directory_uri(); ?>/img/therapeutics.png" />
+				</div>
+			</div>
+			<div id="navigation-search" class="main-menu small-12 medium-12 large-6 columns">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Menu', 'integrative-wisdom'); ?></button>
 				<div class="search-wrapper">
 					<form role="search" method="get" class="search-form" action="/">
-						<label>
-							<input type="search" class="search-field" value="" name="s" title="Search for:">
+						<label class="group">
+							<input type="search" class="search-field" placeholder="" value="" name="s" title="Search for:">
 							<button class="search-button">
 								<span aria-hidden="true" class="icon-search"></span>
 							</button>
@@ -43,6 +47,10 @@
 						<input type="submit" class="search-submit" value="Search">
 					</form>
 				</div>
-			</nav>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav>
+			</div>
+
 		</header>
 		<div id="content" class="site-content">

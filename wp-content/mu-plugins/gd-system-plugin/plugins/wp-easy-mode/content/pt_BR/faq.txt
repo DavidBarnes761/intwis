@@ -1,0 +1,7 @@
+﻿Para sua conveniência, nossas perguntas frequentes de clientes estão respondidas aqui.
+
+Não encontra o que procura? Entre em contato na nossa página <a href="/contact/" title="Fale conosco">Fale conosco</a>.
+
+<strong>P:</strong> <em>Adicione perguntas aqui.</em>
+
+<strong>R:</strong> Adicione respostas aqui.

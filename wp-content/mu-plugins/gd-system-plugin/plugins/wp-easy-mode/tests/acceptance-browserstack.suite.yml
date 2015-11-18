@@ -1,0 +1,118 @@
+# Codeception Test Suite Configuration
+
+# suite for acceptance tests.
+# perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+class_name: AcceptanceTester
+modules:
+  enabled:
+    - BrowserStack
+    - WordPress
+    - AcceptanceHelper
+  config:
+    BrowserStack:
+      url: http://src.wordpress-develop.dev/
+      username: frankiejarrett1
+      access_key: HyAXp5m6KmRgZeC3UZVe
+      browser: IE
+      version: 9.0
+      resolution: 1024x768
+      capabilities:
+        'browserstack.local': 'true'
+        'browserstack.debug': 'true'
+env:
+  ie10:
+    modules:
+      config:
+        BrowserStack:
+          browser: IE
+          version: 10.0
+          resolution: 1280x800
+  ie11:
+    modules:
+      config:
+        BrowserStack:
+          browser: IE
+          version: 11.0
+          resolution: 1440x900
+  edge12:
+    modules:
+      config:
+        BrowserStack:
+          browser: Edge
+          version: 12.0
+          resolution: 1440x900
+          capabilities:
+            'os': 'Windows'
+            'os_version': '10'
+  chrome:
+    modules:
+      config:
+        BrowserStack:
+          browser: Chrome
+          version: 46.0
+          resolution: 1440x900
+          capabilities:
+            'os': 'Windows'
+            'os_version': '8.1'
+  safari9:
+    modules:
+      config:
+        BrowserStack:
+          browser: Safari
+          version: 9.0
+          resolution: 1280x1024
+          capabilities:
+            'os': 'OS X'
+            'os_version': 'El Capitan'
+  safari8:
+    modules:
+      config:
+        BrowserStack:
+          browser: Safari
+          version: 8.0
+          resolution: 1280x1024
+          capabilities:
+            'os': 'OS X'
+            'os_version': 'Yosemite'
+  iphone5:
+    modules:
+      config:
+        BrowserStack:
+          browser: iPhone
+          version:
+          resolution: 1280x1024
+          capabilities:
+            'platform': 'MAC'
+            'device': 'iPhone 5'
+  ipadair:
+    modules:
+      config:
+        BrowserStack:
+          browser: iPad
+          version:
+          resolution: 1280x1024
+          capabilities:
+            'platform': 'MAC'
+            'device': 'iPad Air'
+  android:
+    modules:
+      config:
+        BrowserStack:
+          browser: android
+          version:
+          resolution: 1280x1024
+          capabilities:
+            'platform': 'ANDROID'
+            'device': 'Google Nexus 5'
+  firefox:
+    modules:
+      config:
+        BrowserStack:
+          browser: Firefox
+          version: 41.0
+          resolution: 1440x900
+          capabilities:
+            'platform': 'Windows'
+            'device': '10'

@@ -1,5 +1,5 @@
 <?php
-/**
+	/**
  * The template for displaying the footer.
  *
  * Contains the closing of the #content div and all content after.
@@ -8,39 +8,33 @@
  *
  * @package Integrative_Wisdom
  */
-
 ?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer-wrapper" role="contentinfo">
-		<div class="site-footer row">
-			<div class="email-signup-wrapper large-6 columns">
-				<div class="email-signup">
-					<h2>Subscribe to Email List</h2>
-					<p>Please enter your email address to be notified when new videos are added.</p>
-					<form class="group">
-						<input type="text" name="email" placeholder="Your email" />
-						<input type="submit" value="Submit" />
-					</form>
+		</div>
+		<footer id="colophon" class="site-footer-wrapper" role="contentinfo">
+			<div class="site-footer row">
+				<div class="email-signup-wrapper medium-12 large-6 columns">
+					<div class="email-signup">
+						<h2>Subscribe to Email List</h2>
+						<p>Please enter your email address to be notified when new videos are added.</p>
+						<?php echo do_shortcode( '[contact-form-7 id="202" title="Email Signup"]' ); ?>
+					</div>
+				</div>
+				<div class="additional-resources small-12 medium-6 large-3 columns">
+					<h1>Additional Resources</h1>
+					<?php wp_nav_menu(array('theme_location' => 'secondary', 'menu_id' => 'secondary-menu')); ?>
+				</div>
+				<div class="spread-the-word small-12 medium-6 large-3 columns">
+					<h1>Spread the Word</h1>
+					<?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
 				</div>
 			</div>
-			<div class="additional-resources large-3 columns">
-
-			</div>
-			<div class="spread-the-word large-3 columns">
-
+		</footer>
+		<div class="site-info-wrapper">
+			<div class="site-info row">
+				<span class="copyright large-12 columns">&copy; <?php echo date('Y'); ?> Integrative Wisdom. All rights reserved.</span>
 			</div>
 		</div>
-	</footer><!-- #colophon -->
-	<div class="site-info-wrapper">
-		<div class="site-info row">
-			<span class="copyright large-12 columns">&copy; <?php echo date('Y'); ?> Integrative Wisdom. All rights reserved.</span>
-		</div>
-	</div><!-- .site-info -->
-</div><!-- #page -->
-
-<?php wp_footer(); ?>
-
+	</div>
+	<?php wp_footer(); ?>
 </body>
 </html>

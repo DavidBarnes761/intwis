@@ -1,0 +1,7 @@
+﻿Dla Twej wygody umieściliśmy tutaj odpowiedzi na pytania najczęściej zadawane przez naszych klientów.
+
+Masz problem ze znalezieniem tego, czego potrzebujesz? Skontaktuj się z nami bezpośrednio przez stronę <a href="/contact/" title="Kontakt">Kontakt</a>.
+
+<strong>P:</strong> <em>Dodaj pytania tutaj.</em>
+
+<strong>O:</strong> Dodaj odpowiedzi tutaj.

@@ -1,0 +1,7 @@
+﻿Size yol göstermek amacıyla, müşterilerimizin en sık sorduğu soruları bu alanda yanıtladık.
+
+Aradığınızı bulamadınız mı? <a href="/contact/" title="Bize Ulaşın">Bize Ulaşın</a> sayfamızdan bizimle doğrudan iletişime geçin.
+
+<strong>S:</strong> <em>Buraya soru ekleyin.</em>
+
+<strong>C:</strong> Buraya cevap ekleyin.

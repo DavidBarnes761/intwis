@@ -1,0 +1,7 @@
+﻿Helpotamme elämääsi julkaisemalla tässä kaikkein yleisimmät asiakkaiden kysymykset.
+
+Etkö löytänyt haluamaasi? Ota yhteyttä suoraan <a href="/contact/" title="Ota yhteyttä">Ota yhteyttä</a> -sivun kautta.
+
+<strong>K:</strong> <em>Lisää kysymykset tähän.</em>
+
+<strong>V:</strong> Lisää vastaukset tähän.

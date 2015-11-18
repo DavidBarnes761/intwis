@@ -1,0 +1,406 @@
+# Copyright (C) 2015 GoDaddy Inc
+# This file is distributed under the same license as the WP Easy Mode package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Easy Mode\n"
+"Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
+"POT-Creation-Date: 2015-11-16 14:58-0600\n"
+"PO-Revision-Date: 2015-11-16 14:58-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
+"_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
+"esc_html_x;_c;_nc\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: content\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+"X-Poedit-SearchPathExcluded-3: tests\n"
+
+#: includes/class-wpem-admin.php:172
+msgid "WP Easy Mode"
+msgstr "WP Kolay Mod"
+
+#: includes/class-wpem-admin.php:173
+msgid "Easy Mode"
+msgstr "Kolay Mod"
+
+#: includes/class-wpem-admin.php:213
+msgid "Are you sure you want to exit and configure WordPress on your own?"
+msgstr "Çıkış yapmak ve WordPress'i kendiniz mi yapılandırmak istiyorsunuz?"
+
+#: includes/class-wpem-admin.php:249
+msgid "Expand Sidebar"
+msgstr "Kenar Çubuğunu Genişlet"
+
+#: includes/class-wpem-admin.php:250 includes/class-wpem-step-theme.php:73
+msgid "Collapse Sidebar"
+msgstr "Kenar Çubuğunu Daralt"
+
+#: includes/class-wpem-customizer.php:46
+msgid "Congratulations!"
+msgstr "Tebrikler!"
+
+#: includes/class-wpem-customizer.php:47
+msgid ""
+"You've just created your website! Use the panel to the left to customize the "
+"look &amp; feel of your website's design."
+msgstr ""
+
+#: includes/class-wpem-done.php:66
+msgid "Primary Menu"
+msgstr "Birincil Menü"
+
+#: includes/class-wpem-done.php:152
+msgid "Store"
+msgstr "Mağaza"
+
+#: includes/class-wpem-done.php:153
+msgid "store"
+msgstr "mağaza"
+
+#: includes/class-wpem-done.php:160
+msgid "Cart"
+msgstr "Sepet"
+
+#: includes/class-wpem-done.php:161
+msgid "cart"
+msgstr "sepet"
+
+#: includes/class-wpem-done.php:166
+msgid "Checkout"
+msgstr "Ödeme"
+
+#: includes/class-wpem-done.php:167
+msgid "checkout"
+msgstr "ödeme"
+
+#: includes/class-wpem-done.php:172
+msgid "My Account"
+msgstr "Hesabım"
+
+#: includes/class-wpem-done.php:173
+msgid "account"
+msgstr "hesap"
+
+#: includes/class-wpem-done.php:179
+msgid "About Me"
+msgstr "Hakkımda"
+
+#: includes/class-wpem-done.php:180 includes/class-wpem-done.php:187
+msgid "about"
+msgstr "hakkında"
+
+#: includes/class-wpem-done.php:186
+msgid "About Us"
+msgstr "Hakkımızda"
+
+#: includes/class-wpem-done.php:194
+msgid "Contact Me"
+msgstr "Bana Ulaşın"
+
+#: includes/class-wpem-done.php:195 includes/class-wpem-done.php:202
+msgid "contact"
+msgstr "irtibat kişisi"
+
+#: includes/class-wpem-done.php:201
+msgid "Contact Us"
+msgstr "Bizimle İletişim Kurun"
+
+#: includes/class-wpem-done.php:208
+msgid "FAQs"
+msgstr "SSS'ler"
+
+#: includes/class-wpem-done.php:209
+msgid "faq"
+msgstr "sss"
+
+#: includes/class-wpem-done.php:215
+msgid "Get A Quote"
+msgstr "Fiyat Teklifi Al"
+
+#: includes/class-wpem-done.php:216
+msgid "estimates"
+msgstr "tahminler"
+
+#: includes/class-wpem-done.php:222
+msgid "Testimonials"
+msgstr "Referanslar"
+
+#: includes/class-wpem-done.php:223
+msgid "testimonials"
+msgstr "referanslar"
+
+#: includes/class-wpem-done.php:415
+msgid "Recent Posts"
+msgstr "En Yeni Gönderiler"
+
+#: includes/class-wpem-done.php:424
+msgid "Archives"
+msgstr "Arşivler"
+
+#: includes/class-wpem-done.php:441
+msgid "Browse Products"
+msgstr "Ürünleri Tara"
+
+#: includes/class-wpem-done.php:472
+msgid "Contact Form"
+msgstr "İletişim Formu"
+
+#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+msgid "Your form has been successfully submitted."
+msgstr "Bildiriminiz başarıyla gönderildi."
+
+#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+msgid "Thank you so much for contacting us. We will get back to you shortly."
+msgstr ""
+"Bizimle iletişime geçtiğiniz için teşekkür ederiz. Size kısa sürede dönüş "
+"yapacağız. "
+
+#: includes/class-wpem-done.php:497
+msgid "Request A Quote Form"
+msgstr "Teklif Formu Talep Edin"
+
+#: includes/class-wpem-step-settings.php:18
+#: includes/class-wpem-step-settings.php:19
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: includes/class-wpem-step-settings.php:32
+msgid "Please tell us more about your website (all fields are required)"
+msgstr ""
+"Lütfen bize web siteniz hakkında daha fazla bilgi verin (tüm alanların "
+"doldurulması zorunludur)"
+
+#: includes/class-wpem-step-settings.php:35
+#: includes/class-wpem-step-settings.php:111
+msgid "Type"
+msgstr "Tür"
+
+#: includes/class-wpem-step-settings.php:38
+msgid "- Select a type -"
+msgstr "- Site türü seçin -"
+
+#: includes/class-wpem-step-settings.php:39
+msgid "Standard (Recommended)"
+msgstr "Standart (Önerilen)"
+
+#: includes/class-wpem-step-settings.php:40
+msgid "Blog"
+msgstr "Blog"
+
+#: includes/class-wpem-step-settings.php:41
+msgid "Online Store"
+msgstr "Online Mağaza"
+
+#: includes/class-wpem-step-settings.php:43
+msgid "What type of website are you creating?"
+msgstr "Nasıl bir web sitesi oluşturuyorsunuz?"
+
+#: includes/class-wpem-step-settings.php:47
+#: includes/class-wpem-step-settings.php:117
+msgid "Industry"
+msgstr "Endüstri"
+
+#: includes/class-wpem-step-settings.php:50
+msgid "- Select an industry -"
+msgstr "- Sektör seçin -"
+
+#: includes/class-wpem-step-settings.php:51
+msgid "Business / Finance / Law"
+msgstr "İş / Finans / Hukuk"
+
+#: includes/class-wpem-step-settings.php:52
+msgid "Design / Art / Portfolio"
+msgstr "Tasarım / Sanat / Portfolyo"
+
+#: includes/class-wpem-step-settings.php:53
+msgid "Education"
+msgstr "Eğitim"
+
+#: includes/class-wpem-step-settings.php:54
+msgid "Health / Beauty"
+msgstr "Sağlık / Güzellik"
+
+#: includes/class-wpem-step-settings.php:55
+msgid "Home Services / Construction"
+msgstr "Ev Hizmetleri / İnşaat"
+
+#: includes/class-wpem-step-settings.php:56
+msgid "Music / Movies / Entertainment"
+msgstr "Müzik / Sinema / Eğlence"
+
+#: includes/class-wpem-step-settings.php:57
+msgid "Non-profit / Causes / Religious"
+msgstr "Sivil Toplum / Yardım / Din"
+
+#: includes/class-wpem-step-settings.php:58
+msgid "Other"
+msgstr "Diğer"
+
+#: includes/class-wpem-step-settings.php:59
+msgid "Personal / Family / Wedding"
+msgstr "Kişisel / Aile / Düğün"
+
+#: includes/class-wpem-step-settings.php:60
+msgid "Pets / Animals"
+msgstr "Evcil Hayvanlar/Hayvanlar"
+
+#: includes/class-wpem-step-settings.php:61
+msgid "Real Estate"
+msgstr "Gayrimenkul"
+
+#: includes/class-wpem-step-settings.php:62
+msgid "Restaurant / Food"
+msgstr "Restoran / Yemek"
+
+#: includes/class-wpem-step-settings.php:63
+msgid "Sports / Recreation"
+msgstr "Spor / Rekreasyon"
+
+#: includes/class-wpem-step-settings.php:64
+msgid "Transportation / Automotive"
+msgstr "Ulaşım / Otomotiv"
+
+#: includes/class-wpem-step-settings.php:65
+msgid "Travel / Hospitality / Leisure"
+msgstr "Seyahat / Konaklama / Tatil"
+
+#: includes/class-wpem-step-settings.php:67
+msgid "What will your website be about?"
+msgstr "Web siteniz ne hakkında olacak?"
+
+#: includes/class-wpem-step-settings.php:71
+#: includes/class-wpem-step-settings.php:123
+msgid "Title"
+msgstr "Başlık"
+
+#: includes/class-wpem-step-settings.php:73
+msgid "Enter your website title here"
+msgstr "Buraya sitenizin adını girin"
+
+#: includes/class-wpem-step-settings.php:74
+msgid ""
+"The title of your website appears at the top of all pages and in search "
+"results."
+msgstr ""
+"Sitenizin adı, tüm sayfalarınızın üstünde ve arama sonuçlarında görünür."
+
+#: includes/class-wpem-step-settings.php:78
+#: includes/class-wpem-step-settings.php:129
+msgid "Tagline"
+msgstr "Etiket satırı"
+
+#: includes/class-wpem-step-settings.php:80
+msgid "Enter your website tagline here"
+msgstr "Buraya sitenizin etiket satırını girin"
+
+#: includes/class-wpem-step-settings.php:81
+msgid ""
+"Think of the tagline as a slogan that describes what makes your website "
+"special. It will also appear in search results."
+msgstr ""
+"Web sitenizi özel kılan bir slogan kullanarak etiket satırını doldurun. Bu "
+"da arama sonuçlarında görünür."
+
+#: includes/class-wpem-step-settings.php:98
+#: includes/class-wpem-step-start.php:47
+msgid "Continue"
+msgstr "Devam"
+
+#: includes/class-wpem-step-settings.php:170
+msgid "All fields are required"
+msgstr "Tüm alanlar gerekiyor"
+
+#: includes/class-wpem-step-start.php:18
+msgid "Start"
+msgstr "Başlat"
+
+#: includes/class-wpem-step-start.php:19
+msgid "WordPress Setup"
+msgstr "WordPress Kurulumu"
+
+#: includes/class-wpem-step-start.php:32
+msgid ""
+"Welcome to our WordPress setup wizard. It's designed to help get your site's "
+"basic configurations done quickly and easily so you can get online faster."
+msgstr ""
+"WordPress kurulum sihirbazımıza hoş geldiniz. Hemen online olmanız amacıyla "
+"sitenizin yapılandırma ayarlarını hızlı ve kolay bir şekilde yapmanız için "
+"tasarlandı. "
+
+#: includes/class-wpem-step-start.php:34
+msgid "It's completely optional and will only take a few minutes."
+msgstr "İşlem tamamen opsiyonel olup sadece birkaç dakika sürecektir."
+
+#: includes/class-wpem-step-start.php:46
+msgid "No, thanks"
+msgstr "Hayır, teşekkürler"
+
+#: includes/class-wpem-step-theme.php:18
+msgid "Theme"
+msgstr "Tema"
+
+#: includes/class-wpem-step-theme.php:19
+msgid "Choose a Theme"
+msgstr "Tema Seçin"
+
+#: includes/class-wpem-step-theme.php:32
+msgid ""
+"Choose a design for your website (don't worry, you can change this later)"
+msgstr ""
+"Web siteniz için bir tasarım seçin (merak etmeyin, bunu sonra "
+"değiştirebilirsiniz)"
+
+#: includes/class-wpem-step-theme.php:43
+msgid "Preview"
+msgstr "Önizleme"
+
+#: includes/class-wpem-step-theme.php:44 includes/class-wpem-step-theme.php:64
+msgid "By"
+msgstr "Tasarlayan"
+
+#: includes/class-wpem-step-theme.php:47 includes/class-wpem-step-theme.php:59
+msgid "Activate"
+msgstr "Etkinleştir"
+
+#: includes/class-wpem-step-theme.php:56
+msgid "Close"
+msgstr "Kapat"
+
+#: includes/class-wpem-step-theme.php:57
+msgid "Previous"
+msgstr "Önceki"
+
+#: includes/class-wpem-step-theme.php:58
+msgid "Next"
+msgstr "İleri"
+
+#: includes/class-wpem-step-theme.php:67
+msgid "Version:"
+msgstr "Sürüm:"
+
+#: includes/class-wpem-step-theme.php:75
+msgid "Collapse"
+msgstr "Daralt"
+
+#: includes/functions.php:189
+msgid "Error: WP-CLI not found"
+msgstr "Hata: WP-CLI bulunamadı"
+
+#: templates/fullscreen.php:38
+msgid "WordPress"
+msgstr "WordPress"
+
+#~ msgid ""
+#~ "Yes, I'm interested in hiring a professional to help customize my "
+#~ "WordPress site"
+#~ msgstr ""
+#~ "Evet, WordPress sitemi özelleştirmesi için bir profesyonel ile çalışmak "
+#~ "istiyorum"

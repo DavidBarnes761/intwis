@@ -1,0 +1,410 @@
+# Copyright (C) 2015 GoDaddy Inc
+# This file is distributed under the same license as the WP Easy Mode package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Easy Mode\n"
+"Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
+"POT-Creation-Date: 2015-11-16 14:55-0600\n"
+"PO-Revision-Date: 2015-11-16 14:56-0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
+"_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
+"esc_html_x;_c;_nc\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: content\n"
+"X-Poedit-SearchPathExcluded-2: languages\n"
+"X-Poedit-SearchPathExcluded-3: tests\n"
+
+#: includes/class-wpem-admin.php:172
+msgid "WP Easy Mode"
+msgstr "WP Easy Mode"
+
+#: includes/class-wpem-admin.php:173
+msgid "Easy Mode"
+msgstr "Easy Mode"
+
+#: includes/class-wpem-admin.php:213
+msgid "Are you sure you want to exit and configure WordPress on your own?"
+msgstr ""
+"Möchten Sie den Vorgang wirklich beenden und WordPress eigenständig "
+"konfigurieren?"
+
+#: includes/class-wpem-admin.php:249
+msgid "Expand Sidebar"
+msgstr "Seitenleiste erweitern"
+
+#: includes/class-wpem-admin.php:250 includes/class-wpem-step-theme.php:73
+msgid "Collapse Sidebar"
+msgstr "Seitenleiste reduzieren"
+
+#: includes/class-wpem-customizer.php:46
+msgid "Congratulations!"
+msgstr "Herzlichen Glückwunsch!"
+
+#: includes/class-wpem-customizer.php:47
+msgid ""
+"You've just created your website! Use the panel to the left to customize the "
+"look &amp; feel of your website's design."
+msgstr ""
+
+#: includes/class-wpem-done.php:66
+msgid "Primary Menu"
+msgstr "Primäres Menü"
+
+#: includes/class-wpem-done.php:152
+msgid "Store"
+msgstr "Shop"
+
+#: includes/class-wpem-done.php:153
+msgid "store"
+msgstr "Store"
+
+#: includes/class-wpem-done.php:160
+msgid "Cart"
+msgstr "Einkaufswagen"
+
+#: includes/class-wpem-done.php:161
+msgid "cart"
+msgstr "Einkaufswagen"
+
+#: includes/class-wpem-done.php:166
+msgid "Checkout"
+msgstr "Zur Kasse"
+
+#: includes/class-wpem-done.php:167
+msgid "checkout"
+msgstr "Zur Kasse"
+
+#: includes/class-wpem-done.php:172
+msgid "My Account"
+msgstr "Mein Konto"
+
+#: includes/class-wpem-done.php:173
+msgid "account"
+msgstr "Konto"
+
+#: includes/class-wpem-done.php:179
+msgid "About Me"
+msgstr "Über mich"
+
+#: includes/class-wpem-done.php:180 includes/class-wpem-done.php:187
+msgid "about"
+msgstr "über"
+
+#: includes/class-wpem-done.php:186
+msgid "About Us"
+msgstr "Wir über uns"
+
+#: includes/class-wpem-done.php:194
+msgid "Contact Me"
+msgstr "Kontakt"
+
+#: includes/class-wpem-done.php:195 includes/class-wpem-done.php:202
+msgid "contact"
+msgstr "Kontakt"
+
+#: includes/class-wpem-done.php:201
+msgid "Contact Us"
+msgstr "Kontaktieren Sie uns"
+
+#: includes/class-wpem-done.php:208
+msgid "FAQs"
+msgstr "FAQs"
+
+#: includes/class-wpem-done.php:209
+msgid "faq"
+msgstr "FAQ"
+
+#: includes/class-wpem-done.php:215
+msgid "Get A Quote"
+msgstr "Angebot einholen"
+
+#: includes/class-wpem-done.php:216
+msgid "estimates"
+msgstr "Schätzungen"
+
+#: includes/class-wpem-done.php:222
+msgid "Testimonials"
+msgstr "Kundenaussagen"
+
+#: includes/class-wpem-done.php:223
+msgid "testimonials"
+msgstr "Kundenaussagen"
+
+#: includes/class-wpem-done.php:415
+msgid "Recent Posts"
+msgstr "Aktuelle Posts"
+
+#: includes/class-wpem-done.php:424
+msgid "Archives"
+msgstr "Archive"
+
+#: includes/class-wpem-done.php:441
+msgid "Browse Products"
+msgstr "Produkte durchsuchen"
+
+#: includes/class-wpem-done.php:472
+msgid "Contact Form"
+msgstr "Kontaktformular"
+
+#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+msgid "Your form has been successfully submitted."
+msgstr "Ihr Formular wurde erfolgreich gesendet."
+
+#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+msgid "Thank you so much for contacting us. We will get back to you shortly."
+msgstr ""
+"Vielen Dank, dass Sie mit uns Kontakt aufgenommen haben. Wir werden uns in "
+"Kürze bei Ihnen melden."
+
+#: includes/class-wpem-done.php:497
+msgid "Request A Quote Form"
+msgstr "Formular für Angebote"
+
+#: includes/class-wpem-step-settings.php:18
+#: includes/class-wpem-step-settings.php:19
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/class-wpem-step-settings.php:32
+msgid "Please tell us more about your website (all fields are required)"
+msgstr ""
+"Bitte teilen Sie uns mehr zu Ihrer Website mit (alle Felder sind "
+"obligatorisch)"
+
+#: includes/class-wpem-step-settings.php:35
+#: includes/class-wpem-step-settings.php:111
+msgid "Type"
+msgstr "Typ"
+
+#: includes/class-wpem-step-settings.php:38
+msgid "- Select a type -"
+msgstr "- Typ auswählen -"
+
+#: includes/class-wpem-step-settings.php:39
+msgid "Standard (Recommended)"
+msgstr "Standard (empfohlen)"
+
+#: includes/class-wpem-step-settings.php:40
+msgid "Blog"
+msgstr "Blog"
+
+#: includes/class-wpem-step-settings.php:41
+msgid "Online Store"
+msgstr "Onlineshop"
+
+#: includes/class-wpem-step-settings.php:43
+msgid "What type of website are you creating?"
+msgstr "Welche Art von Website erstellen Sie?"
+
+#: includes/class-wpem-step-settings.php:47
+#: includes/class-wpem-step-settings.php:117
+msgid "Industry"
+msgstr "Industrie"
+
+#: includes/class-wpem-step-settings.php:50
+msgid "- Select an industry -"
+msgstr "- Branche auswählen -"
+
+#: includes/class-wpem-step-settings.php:51
+msgid "Business / Finance / Law"
+msgstr "Business/Finanzen/Recht"
+
+#: includes/class-wpem-step-settings.php:52
+msgid "Design / Art / Portfolio"
+msgstr "Design/Kunst/Mappen"
+
+#: includes/class-wpem-step-settings.php:53
+msgid "Education"
+msgstr "Bildung"
+
+#: includes/class-wpem-step-settings.php:54
+msgid "Health / Beauty"
+msgstr "Gesundheit/Schönheit"
+
+#: includes/class-wpem-step-settings.php:55
+msgid "Home Services / Construction"
+msgstr "Handwerksdienste/Bau"
+
+#: includes/class-wpem-step-settings.php:56
+msgid "Music / Movies / Entertainment"
+msgstr "Musik/Filme/Unterhaltung"
+
+#: includes/class-wpem-step-settings.php:57
+msgid "Non-profit / Causes / Religious"
+msgstr "Gemeinnützig/Anlassbezogen/Religiös"
+
+#: includes/class-wpem-step-settings.php:58
+msgid "Other"
+msgstr "Sonstige"
+
+#: includes/class-wpem-step-settings.php:59
+msgid "Personal / Family / Wedding"
+msgstr "Privat/Familie/Hochzeit"
+
+#: includes/class-wpem-step-settings.php:60
+msgid "Pets / Animals"
+msgstr "Haustiere/Tiere"
+
+#: includes/class-wpem-step-settings.php:61
+msgid "Real Estate"
+msgstr "Immobilien"
+
+#: includes/class-wpem-step-settings.php:62
+msgid "Restaurant / Food"
+msgstr "Restaurant/Lebensmittel"
+
+#: includes/class-wpem-step-settings.php:63
+msgid "Sports / Recreation"
+msgstr "Sport/Erholung"
+
+#: includes/class-wpem-step-settings.php:64
+msgid "Transportation / Automotive"
+msgstr "Transport/Automobil"
+
+#: includes/class-wpem-step-settings.php:65
+msgid "Travel / Hospitality / Leisure"
+msgstr "Reisen/Hotels und Gaststätten/Freizeit"
+
+#: includes/class-wpem-step-settings.php:67
+msgid "What will your website be about?"
+msgstr "Worum wird es bei Ihrer Website gehen?"
+
+#: includes/class-wpem-step-settings.php:71
+#: includes/class-wpem-step-settings.php:123
+msgid "Title"
+msgstr "Titel"
+
+#: includes/class-wpem-step-settings.php:73
+msgid "Enter your website title here"
+msgstr "Geben Sie hier den Titel für Ihre Website ein"
+
+#: includes/class-wpem-step-settings.php:74
+msgid ""
+"The title of your website appears at the top of all pages and in search "
+"results."
+msgstr ""
+"Der Titel Ihrer Website wird im oberen Bereich aller Seiten und in den "
+"Suchergebnissen angezeigt."
+
+#: includes/class-wpem-step-settings.php:78
+#: includes/class-wpem-step-settings.php:129
+msgid "Tagline"
+msgstr "Slogan"
+
+#: includes/class-wpem-step-settings.php:80
+msgid "Enter your website tagline here"
+msgstr "Geben Sie hier den Slogan für Ihre Website ein"
+
+#: includes/class-wpem-step-settings.php:81
+msgid ""
+"Think of the tagline as a slogan that describes what makes your website "
+"special. It will also appear in search results."
+msgstr ""
+"Überlegen Sie sich einen Slogan, der zum Ausdruck bringt, wodurch sich Ihre "
+"Website auszeichnet. Der Slogan wird auch in den Suchergebnissen angezeigt."
+
+#: includes/class-wpem-step-settings.php:98
+#: includes/class-wpem-step-start.php:47
+msgid "Continue"
+msgstr "Fortfahren"
+
+#: includes/class-wpem-step-settings.php:170
+msgid "All fields are required"
+msgstr "Alle Felder sind erforderlich."
+
+#: includes/class-wpem-step-start.php:18
+msgid "Start"
+msgstr "Starten"
+
+#: includes/class-wpem-step-start.php:19
+msgid "WordPress Setup"
+msgstr "WordPress-Einrichtung"
+
+#: includes/class-wpem-step-start.php:32
+msgid ""
+"Welcome to our WordPress setup wizard. It's designed to help get your site's "
+"basic configurations done quickly and easily so you can get online faster."
+msgstr ""
+"Willkommen bei unserem Einrichtungsassistenten für WordPress. Dieser "
+"Assistent soll Ihnen dabei helfen, die grundlegenden Konfigurationen Ihrer "
+"Website schnell und einfach einzurichten, damit Sie schneller online sind."
+
+#: includes/class-wpem-step-start.php:34
+msgid "It's completely optional and will only take a few minutes."
+msgstr ""
+"Der Assistent ist rein optional und nimmt nur wenige Minuten in Anspruch."
+
+#: includes/class-wpem-step-start.php:46
+msgid "No, thanks"
+msgstr "Nein danke"
+
+#: includes/class-wpem-step-theme.php:18
+msgid "Theme"
+msgstr "Thema"
+
+#: includes/class-wpem-step-theme.php:19
+msgid "Choose a Theme"
+msgstr "Thema wählen"
+
+#: includes/class-wpem-step-theme.php:32
+msgid ""
+"Choose a design for your website (don't worry, you can change this later)"
+msgstr ""
+"Wählen Sie ein Design für Ihre Website (keine Bange, Sie können es später "
+"ändern)"
+
+#: includes/class-wpem-step-theme.php:43
+msgid "Preview"
+msgstr "Vorschau"
+
+#: includes/class-wpem-step-theme.php:44 includes/class-wpem-step-theme.php:64
+msgid "By"
+msgstr "Von "
+
+#: includes/class-wpem-step-theme.php:47 includes/class-wpem-step-theme.php:59
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: includes/class-wpem-step-theme.php:56
+msgid "Close"
+msgstr "Schließen"
+
+#: includes/class-wpem-step-theme.php:57
+msgid "Previous"
+msgstr "Zurück"
+
+#: includes/class-wpem-step-theme.php:58
+msgid "Next"
+msgstr "Weiter"
+
+#: includes/class-wpem-step-theme.php:67
+msgid "Version:"
+msgstr "Version:"
+
+#: includes/class-wpem-step-theme.php:75
+msgid "Collapse"
+msgstr "Reduzieren"
+
+#: includes/functions.php:189
+msgid "Error: WP-CLI not found"
+msgstr "Fehler: WP-CLI nicht gefunden"
+
+#: templates/fullscreen.php:38
+msgid "WordPress"
+msgstr "WordPress"
+
+#~ msgid ""
+#~ "Yes, I'm interested in hiring a professional to help customize my "
+#~ "WordPress site"
+#~ msgstr ""
+#~ "Ja, ich bin daran interessiert, mir von einem Fachmann beim Anpassen "
+#~ "meiner WordPress-Website helfen zu lassen"

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'GoDaddy';
+	src:url('../fonts/godaddy.eot');
+	src:url('../fonts/godaddy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/godaddy.ttf') format('truetype'),
+		url('../fonts/godaddy.woff') format('woff'),
+		url('../fonts/godaddy.svg#godaddy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.dashicons-godaddy:before {
+	font-family: 'GoDaddy' !important;
+	content: 'g';
+}
+
+.dashicons-godaddy-alt:before {
+	font-family: 'GoDaddy' !important;
+	content: 'a';
+}
+
+#toplevel_page_godaddy .wp-menu-image:before {
+	font-family: 'GoDaddy' !important;
+	content: 'a' !important;
+}
+
+body.toplevel_page_godaddy .dashboard-widgets-wrap {
+	margin: 8px -8px 0 -8px;
+}
+
+body.toplevel_page_godaddy .dashboard-widgets-wrap .postbox h3 {
+	border-bottom: 1px solid #eee;
+}
+
+body.toplevel_page_godaddy .dashboard-widgets-wrap .postbox ul.list {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+body.toplevel_page_godaddy .dashboard-widgets-wrap .postbox table {
+	width: 100%;
+}
+
+body.toplevel_page_godaddy .dashboard-widgets-wrap .postbox table th {
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+body.toplevel_page_godaddy .dashboard-widgets-wrap .postbox table td {
+	text-align: right;
+}
+
+/* Sidekick */
+.themes-php.customize-active div#sidekick,
+.themes-php.customize-loading div#sidekick {
+	display: none;
+}
+
+
+@media only screen and (max-width: 1499px) and (min-width: 800px) {
+
+	body.toplevel_page_godaddy #wpbody-content #dashboard-widgets .postbox-container,
+	body.toplevel_page_godaddy #wpbody-content #dashboard-widgets #postbox-container-2,
+	body.toplevel_page_godaddy #wpbody-content #dashboard-widgets #postbox-container-3 {
+		width: 33.33%;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+
+	body.toplevel_page_godaddy #wpbody-content #dashboard-widgets .postbox-container,
+	body.toplevel_page_godaddy #wpbody-content #dashboard-widgets #postbox-container-2,
+	body.toplevel_page_godaddy #wpbody-content #dashboard-widgets #postbox-container-3 {
+		width: 100%;
+	}
+
+}
+
+/* GoDaddy Garage Dashboard Widget */
+
+#gd_system_dashboard_godaddy_garage .inside {
+	margin: 0;
+	padding: 0;
+}
+
+#gd_system_dashboard_godaddy_garage .widget-loading,
+#gd_system_dashboard_godaddy_garage .dashboard-widget-control-form {
+	padding: 12px 12px 0;
+}
+
+#gd_system_dashboard_godaddy_garage .rss-widget {
+	border-bottom: 1px solid #eee;
+	font-size: 13px;
+	padding: 8px 12px 10px;
+}
+
+#gd_system_dashboard_godaddy_garage .rss-widget:last-child {
+	border-bottom: none;
+	padding-bottom: 8px;
+}
+
+#gd_system_dashboard_godaddy_garage .rss-widget a {
+	font-weight: normal;
+}
+
+#gd_system_dashboard_godaddy_garage .rss-widget span,
+#gd_system_dashboard_godaddy_garage .rss-widget span.rss-date {
+	color: #777;
+}
+
+#gd_system_dashboard_godaddy_garage .rss-widget span.rss-date {
+	margin-left: 12px;
+}
+
+#gd_system_dashboard_godaddy_garage .rss-widget ul li {
+	margin-bottom: 8px;
+}

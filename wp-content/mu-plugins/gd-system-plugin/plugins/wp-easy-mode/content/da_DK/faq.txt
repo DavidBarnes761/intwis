@@ -1,0 +1,7 @@
+﻿For at gøre det nemt for dig har vi besvaret de mest almindelige spørgsmål fra vores kunder lige her.
+
+Er der noget du ikke kan finde? Du kan få fat i os direkte gennem siden <a href="/contact/" title="Kontakt os">Kontakt os</a>.
+
+<strong>Sp:</strong> <em>Tilføj spørgsmål her.</em>
+
+<strong>Sv:</strong> Tilføj svar her.

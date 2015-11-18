@@ -1,0 +1,7 @@
+﻿Der vil du finne svar på de vanligste spørsmålene fra kundene direkte på siden, for å gjøre det enklere for deg.
+
+Finner du ikke det du ønsker? Henvend deg direkte gjennom siden <a href="/contact/" title="Kontakt oss">Kontakt oss</a>.
+
+<strong>Sp:</strong> <em>Legg til spørsmål her.</em>
+
+<strong>Sv:</strong> Legg til svar her.

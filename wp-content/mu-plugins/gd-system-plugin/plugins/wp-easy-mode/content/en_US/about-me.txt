@@ -1,0 +1,3 @@
+Hi! I’m <strong>YOUR NAME</strong>. Thanks for stopping by.
+
+<strong>INSERT BIO HERE</strong>

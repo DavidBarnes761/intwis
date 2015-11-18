@@ -1,0 +1,3 @@
+﻿Hoi! Mijn naam is <strong>JE NAAM</strong>. Bedankt voor je bezoek.
+
+<strong>HIER BIOGRAFIE INVOEGEN</strong>

@@ -2,15 +2,606 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="887e6fab-cec5-4a22-ba68-c7366b27c78e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-videos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/WhyWisdomMatters.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/play-overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/therapeutics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-home.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-speakers.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-videos.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-why-wisdom-matters.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-speaker.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-video.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-admin/install.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-config-sample.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/documentation.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-amazon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-arne.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-bing.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-donate.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-email.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-google.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-help.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-paypal.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-trac.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-wordpress.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/icon-yahoo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/img/sitemap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ar.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ar.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-bg_BG.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-bg_BG.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-by_BY.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-by_BY.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-cs_CZ.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-cs_CZ.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-da_DK.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-da_DK.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-de_DE.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-es_ES.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-fi_FI.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-fi_FI.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-fr_FR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-hi_IN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-hi_IN.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-hu_HU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-hu_HU.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-it_IT.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja_EUC.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja_EUC.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja_SJIS.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja_SJIS.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja_UTF.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ja_UTF.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ko_KR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ko_KR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-nl_NL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-nl_NL.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-pl_PL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-pl_PL.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-pt_BR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-pt_BR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-pt_PT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-pt_PT.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-ru_RU.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-sl_SI.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-sl_SI.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-sr_RS.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-sr_RS.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-sv_SE.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-tr_TR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-tr_TR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-uk_UA.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-uk_UA.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-zh_CN.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-zh_TW.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap-zh_TW.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/lang/sitemap.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/screenshot-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/screenshot-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/screenshot-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap-builder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap-core.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap-loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap-ui.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap-wpmu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/google-sitemap-generator/sitemap.xsl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ar.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-he_IL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-id_ID.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ja.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ko_KR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-nl_NL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-pt_BR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-sq.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-tr_TR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-zh_TW.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/assets/gray-grad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/assets/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checkbase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/admin_menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/artisteer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/badthings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/basic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/cdn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/comment_reply.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/commpage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/content-width.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/customizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/customs.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/dep_recommend.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/deprecated.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/directories.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/editorstyle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/filenames.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/gravatar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/i18n.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/iframes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/include.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/lineendings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/links.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/malware.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/more_deprecated.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/navmenu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/nonprintable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/phpshort.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/plugin-territory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/post-formats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/postsnav.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/postthumb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/required.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/screenshot.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/searchform.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/style_needed.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/style_suggested.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/style_tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/suggested.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/textdomain.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/time_date.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/title.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/widgets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/checks/worms.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/lang/theme-check.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/theme-check/theme-check.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/Changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/advanced-cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-be_BY.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-be_BY.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-de_DE.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-es_ES.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-fr_FR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-it_IT.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ja.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ja.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-lt_LT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-lt_LT.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ro_RO.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ro_RO.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ru_RU.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-sr_RS.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-sr_RS.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-sv_SE.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-tr_TR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-tr_TR.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ua_UA.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-ua_UA.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-uk.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-uk.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-zh_CN.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-zh_TW.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/languages/wp-super-cache-zh_TW.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/ossdl-cdn.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/awaitingmoderation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/badbehaviour.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/domain-mapping.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/dynamic-cache-test.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/jetpack.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/multisite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/searchengine.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/plugins/wptouch.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/tmp-wp-super-cache-readme.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/tmp-wp-super-cache.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/wp-cache-base.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/wp-cache-config-sample.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/wp-cache-phase1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/wp-cache-phase2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/wp-cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/wp-super-cache/wp-super-cache.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-videos.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/archive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/author-bio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/content-link.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/content-none.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/content-page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/content-search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/css/editor-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/css/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/css/ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/Genericons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/Genericons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/Genericons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/Genericons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/genericons/genericons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/inc/back-compat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/inc/custom-header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/inc/customizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/inc/template-tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/js/color-scheme-control.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/js/customize-preview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/js/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/js/keyboard-image-navigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/languages/twentyfifteen.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/single.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfifteen/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/archive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/author.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/category.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-aside.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-audio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-featured-post.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-link.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-none.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-quote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content-video.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/css/editor-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/css/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/featured-content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/Genericons-Regular.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/font/genericons-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/genericons/genericons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/images/pattern-dark.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/images/pattern-light.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/inc/back-compat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/inc/custom-header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/inc/customizer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/inc/featured-content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/inc/template-tags.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/inc/widgets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/customizer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/featured-content-admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/keyboard-image-navigation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/languages/twentyfourteen.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/page-templates/contributors.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/page-templates/full-width.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/sidebar-content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/sidebar-footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/single.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/tag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentyfourteen/taxonomy-post_format.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/archive.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/author-bio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/author.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/category.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-aside.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-audio.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-chat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-link.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-none.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-quote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-status.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content-video.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/css/editor-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/css/ie.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/COPYING.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/Genericons-Regular.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/font/genericons-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/font/genericons-regular-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/font/genericons-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/font/genericons-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/genericons/genericons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/image.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/dotted-line-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/dotted-line-light-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/dotted-line-light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/dotted-line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/headers/circle-thumbnail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/headers/circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/headers/diamond-thumbnail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/headers/diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/headers/star-thumbnail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/headers/star.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/search-icon-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/images/search-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/inc/back-compat.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/inc/custom-header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/js/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/js/theme-customizer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/languages/twentythirteen.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/rtl.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/screenshot.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/sidebar-main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/single.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/tag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/twentythirteen/taxonomy-post_format.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-af.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-af.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-bg_BG.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-bg_BG.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-cy.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-cy.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-el.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-el.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-es_CL.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-es_CL.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-fa_IR.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-fa_IR.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-is_IS.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-is_IS.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ka_GE.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ka_GE.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-lt_LT.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-lt_LT.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-lv.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-lv.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ms_MY.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-ms_MY.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-my_MM.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-my_MM.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-nn_NO.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-nn_NO.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-sa_IN.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-sa_IN.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-th.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-th.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-uk.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/languages/jetpack-uk.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/logo.png" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/atoms/icons/_jetpack.scss" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/atoms/icons/_jetpack.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/navigation/_menus.scss" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/navigation/_menus.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/templates/_nux-landing-2015.scss" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/templates/_nux-landing-2015.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/templates/_settings.scss" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/templates/_settings.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/views/admin/admin-page.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/views/admin/admin-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/admin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/after-the-deadline.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/after-the-deadline.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/audio.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/audio.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/comments/base.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/comments/base.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/3rd-party/bitly.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/3rd-party/bitly.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/verification-tools/blog-verification-tools.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/verification-tools/blog-verification-tools.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/carousel.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/carousel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-admin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-autoupdate.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-autoupdate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-client-server.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-client-server.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-client.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-debugger.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-debugger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-heartbeat.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-heartbeat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-ixr-client.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-ixr-client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-jitm.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-jitm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-network.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-network.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-post-images.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-post-images.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-sync.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-sync.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-user-agent.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-user-agent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-xmlrpc-server.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack-xmlrpc-server.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.jetpack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.json-api-endpoints.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.json-api-endpoints.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.json-api.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.json-api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.media-summary.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.media-summary.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.photon.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/class.photon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/videopress/class.videopress-player.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/videopress/class.videopress-player.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-get-site-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-get-site-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-list-posts-v1-1-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-list-posts-v1-1-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-post-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-post-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-publicize-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-publicize-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-site-settings-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-site-settings-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-comment-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-comment-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-post-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-post-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-post-v1-1-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-post-v1-1-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-post-v1-2-endpoint.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints/class.wpcom-json-api-update-post-v1-2-endpoint.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/comics.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/comics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/comments.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/comments/comments.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/comments/comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/template-parts/content-search.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/template-parts/content-search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-content-types.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-content-types.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-css.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-css/custom-css.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-css/custom-css.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/markdown/easy-markdown.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/markdown/easy-markdown.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/enhanced-distribution.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/enhanced-distribution.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/facebook-likebox.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/facebook-likebox.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/js/facebook.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/js/facebook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/facebook.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/facebook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/featured-content.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/featured-content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/footer.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.css" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.min.css" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/functions.gallery.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/functions.gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/functions.opengraph.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/functions.opengraph.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/functions.photon.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/functions.photon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/site-logo/inc/functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/site-logo/inc/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/gallery.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/goodreads.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/goodreads.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/gravatar-hovercards.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/gravatar-hovercards.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/gravatar-profile.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/gravatar-profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/grunion-contact-form.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/grunion-contact-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/grunion-form-view.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/grunion-form-view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/css/rtl/grunion-rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/css/rtl/grunion-rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/js/grunion.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/js/grunion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/header.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/holiday-snow.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/holiday-snow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/image.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/theme/pub/minileven/image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/infinite-scroll.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/infinite-scroll.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/infinite-scroll.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/infinite-scroll.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/infinite-scroll/infinity.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/infinite-scroll/infinity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/instagram.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/instagram.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery/templates/partials/item.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery/templates/partials/item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm-rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm-rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm-rtl.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm-rtl.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.css.map" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.min.css.map" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-jitm.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/jetpack-admin-jitm.scss" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/jetpack-admin-jitm.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-rtl.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin-rtl.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.css.map" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.min.css.map" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-admin.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/jetpack-admin.scss" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/scss/jetpack-admin.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners-rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners-rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners-rtl.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners-rtl.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.css.map" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.min.css.map" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-banners.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/jetpack-jitm.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/jetpack-jitm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/jetpack-modules.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/jetpack-modules.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/related-posts/jetpack-related-posts.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/related-posts/jetpack-related-posts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack-rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon/jetpack-site-icon.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon/jetpack-site-icon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/css/jetpack.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/jetpack.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/jetpack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/jp.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/jp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-includes/js/jquery/jquery-migrate.js" afterPath="$PROJECT_DIR$/wp-includes/js/jquery/jquery-migrate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-includes/js/jquery/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/wp-includes/js/jquery/jquery-migrate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/json-api.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/json-api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/json-endpoints.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/latex.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/latex.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/license.txt" afterPath="$PROJECT_DIR$/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-includes/images/crystal/license.txt" afterPath="$PROJECT_DIR$/wp-includes/images/crystal/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/likes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/likes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/locales.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/locales.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/manage.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/manage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/markdown.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/markdown.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/css/rtl/menu-alter-rtl.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/contact-form/css/rtl/menu-alter-rtl.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/minileven.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/minileven/minileven.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/module-headings.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/module-headings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/module-info.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/module-info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/monitor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/monitor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/views/admin/my-jetpack-page.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/views/admin/my-jetpack-page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/navigation.js" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/views/admin/network-admin-header.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/views/admin/network-admin-header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/notes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/notes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/nova.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/nova.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/omnisearch/omnisearch-core.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/omnisearch/omnisearch-core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/omnisearch.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/omnisearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/photon.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/photon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/portfolios.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/portfolios.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/post-by-email.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/post-by-email.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/protect.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/protect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/after-the-deadline/proxy.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/after-the-deadline/proxy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize/publicize-jetpack.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize/publicize-jetpack.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize/publicize.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize/publicize.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/readme.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/related-posts/related-posts.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/related-posts/related-posts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/related-posts.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/related-posts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/require-lib.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/require-lib.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/responsive-videos.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools/responsive-videos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/rsslinks-widget.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/rsslinks-widget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/search.php" afterPath="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/protect/shared-functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/protect/shared-functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharedaddy.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharedaddy.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing-service.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing-service.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing-sources.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing-sources.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sharedaddy/sharing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/videopress/shortcode.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/videopress/shortcode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortlinks.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortlinks.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon/site-icon-functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon/site-icon-functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/slideshow.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/slideshow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/social-media-icons.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/social-media-icons.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sso.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/sso.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/stats.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/stats.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/subscriptions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/subscriptions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/testimonial.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/custom-post-types/testimonial.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/theme-tools.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery/tiled-gallery-item.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery/tiled-gallery-item.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/tiled-gallery/tiled-gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/lib/tonesque.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/_inc/lib/tonesque.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/top-posts.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/top-posts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/protect/transient-cleanup.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/protect/transient-cleanup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/twitter-timeline.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/twitter-timeline.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize/ui.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/publicize/ui.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-admin/includes/upgrade.php" afterPath="$PROJECT_DIR$/wp-admin/includes/upgrade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon/upload-site-icon.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/site-icon/upload-site-icon.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/vaultpress.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/vaultpress.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/verification-tools.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/verification-tools.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-includes/version.php" afterPath="$PROJECT_DIR$/wp-includes/version.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/videopress.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/videopress.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/vimeo.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/vimeo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widget-visibility/widget-conditions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widget-visibility/widget-conditions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widget-visibility.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widget-visibility.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/wordpress-post-widget.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/widgets/wordpress-post-widget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/wufoo.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/wufoo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/youtube.php" afterPath="$PROJECT_DIR$/wp-content/plugins/jetpack/modules/shortcodes/youtube.php" />
     </list>
     <ignored path="Integrative Wisdom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,113 +622,96 @@
     <favorites_list name="Integrative Wisdom" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="page_home.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.5">
-                  <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#7#90#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.5">
-                  <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.208333">
-                  <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="list-videos.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-videos.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4609375">
-                  <caret line="34" column="95" selection-start-line="34" selection-start-column="95" selection-end-line="34" selection-end-column="95" />
-                  <folding>
-                    <element signature="e#7#45#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="single-speaker.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-13.125">
-                  <caret line="23" column="125" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
-                  <folding>
-                    <element signature="e#7#111#0#PHP" expanded="true" />
-                    <marker date="1445139758000" expanded="true" signature="1634:1640" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="single-video.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.375">
-                  <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38476562">
-                  <caret line="356" column="15" selection-start-line="356" selection-start-column="15" selection-end-line="356" selection-end-column="15" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-4.5833335">
-                  <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7272727">
+              <caret line="449" column="25" selection-start-line="449" selection-start-column="25" selection-end-line="449" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gd-config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gd-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.5">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-why-wisdom-matters.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-why-wisdom-matters.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.125">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="e#7#123#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-speakers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-speakers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-25.625">
+              <caret line="51" column="107" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
+              <folding>
+                <element signature="e#7#111#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-home.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.64912283">
+              <caret line="30" column="1879" selection-start-line="30" selection-start-column="1879" selection-end-line="30" selection-end-column="1879" />
+              <folding>
+                <element signature="e#7#90#0#PHP" expanded="true" />
+                <element signature="e#1997#2075#0#HTML" expanded="true" />
+                <element signature="e#2138#2183#0#HTML" expanded="true" />
+                <element signature="e#2203#2269#0#HTML" expanded="true" />
+                <element signature="e#2274#2327#0#HTML" expanded="true" />
+                <element signature="e#2349#2433#0#HTML" expanded="true" />
+                <element signature="e#2454#2575#0#HTML" expanded="true" />
+                <element signature="e#2696#2715#0#HTML" expanded="true" />
+                <element signature="e#2831#2909#0#HTML" expanded="true" />
+                <element signature="e#2972#3017#0#HTML" expanded="true" />
+                <element signature="e#3037#3103#0#HTML" expanded="true" />
+                <element signature="e#3108#3161#0#HTML" expanded="true" />
+                <element signature="e#3221#3272#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-video.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-video.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="55" column="88" selection-start-line="55" selection-start-column="88" selection-end-line="55" selection-end-column="88" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -162,19 +736,34 @@
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/style.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/config.rb" />
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/foundation-init.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/wp-config.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/speaker-bio.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-speakers.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-videos.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-home-old.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-speaker.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/search.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/template-parts/content-search.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/navigation.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/navigation/_menus.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-why-wisdom-matters.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-speakers.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-video.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-videos.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-home.php" />
       </list>
     </option>
   </component>
@@ -217,6 +806,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,96 +825,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integrative-wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Integrative Wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="integrative-wisdom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pods-templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -344,10 +853,10 @@
       <recent name="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/integrative-wisdom" />
       <recent name="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img" />
       <recent name="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js" />
       <recent name="$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/integrative-wisdom" />
       <recent name="$PROJECT_DIR$/wp-content/themes" />
     </key>
   </component>
@@ -392,19 +901,30 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16380544" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32904148" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1702432" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32650602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32048193" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3192771" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -412,12 +932,33 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31971154" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16595136" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -435,117 +976,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="e#7#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding>
-            <element signature="e#7#43#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="125" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
-          <folding>
-            <element signature="e#7#111#0#PHP" expanded="true" />
-            <marker date="1445139758000" expanded="true" signature="1634:1640" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="314" column="35" selection-start-line="314" selection-start-column="35" selection-end-line="314" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-videos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/pods/includes/data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="834" column="9" selection-start-line="834" selection-start-column="9" selection-end-line="834" selection-end-column="9" />
-          <folding>
-            <marker date="1444185402000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="57" selection-start-line="91" selection-start-column="57" selection-end-line="91" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding>
-            <element signature="e#7#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#7#43#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="125" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
-          <folding>
-            <element signature="e#7#111#0#PHP" expanded="true" />
-            <marker date="1445139758000" expanded="true" signature="1634:1640" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -561,16 +996,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="91" column="57" selection-start-line="91" selection-start-column="57" selection-end-line="91" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
           <folding>
             <element signature="e#7#90#0#PHP" expanded="true" />
+            <element signature="e#1997#2075#0#HTML" expanded="true" />
+            <element signature="e#2138#2183#0#HTML" expanded="true" />
+            <element signature="e#2203#2269#0#HTML" expanded="true" />
+            <element signature="e#2274#2327#0#HTML" expanded="true" />
+            <element signature="e#2349#2433#0#HTML" expanded="true" />
+            <element signature="e#2454#2575#0#HTML" expanded="true" />
+            <element signature="e#2696#2715#0#HTML" expanded="true" />
+            <element signature="e#2831#2909#0#HTML" expanded="true" />
+            <element signature="e#2972#3017#0#HTML" expanded="true" />
+            <element signature="e#3037#3103#0#HTML" expanded="true" />
+            <element signature="e#3108#3161#0#HTML" expanded="true" />
+            <element signature="e#3221#3272#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,32 +1050,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfifteen/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfourteen/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="32" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/general-template.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-35.291668">
           <caret line="228" column="48" selection-start-line="228" selection-start-column="48" selection-end-line="228" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfifteen/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.306383">
-          <caret line="355" column="15" selection-start-line="355" selection-start-column="7" selection-end-line="355" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -647,31 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/foundation-init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="30" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -696,13 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="962" column="0" selection-start-line="962" selection-start-column="0" selection-end-line="962" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-admin/includes/nav-menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="24.260042">
@@ -714,13 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -748,13 +1138,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="834" column="9" selection-start-line="834" selection-start-column="9" selection-end-line="834" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2788104">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="24.97991">
+          <caret line="0" column="104769" selection-start-line="0" selection-start-column="104769" selection-end-line="0" selection-end-column="104769" />
           <folding>
-            <marker date="1444185402000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..." />
+            <element signature="e#31853#32178#2" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="85" column="45" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-speaker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/pods/classes/fields/pick.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="843" column="60" selection-start-line="843" selection-start-column="60" selection-end-line="843" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="36" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/foundation/css/foundation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5794" column="18" selection-start-line="5794" selection-start-column="7" selection-end-line="5794" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="749" column="30" selection-start-line="749" selection-start-column="30" selection-end-line="749" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/template-parts/content-search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23762377">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/js/customize-nav-menus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="871" column="46" selection-start-line="871" selection-start-column="46" selection-end-line="871" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-admin/js/customize-nav-menus.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="45.148148">
+          <caret line="0" column="13759" selection-start-line="0" selection-start-column="13759" selection-end-line="0" selection-end-column="13759" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/js/navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.916667">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/navigation/_menus.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.2807016">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02793296">
+          <caret line="1222" column="1" selection-start-line="1222" selection-start-column="1" selection-end-line="1222" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/template-parts/content-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -762,74 +1286,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page_home.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-speakers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state vertical-scroll-proportion="-25.625">
+          <caret line="51" column="107" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
           <folding>
-            <element signature="e#7#90#0#PHP" expanded="true" />
+            <element signature="e#7#111#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/single-video.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5833335">
-          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="55" column="88" selection-start-line="55" selection-start-column="88" selection-end-line="55" selection-end-column="88" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-why-wisdom-matters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.208333">
-          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#7#123#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/single-speaker.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-videos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="23" column="125" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="125" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="29" />
           <folding>
-            <element signature="e#7#111#0#PHP" expanded="true" />
-            <marker date="1445139758000" expanded="true" signature="1634:1640" placeholder="..." />
+            <element signature="e#7#107#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/pods-templates/list-videos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4609375">
-          <caret line="34" column="95" selection-start-line="34" selection-start-column="95" selection-end-line="34" selection-end-column="95" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/img/WhyWisdomMatters.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/sass/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38476562">
-          <caret line="356" column="15" selection-start-line="356" selection-start-column="15" selection-end-line="356" selection-end-column="15" />
+        <state vertical-scroll-proportion="-3.7272727">
+          <caret line="449" column="25" selection-start-line="449" selection-start-column="25" selection-end-line="449" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gd-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/integrative-wisdom/page-home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64912283">
+          <caret line="30" column="1879" selection-start-line="30" selection-start-column="1879" selection-end-line="30" selection-end-column="1879" />
+          <folding>
+            <element signature="e#7#90#0#PHP" expanded="true" />
+            <element signature="e#1997#2075#0#HTML" expanded="true" />
+            <element signature="e#2138#2183#0#HTML" expanded="true" />
+            <element signature="e#2203#2269#0#HTML" expanded="true" />
+            <element signature="e#2274#2327#0#HTML" expanded="true" />
+            <element signature="e#2349#2433#0#HTML" expanded="true" />
+            <element signature="e#2454#2575#0#HTML" expanded="true" />
+            <element signature="e#2696#2715#0#HTML" expanded="true" />
+            <element signature="e#2831#2909#0#HTML" expanded="true" />
+            <element signature="e#2972#3017#0#HTML" expanded="true" />
+            <element signature="e#3037#3103#0#HTML" expanded="true" />
+            <element signature="e#3108#3161#0#HTML" expanded="true" />
+            <element signature="e#3221#3272#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

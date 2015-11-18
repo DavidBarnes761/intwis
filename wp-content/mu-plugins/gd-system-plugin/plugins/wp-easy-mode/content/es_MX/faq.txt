@@ -1,0 +1,7 @@
+﻿Para tu conveniencia, las preguntas más frecuentes de nuestros clientes están aquí.
+
+¿No encuentras lo que quieres? Comunícate directamente a través de nuestra página <a href="/contact/" title="Contáctanos">Contáctanos</a>.
+
+<strong>P:</strong> <em>Agrega las preguntas aquí.</em>
+
+<strong>R:</strong> Agrega las respuestas aquí.

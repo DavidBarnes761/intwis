@@ -1,0 +1,5 @@
+﻿<strong>BEDRIJFSNAAM</strong> is al sinds de oprichting in <strong>JAAR</strong> succesvol. Wij streven ernaar onze klanten op een prettige wijze van dienst te zijn.
+
+<strong>NAAM VAN EIGENAAR</strong> heeft meer dan <strong>GETAL</strong> jaar ervaring in <strong>NAAM VAN SECTOR</strong> en zet zich volledig in om aan je verwachtingen te voldoen.
+
+We zijn erg blij met onze klanten en waarderen je mening en suggesties. Ga naar de pagina <a href="/contact/" title="Neem contact met ons op">Neem contact met ons op</a> en vertel ons wat we goed doen en wat we kunnen verbeteren.

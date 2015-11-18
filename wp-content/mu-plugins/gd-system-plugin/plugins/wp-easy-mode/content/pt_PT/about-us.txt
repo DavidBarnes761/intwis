@@ -1,0 +1,5 @@
+﻿<strong>NOME DA EMPRESA</strong> tem divulgado resultados desde que abrimos em <strong>ANO</strong>. O nosso objetivo é proporcionar uma experiência do cliente superior e um excelente valor para os nossos clientes.
+
+<strong>NOME DO PROPRIETÁRIO</strong> tem mais de <strong>NÚMERO</strong> anos de experiência em <strong>NOME DA INDÚSTRIA</strong> e tem uma paixão por superar as suas expectativas.
+
+Adoramos os nossos clientes e agradecemos o seu feedback e sugestões. Use a nossa página <a href="/contact/" title="Contacte-nos">Contacte-nos</a> para nos dizer o que estamos a fazer bem ou o que podemos melhorar.

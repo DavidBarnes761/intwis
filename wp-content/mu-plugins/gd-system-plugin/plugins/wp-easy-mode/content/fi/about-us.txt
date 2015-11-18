@@ -1,0 +1,5 @@
+﻿<strong>YRITYKSEN NIMI</strong> on tuottanut tulosta avaamisestaan lähtien, vuodesta <strong>VUOSI</strong>. Tavoitteenamme on tarjota sekä ylivoimainen asiakaskokemus että valtavasti arvoa asiakkaillemme.
+
+<strong>OMISTAJAN NIMELLÄ</strong> on yli <strong>NUMERO</strong> vuoden kokemus <strong>ALAN NIMESTÄ</strong>, ja hän pyrkii intohimoisesti ylittämään odotuksesi.
+
+Asiakkaamme ovat meille tärkeitä, ja haluamme saada sinulta palautetta ja ehdotuksia. Käytä <a href="/contact/" title="Ota yhteyttä">Ota yhteyttä</a> -sivuamme kertoaksesi meille, mitä teemme tällä hetkellä oikein ja missä olisi parantamisen varaa.
