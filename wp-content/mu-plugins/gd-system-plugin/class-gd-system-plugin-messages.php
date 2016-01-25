@@ -1,109 +1,118 @@
 <?php
 
-/**
- * Copyright 2013 Go Daddy Operating Company, LLC. All Rights Reserved.
- */
+if ( ! defined( 'ABSPATH' ) ) {
 
-// Make sure it's wordpress
-if ( !defined( 'ABSPATH' ) )
-    die( 'Forbidden' );
+	exit;
+
+}
 
 /**
- * Class GD_System_Plugin_Messages
- * Send growl messages to users
- * @version 1.0
- * @author Kurt Payne <kpayne@godaddy.com>
+ * Display growl messages to users
+ *
+ * @version 1.1.0
+ *
+ * @author Frankie Jarrett <fjarrett@godaddy.com>
  */
-class GD_System_Plugin_Messages {
+final class GD_System_Plugin_Messages {
+
+	/**
+	 * Option key for messages
+	 *
+	 * @var string
+	 */
+	const OPTION_KEY = 'gd_system_messages';
+
+	/**
+	 * User cap required to see messages
+	 *
+	 * @var string
+	 */
+	const CAP = 'activate_plugins';
+
+	/**
+	 * Array of messages
+	 *
+	 * @var array
+	 */
+	private $messages = array();
 
 	/**
 	 * Construct
-	 * Hook any needed actions/filters
-	 * @return GD_System_Plugin_Messages
 	 */
 	public function __construct() {
-		// If there are any system messages, show them
-		add_action( 'init', array( $this, 'load_styles' ) );
-		add_action( 'admin_bar_menu', array( $this, 'show_messages' ) );
+
+		$this->messages = (array) get_option( static::OPTION_KEY, array() );
+
+		add_action( 'init', array( $this, 'init' ) );
+
 	}
 
 	/**
 	 * Display any system messages to the user
-	 * @return void
+	 *
+	 * @action init
 	 */
-	public function load_styles() {
+	public function init() {
 
-	   // Get the transient
-	   if ( !is_user_logged_in() || !current_user_can( 'activate_plugins' ) ) {
-		   return;
-	   }
-	   $transient = get_option( 'gd_system_messages' );
+		if ( ! current_user_can( static::CAP ) || empty( $this->messages ) ) {
 
-	   // If there are no messages, bail
-	   if ( empty( $transient ) ) {
-		   return;
-	   }
+			return;
 
-	   // If there are messages, print our style
-	   if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
-		   // @codeCoverageIgnoreStart
-		   wp_enqueue_script( 'gd_system_gritter_js', GD_SYSTEM_PLUGIN_URL . 'gd-system-plugin/js/jquery.gritter.js', array( 'jquery' ) );
-		   wp_enqueue_style( 'gd_system_gritter_css', GD_SYSTEM_PLUGIN_URL . 'gd-system-plugin/css/jquery.gritter.css' );
-		   // @codeCoverageIgnoreEnd
-	   } else {
-		   wp_enqueue_script( 'gd_system_gritter_js', GD_SYSTEM_PLUGIN_URL . 'gd-system-plugin/js/jquery.gritter.min.js', array( 'jquery' ) );
-		   wp_enqueue_style( 'gd_system_gritter_css', GD_SYSTEM_PLUGIN_URL . 'gd-system-plugin/css/jquery.gritter.min.css' );
-	   }
+		}
+
+		$suffix = SCRIPT_DEBUG ? '' : '.min';
+
+		// @codeCoverageIgnoreStart
+
+		wp_enqueue_script( 'gd_system_gritter', GD_SYSTEM_PLUGIN_URL . "gd-system-plugin/js/jquery.gritter{$suffix}.js", array( 'jquery' ), '1.7.4' );
+
+		wp_enqueue_style( 'gd_system_gritter', GD_SYSTEM_PLUGIN_URL . "gd-system-plugin/css/jquery.gritter{$suffix}.css", array(), '0.0.1' );
+
+		// @codeCoverageIgnoreEnd
+
+		add_action( 'admin_bar_menu', array( $this, 'display_messages' ) );
+
 	}
 
 	/**
 	 * Display any system messages to the user
-	 * @return void
+	 *
+	 * @action admin_bar_menu
 	 */
-	public function show_messages( ) {
+	public function display_messages() {
 
-		// Get the transient
-		if ( !is_user_logged_in() || !current_user_can( 'activate_plugins' ) ) {
-			return;
-		}
-		$transient = get_option( 'gd_system_messages' );
+		foreach ( $this->messages as $message ) {
 
-		// If there are no messages, bail
-		if ( empty( $transient ) ) {
-			return;
-		}
-
-		// Show messages
-		foreach ( (array) $transient as $message ) {
 			?>
 			<script type="text/javascript">
 				jQuery( document ).ready( function( $ ) {
 					$.gritter.add( {
-						image: "http://img1.wsimg.com/shared/img/1/success-icon.png",
-						title: "<?php echo esc_js( __( 'System message', 'gd_system' ) ); ?>",
-						text: "<?php echo esc_js( $message ); ?>",
-						time: 10 * 1000,
+						title: "<?php echo esc_js( __( 'System message', 'gd_system' ) ) ?>",
+						text: "<?php echo esc_js( $message ) ?>",
+						time: <?php echo absint( 5 * 1000 ) ?>
 					} );
 				} );
 			</script>
 			<?php
+
 		}
 
-		// If there are no more messages, delete.  Otherwise, save.
-		delete_option( 'gd_system_messages' );
+		// If there are no more messages, delete. Otherwise, save.
+		delete_option( static::OPTION_KEY );
+
 	}
 
 	/**
 	 * Add a message to be displayed to the user
+	 *
 	 * @param string $message
-	 * @return void
 	 */
 	public function add_message( $message ) {
-		$transient = get_option( 'gd_system_messages' );
-		if ( empty( $transient ) ) {
-			$transient = array();
-		}
-		$transient[] = $message;
-		update_option( 'gd_system_messages', $transient );
+
+		$this->messages[] = $message;
+
+		update_option( static::OPTION_KEY, $this->messages );
+
 	}
+
 }

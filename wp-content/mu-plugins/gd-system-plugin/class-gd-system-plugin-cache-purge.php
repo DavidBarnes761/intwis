@@ -105,9 +105,17 @@ class GD_System_Plugin_Cache_Purge extends WP_Async_Task {
 	 * @return void
 	 */
 	public function purge_comment( $comment_id ) {
+
 		$comment = get_comment( $comment_id );
-		$post = get_post( $comment->comment_post_ID );
-		$this->purge_cache( $post );
+
+		if ( ! empty( $comment->comment_post_ID ) ) {
+
+			$post = get_post( $comment->comment_post_ID );
+
+			$this->purge_cache( $post );
+
+		}
+
 	}
 
 	/**
@@ -181,11 +189,12 @@ class GD_System_Plugin_Cache_Purge extends WP_Async_Task {
      */
     protected function run_action() {
 
-		$ban  = $_POST['ban'];
-		$urls = $_POST['urls'];
+		$ban = isset( $_POST['ban'] ) ? $_POST['ban'] : null;
+
+		$urls = isset( $_POST['urls'] ) ? $_POST['urls'] : null;
 
 		// BAN everything
-		if ( $ban ) {
+		if ( defined( 'GD_VIP' ) && $ban ) {
 			$url = get_home_url();
 			if ( preg_match( '/http[s]?:\/\/([^\/]+)/i', $url, $matches ) ) {
 				$_url = str_replace( $matches[1], GD_VIP, $url );
@@ -199,7 +208,7 @@ class GD_System_Plugin_Cache_Purge extends WP_Async_Task {
 			}
 
 		// PURGE selectively
-		} else {
+		} elseif ( defined( 'GD_VIP' ) && $urls ) {
 			foreach ( $urls as $url ) {
 				if ( preg_match( '/http[s]?:\/\/([^\/]+)/i', $url, $matches ) ) {
 					$_url = str_replace( $matches[1], GD_VIP, $url );

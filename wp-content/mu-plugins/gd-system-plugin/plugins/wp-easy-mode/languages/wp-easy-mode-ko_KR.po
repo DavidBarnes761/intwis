@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Easy Mode\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
-"POT-Creation-Date: 2015-11-16 14:57-0600\n"
-"PO-Revision-Date: 2015-11-16 14:57-0600\n"
+"POT-Creation-Date: 2015-12-21 13:51-0600\n"
+"PO-Revision-Date: 2015-12-21 13:51-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
 "_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
 "esc_html_x;_c;_nc\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: content\n"
@@ -43,15 +44,97 @@ msgstr "사이드바 확장"
 msgid "Collapse Sidebar"
 msgstr "사이드바 축소"
 
-#: includes/class-wpem-customizer.php:46
+#: includes/class-wpem-customizer.php:37
+msgid "Watch Video"
+msgstr "비디오 시청"
+
+#: includes/class-wpem-customizer.php:38
+msgid ""
+"You've just created your website! Click \"Watch Video\" to view a quick "
+"demonstration of how to customize your site."
+msgstr ""
+"웹사이트를 만들었습니다! \"동영상 시청\"을 누르면 웹사이트를 수정 또는 변경하"
+"는 방법을 볼 수 있습니다."
+
+#: includes/class-wpem-customizer.php:42
+msgid "Learn More"
+msgstr "자세히 알아보기"
+
+#: includes/class-wpem-customizer.php:43
+msgid ""
+"You've just created your website! Click \"Learn More\" to view some tips on "
+"how to customize your site ."
+msgstr ""
+"웹사이트를 만들었습니다! \"더 알아보기\"을 누르면 웹사이트를 멋지게 만드는 고"
+"급 기능을 배울 수 있습니다."
+
+#: includes/class-wpem-customizer.php:58
 msgid "Congratulations!"
 msgstr "축하합니다!"
 
-#: includes/class-wpem-customizer.php:47
+#: includes/class-wpem-customizer.php:149
+msgid "The Customizer"
+msgstr "커스터마이저"
+
+#: includes/class-wpem-customizer.php:151
 msgid ""
-"You've just created your website! Use the panel to the left to customize the "
-"look &amp; feel of your website's design."
+"You are now in the Customizer, a tool that enables you to make changes to "
+"your website’s appearance, and preview those changes before publishing them. "
+"We’ve created a few commonly-used pages and widgets to help you get started."
 msgstr ""
+"커스터마이저 상태입니다. 수정도구를 사용하여 웹사이트의 모양을 변경하거나, 웹"
+"사이트를 게시하기 전에 변경 내용을 미리 볼 수 있습니다. 귀하가 쉽게 시작할 "
+"수 있도록, 일반적으로 많이 사용하는 페이지와 위젯을 추가했습니다."
+
+#: includes/class-wpem-customizer.php:152
+msgid ""
+"The top of the Customizer indicates the name of the active theme you’ve "
+"selected. You can change the theme at any time, but doing so will change "
+"these options and reset any customizations you might have made here."
+msgstr ""
+"커스터마이저 상단에 선택된 활성 테마의 이름이 표시되어 있습니다. 테마를 언제"
+"든지 변경할 수 있습니다. 그러나 테마를 변경하면 지정한 옵션과 사용자가 지정"
+"한 기능이 초기화됩니다."
+
+#: includes/class-wpem-customizer.php:153
+msgid ""
+"The options available in the Customizer will vary, depending on the features "
+"supported by your current theme. But most themes include these basic "
+"Customizer controls:"
+msgstr ""
+"커스터마이저에서 이용 가능한 옵션은 현재 테마에서 지원되는 기능에 따라 다릅니"
+"다. 그러나 대부분의 테마에는 다음과 같은 기본적인 커스터마이저 컨트롤이 포함"
+"되어 있습니다:"
+
+#: includes/class-wpem-customizer.php:155
+msgid "Site Identity"
+msgstr "사이트 신원"
+
+#: includes/class-wpem-customizer.php:156
+msgid "Colors"
+msgstr "색상"
+
+#: includes/class-wpem-customizer.php:157
+msgid "Header and Background Images"
+msgstr "머리글 및 배경 이미지"
+
+#: includes/class-wpem-customizer.php:158
+msgid "Navigation Menus"
+msgstr "탐색 메뉴"
+
+#: includes/class-wpem-customizer.php:159
+msgid "Widgets"
+msgstr "위젯"
+
+#: includes/class-wpem-customizer.php:161
+msgid ""
+"When you’re happy with your changes, click <strong>Save & Publish</strong> "
+"to keep these new settings. Or, simply close the Customizer by clicking the "
+"“X” in the top left-hand corner to discard your changes."
+msgstr ""
+"변경 내용이 마음에 들면, <strong>저장 & 게시</strong>를 눌러 새 설정을 보관하"
+"십시오. 또는, 왼쪽 모서리에 있는 \"X\"를 클릭하여 변경 내용을 버리고 커스터마"
+"이저를 닫을 수 있습니다."
 
 #: includes/class-wpem-done.php:66
 msgid "Primary Menu"
@@ -137,31 +220,31 @@ msgstr "체험담"
 msgid "testimonials"
 msgstr "고객의 사용 소감"
 
-#: includes/class-wpem-done.php:415
+#: includes/class-wpem-done.php:424
 msgid "Recent Posts"
 msgstr "최근 게시물"
 
-#: includes/class-wpem-done.php:424
+#: includes/class-wpem-done.php:433
 msgid "Archives"
 msgstr "보관"
 
-#: includes/class-wpem-done.php:441
+#: includes/class-wpem-done.php:450
 msgid "Browse Products"
 msgstr "제품 둘러보기"
 
-#: includes/class-wpem-done.php:472
+#: includes/class-wpem-done.php:481
 msgid "Contact Form"
 msgstr "연락 형식"
 
-#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+#: includes/class-wpem-done.php:482 includes/class-wpem-done.php:507
 msgid "Your form has been successfully submitted."
 msgstr "귀하의 양식이 성공적으로 제출되었습니다."
 
-#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+#: includes/class-wpem-done.php:483 includes/class-wpem-done.php:508
 msgid "Thank you so much for contacting us. We will get back to you shortly."
 msgstr "연락해 주셔서 감사합니다. 곧 연락 드리겠습니다."
 
-#: includes/class-wpem-done.php:497
+#: includes/class-wpem-done.php:506
 msgid "Request A Quote Form"
 msgstr "견적서 요청"
 
@@ -172,7 +255,7 @@ msgstr "설정"
 
 #: includes/class-wpem-step-settings.php:32
 msgid "Please tell us more about your website (all fields are required)"
-msgstr "Please tell us more about your website (all fields are required)"
+msgstr "웹사이트에 대해 더 자세하게 설명해 주세요(모든 필드 필수)"
 
 #: includes/class-wpem-step-settings.php:35
 #: includes/class-wpem-step-settings.php:111
@@ -181,11 +264,11 @@ msgstr "유형"
 
 #: includes/class-wpem-step-settings.php:38
 msgid "- Select a type -"
-msgstr "- Select a type -"
+msgstr "- 종류 선택 -"
 
 #: includes/class-wpem-step-settings.php:39
 msgid "Standard (Recommended)"
-msgstr "Standard (Recommended)"
+msgstr "표준(권장)"
 
 #: includes/class-wpem-step-settings.php:40
 msgid "Blog"
@@ -197,7 +280,7 @@ msgstr "온라인 스토어"
 
 #: includes/class-wpem-step-settings.php:43
 msgid "What type of website are you creating?"
-msgstr "What type of website are you creating?"
+msgstr "무슨 종류의 웹사이트를 작성하겠습니까?"
 
 #: includes/class-wpem-step-settings.php:47
 #: includes/class-wpem-step-settings.php:117
@@ -206,15 +289,15 @@ msgstr "산업"
 
 #: includes/class-wpem-step-settings.php:50
 msgid "- Select an industry -"
-msgstr "- Select an industry -"
+msgstr "- 업종 선택 -"
 
 #: includes/class-wpem-step-settings.php:51
 msgid "Business / Finance / Law"
-msgstr "Business / Finance / Law"
+msgstr "비즈니스 / 금융 / 법률"
 
 #: includes/class-wpem-step-settings.php:52
 msgid "Design / Art / Portfolio"
-msgstr "Design / Art / Portfolio"
+msgstr "디자인 / 예술 / 포트폴리오"
 
 #: includes/class-wpem-step-settings.php:53
 msgid "Education"
@@ -222,19 +305,19 @@ msgstr "교육"
 
 #: includes/class-wpem-step-settings.php:54
 msgid "Health / Beauty"
-msgstr "Health / Beauty"
+msgstr "건강 / 미용"
 
 #: includes/class-wpem-step-settings.php:55
 msgid "Home Services / Construction"
-msgstr "Home Services / Construction"
+msgstr "홈 서비스 / 건설"
 
 #: includes/class-wpem-step-settings.php:56
 msgid "Music / Movies / Entertainment"
-msgstr "Music / Movies / Entertainment"
+msgstr "음악 / 영화 / 오락"
 
 #: includes/class-wpem-step-settings.php:57
 msgid "Non-profit / Causes / Religious"
-msgstr "Non-profit / Causes / Religious"
+msgstr "비영리 / 단체 / 종교"
 
 #: includes/class-wpem-step-settings.php:58
 msgid "Other"
@@ -242,7 +325,7 @@ msgstr "기타"
 
 #: includes/class-wpem-step-settings.php:59
 msgid "Personal / Family / Wedding"
-msgstr "Personal / Family / Wedding"
+msgstr "개인 / 가족 / 결혼"
 
 #: includes/class-wpem-step-settings.php:60
 msgid "Pets / Animals"
@@ -254,23 +337,23 @@ msgstr "부동산"
 
 #: includes/class-wpem-step-settings.php:62
 msgid "Restaurant / Food"
-msgstr "Restaurant / Food"
+msgstr "음식점 / 식품"
 
 #: includes/class-wpem-step-settings.php:63
 msgid "Sports / Recreation"
-msgstr "Sports / Recreation"
+msgstr "스포츠 / 레크이에이션"
 
 #: includes/class-wpem-step-settings.php:64
 msgid "Transportation / Automotive"
-msgstr "Transportation / Automotive"
+msgstr "교통 / 자동차"
 
 #: includes/class-wpem-step-settings.php:65
 msgid "Travel / Hospitality / Leisure"
-msgstr "Travel / Hospitality / Leisure"
+msgstr "여행 / 접대 / 레저"
 
 #: includes/class-wpem-step-settings.php:67
 msgid "What will your website be about?"
-msgstr "What will your website be about?"
+msgstr "웹사이트는 무엇에 대한 것입니까?"
 
 #: includes/class-wpem-step-settings.php:71
 #: includes/class-wpem-step-settings.php:123
@@ -279,7 +362,7 @@ msgstr "제목"
 
 #: includes/class-wpem-step-settings.php:73
 msgid "Enter your website title here"
-msgstr "Enter your website title here"
+msgstr "여기에 웹사이트 제목 입력"
 
 #: includes/class-wpem-step-settings.php:74
 msgid ""
@@ -294,7 +377,7 @@ msgstr "태그라인"
 
 #: includes/class-wpem-step-settings.php:80
 msgid "Enter your website tagline here"
-msgstr "Enter your website tagline here"
+msgstr "여기에 웹사이트 핵심요약 입력"
 
 #: includes/class-wpem-step-settings.php:81
 msgid ""
@@ -311,7 +394,7 @@ msgstr "계속"
 
 #: includes/class-wpem-step-settings.php:170
 msgid "All fields are required"
-msgstr "All fields are required"
+msgstr "모든 필드를 작성해야 합니다."
 
 #: includes/class-wpem-step-start.php:18
 msgid "Start"
@@ -343,13 +426,12 @@ msgstr "테마"
 
 #: includes/class-wpem-step-theme.php:19
 msgid "Choose a Theme"
-msgstr "Choose a Theme"
+msgstr "테마를 선택하세요"
 
 #: includes/class-wpem-step-theme.php:32
 msgid ""
 "Choose a design for your website (don't worry, you can change this later)"
-msgstr ""
-"Choose a design for your website (don't worry, you can change this later)"
+msgstr "웹사이트의 디자인을 선택하십시오(나중에 변경할 수 있음)"
 
 #: includes/class-wpem-step-theme.php:43
 msgid "Preview"
@@ -383,17 +465,10 @@ msgstr "버전:"
 msgid "Collapse"
 msgstr "축소"
 
-#: includes/functions.php:189
+#: includes/functions.php:197
 msgid "Error: WP-CLI not found"
 msgstr "오류: WP-CLI 찾을 수 없음"
 
 #: templates/fullscreen.php:38
 msgid "WordPress"
 msgstr "워드프레스"
-
-#~ msgid ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"
-#~ msgstr ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"

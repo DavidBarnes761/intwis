@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: System Plugin\n"
-"POT-Creation-Date: 2015-11-16 14:28-0600\n"
-"PO-Revision-Date: 2015-11-16 14:28-0600\n"
+"POT-Creation-Date: 2016-01-13 12:43-0600\n"
+"PO-Revision-Date: 2016-01-13 12:43-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -21,79 +21,173 @@ msgstr ""
 "X-Poedit-SearchPath-1: gd-system-plugin\n"
 "X-Poedit-SearchPathExcluded-0: gd-system-plugin/plugins\n"
 
-#: gd-system-plugin.php:321
+#: gd-system-plugin.php:342
 msgid ""
-"Yes, I'm interested in hiring a professional to help customize my WordPress "
-"site"
+"I would be interested in hiring a professional to help me with my WordPress "
+"site."
 msgstr ""
-"Sì, mi interessa l'aiuto di un professionista per la personalizzazione del "
-"mio sito WordPress."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:75
-msgid "Flush Cache"
-msgstr "Svuota cache"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:83
+msgid "Media Temple"
+msgstr "Media Temple"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:86
-msgid "GoDaddy Settings"
-msgstr "Impostazioni GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:90
+msgid "Managed WordPress"
+msgstr "WordPress gestito"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:88
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:97
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:206
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:119
 msgid "Account Settings"
 msgstr "Impostazioni dell'account"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:128
+msgid "Flush Cache"
+msgstr "Svuota cache"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:186
 msgid "UserVoice"
 msgstr "UserVoice"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:151
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
 msgid "Hide the UserVoice feedback button from the Dashboard"
 msgstr "Nascondi il pulsante di feedback UserVoice dal dashboard"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:203
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:241
 msgid ""
 "For your security, we’ve disabled WordPress’ built-in file editor by default."
 msgstr ""
 "Per la tua sicurezza abbiamo disabilitato per impostazione predefinita "
 "l'editor dei file di WordPress."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:204
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:242
 msgid "If you enable editing, all plugin and theme files become editable."
 msgstr ""
 "Se abiliti la modifica, tutti i file di plugin e temi divengono modificabili."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:243
 msgid "Enable Editing"
 msgstr "Abilita modifica"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:217
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:255
 msgid "File editing is not enabled on this site"
 msgstr "La modifica dei file non è abilitata su questo sito"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:269
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:320
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:307
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:358
 #, php-format
 msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
 msgstr "Devi <a href=\"%s\">cambiare il nome di dominio qui</a>."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:68
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:99
 msgid "FAQ &amp; Support"
 msgstr "Domande frequenti e Assistenza"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:83
-msgid "Messages"
-msgstr "Messaggi"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:100
+msgid "Hire A Pro"
+msgstr "Assumi un professionista"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:113
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:114
-msgid "GoDaddy"
-msgstr "GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:101
+msgid "Plugin Partners"
+msgstr "Partner plug-in"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:75
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:419
+msgid "Find A Freelancer"
+msgstr "Trova un libero professionista"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:429
+msgid ""
+"Need a freelancer to design your website? GoDaddy Pro Connect filters "
+"through thousands of designers to put you in touch with the best ones for "
+"your site and budget."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:431
+msgid ""
+"We send you three on-budget quotes (no cost or obligation). You choose the "
+"best fit, and they get the job done."
+msgstr ""
+"Ti inviamo tre preventivi in base al tuo budget (gratuitamente e senza alcun "
+"obbligo). Tu scegli quello più adatto alle tue esigenze e loro pensano al "
+"resto."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:435
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:568
+msgid "Learn More"
+msgstr "Per saperne di più"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:465
+msgid "Meet the plugins that meet our high standards."
+msgstr ""
+"Ulteriori informazioni sui plug-in che soddisfano i nostri standard elevati."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:467
+msgid ""
+"We've partnered with the world’s top WordPress plugin authors to provide a "
+"list of plugins that work well with GoDaddy WordPress hosting."
+msgstr ""
+"Collaboriamo con i principali autori di plug-in WordPress al mondo per "
+"fornire un elenco di plug-in che funzionano in modo ottimale con l'hosting "
+"WordPress di GoDaddy."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:477
+msgid "Plugins list"
+msgstr "Elenco di plug-in"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:485
+msgid ""
+"Whoops! There was a problem fetching the list of plugins, please try "
+"reloading this page."
+msgstr ""
+"C'è un problema. Si è verificato un problema durante il recupero dell'elenco "
+"di plug-in. Prova a ricaricare questa pagina."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:530
+#, php-format
+msgid "More information about %s"
+msgstr "Ulteriori informazioni su %s"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+#, php-format
+msgid "Install %s now"
+msgstr "Installa %s adesso"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+msgid "Install Now"
+msgstr "Installa adesso"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+#, php-format
+msgid "Update %s now"
+msgstr "Aggiorna %s adesso"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+msgid "Update Now"
+msgstr "Aggiorna adesso"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "This plugin is already installed and is up to date"
+msgstr "Questo plug-in è già installato e aggiornato"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "Installed"
+msgstr "Installato"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:582
+#, php-format
+msgid "By %s"
+msgstr "Di %s"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:80
 #, php-format
 msgid "Unknown verb: %s. Try GET or POST"
 msgstr "Verbo sconosciuto: %s. Prova OTTIENI o INVIA"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:110
+#: gd-system-plugin/class-gd-system-plugin-api.php:115
 #, php-format
 msgid "API returned bad status: %d: %s"
 msgstr "API ha restituito uno stato non valido: %d: %s"
@@ -122,12 +216,12 @@ msgstr ""
 "Questo plugin %s non è consentito sul nostro sistema. È stato "
 "automaticamente disattivato."
 
-#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:286
+#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:295
 #: gd-system-plugin/class-gd-system-plugin-command-controller.php:66
 msgid "Cache cleared"
 msgstr "Cache cancellata"
 
-#: gd-system-plugin/class-gd-system-plugin-cname.php:131
+#: gd-system-plugin/class-gd-system-plugin-cname.php:137
 #, php-format
 msgid ""
 "<strong>Note:</strong> You're using the temporary domain <strong>%s</"
@@ -144,9 +238,42 @@ msgstr "Modifica dei file abilitata"
 msgid "GoDaddy Garage"
 msgstr "GoDaddy Garage (Garage GoDaddy)"
 
-#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+#: gd-system-plugin/class-gd-system-plugin-messages.php:90
 msgid "System message"
 msgstr "Messaggio di sistema"
 
-#~ msgid "Hire A Pro"
-#~ msgstr "Assumi un professionista"
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:47
+msgid "Good news!"
+msgstr "Buone notizie!"
+
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:48
+msgid ""
+"You can now access <strong>Flush Cache</strong> and other links directly "
+"from the admin bar using your desktop or mobile device."
+msgstr ""
+"Ora puoi accedere a <strong>Svuota cache</strong> e ad altri link "
+"direttamente dalla barra di amministrazione del tuo desktop o dispositivo "
+"mobile."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:87
+msgid "This setting is required on staging sites."
+msgstr ""
+"Questa impostazione è richiesta per gli ambienti di gestione temporanea."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:91
+msgid "This setting is required on temporary domains."
+msgstr "Questa impostazione è richiesta per i domini temporanei."
+
+#~ msgid ""
+#~ "I would be interested in a professional helping me with my WordPress site."
+#~ msgstr ""
+#~ "Desidero ottenere assistenza professionale per il mio sito WordPress."
+
+#~ msgid ""
+#~ "Need a freelancer to design your website? Pro Marketplace by GoDaddy "
+#~ "filters through thousands of designers to put you in touch with the best "
+#~ "ones for your site and budget."
+#~ msgstr ""
+#~ "Hai bisogno di un libero professionista per progettare il tuo sito web? "
+#~ "Pro Marketplace di GoDaddy cerca tra migliaia di progettisti quelli "
+#~ "migliori per il tuo sito e il tuo budget."

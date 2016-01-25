@@ -22,19 +22,14 @@
 	<div id="page" class="hfeed site">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'integrative-wisdom'); ?></a>
 		<header id="masthead" class="site-header row" role="banner">
-			<div class="site-branding small-12 medium-6 large-3 columns">
+			<div class="site-branding small-12 medium-12 large-3 columns">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<div class="site-title">
-						<img title="Integrative Wisdom Home" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" />
+						<img title="Integrative Wisdom Home Page" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Integrative Wisdom Logo" />
 					</div>
 				</a>
 			</div>
-			<div class="site-branding small-12 medium-6 large-3 columns">
-				<div class="site-subtitle">
-					<img title="Integrative Therapeutics Logo" src="<?php echo get_template_directory_uri(); ?>/img/therapeutics.png" />
-				</div>
-			</div>
-			<div id="navigation-search" class="main-menu small-12 medium-12 large-6 columns">
+			<div id="navigation-search" class="main-menu small-12 medium-12 large-9 columns">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Menu', 'integrative-wisdom'); ?></button>
 				<div class="search-wrapper">
 					<form role="search" method="get" class="search-form" action="/">
@@ -51,6 +46,5 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav>
 			</div>
-
 		</header>
 		<div id="content" class="site-content">

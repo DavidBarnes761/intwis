@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Easy Mode
  * Description: Helping users launch their new WordPress site in just a few clicks.
- * Version: 1.0.0
+ * Version: 1.0.3
  * Author: GoDaddy
  * Author URI: https://www.godaddy.com
  * Text Domain: wp-easy-mode
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 }
 
-define( 'WPEM_VERSION', '1.0.0' );
+define( 'WPEM_VERSION', '1.0.3' );
 
 define( 'WPEM_PLUGIN', plugin_basename( __FILE__ ) );
 
@@ -56,9 +56,11 @@ final class WPEM_Plugin {
 	 */
 	private function __construct() {
 
-		if ( defined( 'WP_CLI' ) && WP_CLI && defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+		if ( defined( 'WP_CLI' ) && WP_CLI ) {
 
 			require_once WPEM_INC_DIR . 'class-wpem-cli.php';
+
+			return;
 
 		}
 
@@ -68,13 +70,33 @@ final class WPEM_Plugin {
 
 		}
 
-		add_action( 'plugins_loaded', array( $this, 'i18n' ) );
-
 		spl_autoload_register( array( $this, 'autoload' ) );
+
+		require_once WPEM_INC_DIR . 'functions.php';
+
+		if ( ! $this->is_fresh_wp() ) {
+
+			if ( ! $this->is_done() ) {
+
+				add_filter( 'wpem_deactivate_plugins_on_quit', '__return_false' );
+
+				wpem_quit();
+
+			}
+
+			return;
+
+		}
+
+		add_action( 'plugins_loaded', array( $this, 'i18n' ) );
 
 		new WPEM_Customizer;
 
 		if ( $this->is_done() ) {
+
+			$this->self_destruct();
+
+			$this->deactivate();
 
 			add_action( 'init', array( $this, 'maybe_redirect' ) );
 
@@ -83,8 +105,6 @@ final class WPEM_Plugin {
 		}
 
 		define( 'WPEM_DOING_STEPS', true );
-
-		require_once WPEM_INC_DIR . 'functions.php';
 
 		require_once WPEM_INC_DIR . 'template-tags.php';
 
@@ -110,6 +130,50 @@ final class WPEM_Plugin {
 	}
 
 	/**
+	 * Is this a fresh WordPress install?
+	 *
+	 * @return bool
+	 */
+	private function is_fresh_wp() {
+
+		$log = new WPEM_Log();
+
+		try {
+
+			$is_fresh = $log->is_fresh_wp;
+
+		} catch ( Exception $e ) {
+
+			$is_fresh = $this->check_is_fresh_wp();
+
+			$log->add( 'is_fresh_wp', $is_fresh );
+
+		}
+
+		return $is_fresh;
+
+	}
+
+	/**
+	 * Check the WordPress database for freshness
+	 *
+	 * @return bool
+	 */
+	private function check_is_fresh_wp() {
+
+		global $wpdb;
+
+		$highest_post_id = (int) $wpdb->get_var( "SELECT ID FROM {$wpdb->posts} ORDER BY ID DESC LIMIT 0,1" );
+
+		$highest_user_id = (int) $wpdb->get_var( "SELECT ID FROM {$wpdb->users} ORDER BY ID DESC LIMIT 0,1" );
+
+		$is_fresh = ( $highest_post_id <= 2 && 1 === $highest_user_id );
+
+		return (bool) apply_filters( 'wpem_check_is_fresh_wp', $is_fresh );
+
+	}
+
+	/**
 	 * Has the wizard already been done?
 	 *
 	 * @return bool
@@ -119,6 +183,23 @@ final class WPEM_Plugin {
 		$status = get_option( 'wpem_done' );
 
 		return ! empty( $status );
+
+	}
+
+	/**
+	 * Is WPEM running as a standalone plugin?
+	 *
+	 * @return bool
+	 */
+	public function is_standalone_plugin() {
+
+		if ( ! function_exists( 'is_plugin_active' ) ) {
+
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+		}
+
+		return is_plugin_active( WPEM_PLUGIN );
 
 	}
 
@@ -170,13 +251,60 @@ final class WPEM_Plugin {
 	}
 
 	/**
+	 * Self-destruct the plugin
+	 */
+	public function self_destruct() {
+
+		if ( ! $this->is_standalone_plugin() ) {
+
+			return;
+
+		}
+
+		/**
+		 * Filter to self-destruct when done
+		 *
+		 * @var bool
+		 */
+		if ( ! (bool) apply_filters( 'wpem_self_destruct', true ) ) {
+
+			return;
+
+		}
+
+		if ( ! class_exists( 'WP_Filesystem' ) ) {
+
+			require_once ABSPATH . 'wp-admin/includes/file.php';
+
+		}
+
+		WP_Filesystem();
+
+		global $wp_filesystem;
+
+		$wp_filesystem->rmdir( WPEM_DIR, true );
+
+	}
+
+	/**
 	 * Deactivate the plugin silently
 	 */
 	public function deactivate() {
 
-		if ( ! function_exists( 'deactivate_plugins' ) ) {
+		if ( ! $this->is_standalone_plugin() ) {
 
-			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+			return;
+
+		}
+
+		/**
+		 * Filter to deactivate when done
+		 *
+		 * @var bool
+		 */
+		if ( ! (bool) apply_filters( 'wpem_deactivate', true ) ) {
+
+			return;
 
 		}
 

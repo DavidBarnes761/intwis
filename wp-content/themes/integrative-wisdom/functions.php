@@ -140,6 +140,7 @@ function integrative_wisdom_scripts() {
 	wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'foundation-modernizr-js', get_template_directory_uri() . '/foundation/js/vendor/modernizr.js', array( 'jquery' ), '1', true );
 	wp_enqueue_script( 'foundation-init-js', get_template_directory_uri() . '/js/foundation-init.js', array( 'jquery' ), '1', true );
+//	wp_enqueue_script( 'integrative-wisdom-eloqua', 'https://img03.en25.com/i/livevalidation_standalone.compressed.js', array(), '20151117', false );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

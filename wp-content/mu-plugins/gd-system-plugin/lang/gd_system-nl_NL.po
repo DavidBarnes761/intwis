@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: System Plugin\n"
-"POT-Creation-Date: 2015-11-16 14:28-0600\n"
-"PO-Revision-Date: 2015-11-16 14:28-0600\n"
+"POT-Creation-Date: 2016-01-13 12:43-0600\n"
+"PO-Revision-Date: 2016-01-13 12:43-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -21,79 +21,172 @@ msgstr ""
 "X-Poedit-SearchPath-1: gd-system-plugin\n"
 "X-Poedit-SearchPathExcluded-0: gd-system-plugin/plugins\n"
 
-#: gd-system-plugin.php:321
+#: gd-system-plugin.php:342
 msgid ""
-"Yes, I'm interested in hiring a professional to help customize my WordPress "
-"site"
+"I would be interested in hiring a professional to help me with my WordPress "
+"site."
 msgstr ""
-"Ja, ik ben geïnteresseerd in het inhuren van een professional voor het "
-"aanpassen van mijn WordPress-site"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:75
-msgid "Flush Cache"
-msgstr "Cache leegmaken"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:83
+msgid "Media Temple"
+msgstr "Media Temple"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:86
-msgid "GoDaddy Settings"
-msgstr "GoDaddy-instellingen"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:90
+msgid "Managed WordPress"
+msgstr "Beheerde WordPress"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:88
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:97
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:206
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:119
 msgid "Account Settings"
 msgstr "Accountinstellingen"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:128
+msgid "Flush Cache"
+msgstr "Cache leegmaken"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:186
 msgid "UserVoice"
 msgstr "UserVoice"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:151
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
 msgid "Hide the UserVoice feedback button from the Dashboard"
 msgstr "De UserVoice-feedbackknop verwijderen van het dashboard"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:203
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:241
 msgid ""
 "For your security, we’ve disabled WordPress’ built-in file editor by default."
 msgstr ""
 "Voor je veiligheid hebben we de standaard de ingebouwde bestandsbewerker van "
 "WordPress uitgeschakeld."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:204
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:242
 msgid "If you enable editing, all plugin and theme files become editable."
 msgstr ""
 "Als je bewerken inschakelt, kun je alle plugin- en themabestanden bewerken."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:243
 msgid "Enable Editing"
 msgstr "Bewerken inschakelen"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:217
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:255
 msgid "File editing is not enabled on this site"
 msgstr "Bestand bewerken is niet ingeschakeld op deze site"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:269
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:320
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:307
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:358
 #, php-format
 msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
 msgstr "Helaas, maar je moet <a href=\"%s\">hier je domeinnaam wijzigen</a>."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:68
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:99
 msgid "FAQ &amp; Support"
 msgstr "Veelgestelde vragen en support"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:83
-msgid "Messages"
-msgstr "Berichten"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:100
+msgid "Hire A Pro"
+msgstr "Een professional inhuren"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:113
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:114
-msgid "GoDaddy"
-msgstr "GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:101
+msgid "Plugin Partners"
+msgstr "Plug-in-partners"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:75
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:419
+msgid "Find A Freelancer"
+msgstr "Een freelancer zoeken"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:429
+msgid ""
+"Need a freelancer to design your website? GoDaddy Pro Connect filters "
+"through thousands of designers to put you in touch with the best ones for "
+"your site and budget."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:431
+msgid ""
+"We send you three on-budget quotes (no cost or obligation). You choose the "
+"best fit, and they get the job done."
+msgstr ""
+"We sturen je drie offertes (gratis en zonder enige verplichting) die zijn "
+"afgestemd op je budget. Je kunt de persoon kiezen die het beste bij je past "
+"en deze doet het werkt voor je."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:435
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:568
+msgid "Learn More"
+msgstr "Meer informatie"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:465
+msgid "Meet the plugins that meet our high standards."
+msgstr "Maak kennis de plug-ins die aan onze strenge normen voldoen."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:467
+msgid ""
+"We've partnered with the world’s top WordPress plugin authors to provide a "
+"list of plugins that work well with GoDaddy WordPress hosting."
+msgstr ""
+"We werken samen met mondiaal toonaangevende schrijvers op het vlak van "
+"WordPress-plug-in om een lijst te kunnen bieden van plug-ins die goed werken "
+"in combinatie met WordPress-hosting van GoDaddy."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:477
+msgid "Plugins list"
+msgstr "Lijst met plug-ins"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:485
+msgid ""
+"Whoops! There was a problem fetching the list of plugins, please try "
+"reloading this page."
+msgstr ""
+"Oeps. Er is een probleem opgetreden bij het ophalen van de lijst met plug-"
+"ins. Probeer het probleem op te lossen door de pagina opnieuw te laden."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:530
+#, php-format
+msgid "More information about %s"
+msgstr "Meer informatie over %s"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+#, php-format
+msgid "Install %s now"
+msgstr "%s nu installeren"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+msgid "Install Now"
+msgstr "Nu installeren"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+#, php-format
+msgid "Update %s now"
+msgstr "%s nu bijwerken"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+msgid "Update Now"
+msgstr "Nu bijwerken"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "This plugin is already installed and is up to date"
+msgstr "Deze plug-ins is al geïnstalleerd en bijgewerkt"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:582
+#, php-format
+msgid "By %s"
+msgstr "Van %s"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:80
 #, php-format
 msgid "Unknown verb: %s. Try GET or POST"
 msgstr "Onbekend werkwoord: %s. Probeer GET of POST"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:110
+#: gd-system-plugin/class-gd-system-plugin-api.php:115
 #, php-format
 msgid "API returned bad status: %d: %s"
 msgstr "API retourneerde slechte status: %d: %s"
@@ -122,12 +215,12 @@ msgstr ""
 "Deze plugin %s is niet toegestaan op ons systeem. Hij is automatisch "
 "gedeactiveerd."
 
-#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:286
+#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:295
 #: gd-system-plugin/class-gd-system-plugin-command-controller.php:66
 msgid "Cache cleared"
 msgstr "Cache geleegd"
 
-#: gd-system-plugin/class-gd-system-plugin-cname.php:131
+#: gd-system-plugin/class-gd-system-plugin-cname.php:137
 #, php-format
 msgid ""
 "<strong>Note:</strong> You're using the temporary domain <strong>%s</"
@@ -144,9 +237,41 @@ msgstr "Bestand bewerken ingeschakeld"
 msgid "GoDaddy Garage"
 msgstr "GoDaddy Garage (GoDaddy-garage)"
 
-#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+#: gd-system-plugin/class-gd-system-plugin-messages.php:90
 msgid "System message"
 msgstr "Systeembericht"
 
-#~ msgid "Hire A Pro"
-#~ msgstr "Huur een deskundige in"
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:47
+msgid "Good news!"
+msgstr "Goed nieuws."
+
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:48
+msgid ""
+"You can now access <strong>Flush Cache</strong> and other links directly "
+"from the admin bar using your desktop or mobile device."
+msgstr ""
+"Je hebt op je desktop of mobiele apparaat voortaan vanuit de beheerbalk "
+"rechtstreeks toegang tot <strong>Cache legen</strong> en andere koppelingen."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:87
+msgid "This setting is required on staging sites."
+msgstr "Deze instelling is vereist voor tijdelijke sites."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:91
+msgid "This setting is required on temporary domains."
+msgstr "Deze instelling is vereist voor tijdelijke domeinen."
+
+#~ msgid ""
+#~ "I would be interested in a professional helping me with my WordPress site."
+#~ msgstr ""
+#~ "Ik ben geïnteresseerd in een professional die me helpt met mijn WordPress-"
+#~ "site."
+
+#~ msgid ""
+#~ "Need a freelancer to design your website? Pro Marketplace by GoDaddy "
+#~ "filters through thousands of designers to put you in touch with the best "
+#~ "ones for your site and budget."
+#~ msgstr ""
+#~ "Heb je een freelancer nodig om je website te ontwerpen? Pro Marketplace "
+#~ "van GoDaddy zoekt in duizenden ontwerpers om je in contact te brengen met "
+#~ "de beste ontwerpers voor je site en budget."

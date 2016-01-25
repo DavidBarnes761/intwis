@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Easy Mode\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
-"POT-Creation-Date: 2015-11-16 14:58-0600\n"
-"PO-Revision-Date: 2015-11-16 14:58-0600\n"
+"POT-Creation-Date: 2015-12-21 13:51-0600\n"
+"PO-Revision-Date: 2015-12-21 13:51-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: tr_TR\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
 "_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
 "esc_html_x;_c;_nc\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: content\n"
@@ -43,15 +44,100 @@ msgstr "Kenar Çubuğunu Genişlet"
 msgid "Collapse Sidebar"
 msgstr "Kenar Çubuğunu Daralt"
 
-#: includes/class-wpem-customizer.php:46
+#: includes/class-wpem-customizer.php:37
+msgid "Watch Video"
+msgstr "Videoyu İzleyin"
+
+#: includes/class-wpem-customizer.php:38
+msgid ""
+"You've just created your website! Click \"Watch Video\" to view a quick "
+"demonstration of how to customize your site."
+msgstr ""
+"Web sitenizi oluşturdunuz! Sitenizi nasıl kişiselleştireceğinizi görmek için "
+"hemen \"Video izle\" seçeneğine tıklayın. "
+
+#: includes/class-wpem-customizer.php:42
+msgid "Learn More"
+msgstr "Daha Fazla Bilgi Edinin"
+
+#: includes/class-wpem-customizer.php:43
+msgid ""
+"You've just created your website! Click \"Learn More\" to view some tips on "
+"how to customize your site ."
+msgstr ""
+"Web sitenizi oluşturdunuz! Sitenizi nasıl kişiselleştireceğiniz hakkındaki "
+"bazı ipuçları için \"Daha fazla bilgi edin\" seçeneğine tıklayın. "
+
+#: includes/class-wpem-customizer.php:58
 msgid "Congratulations!"
 msgstr "Tebrikler!"
 
-#: includes/class-wpem-customizer.php:47
+#: includes/class-wpem-customizer.php:149
+msgid "The Customizer"
+msgstr "Kişiselleştirici"
+
+#: includes/class-wpem-customizer.php:151
 msgid ""
-"You've just created your website! Use the panel to the left to customize the "
-"look &amp; feel of your website's design."
+"You are now in the Customizer, a tool that enables you to make changes to "
+"your website’s appearance, and preview those changes before publishing them. "
+"We’ve created a few commonly-used pages and widgets to help you get started."
 msgstr ""
+"Kişiselleştirici'ye hoş geldiniz; Kişiselleştirici, web sitenizin "
+"görünümünde değişiklik yapmayı ve yayınlamadan önce bu değişikliklerin ön "
+"izlemesini sağlayan bir araçtır.  Hemen kullanmaya başlamanız için birkaç "
+"sık kullanılan sayfa ve modül oluşturduk."
+
+#: includes/class-wpem-customizer.php:152
+msgid ""
+"The top of the Customizer indicates the name of the active theme you’ve "
+"selected. You can change the theme at any time, but doing so will change "
+"these options and reset any customizations you might have made here."
+msgstr ""
+"Seçtiğiniz etkin temanın adı Kişiselleştiricinin üst kısmında bulunur.  "
+"İstediğiniz zaman temayı değiştirebilirsiniz ama değiştireceğiniz bu "
+"seçenekler, burada yapmış olabileceğiniz her türlü kişiselleştirmeyi "
+"sıfırlar."
+
+#: includes/class-wpem-customizer.php:153
+msgid ""
+"The options available in the Customizer will vary, depending on the features "
+"supported by your current theme. But most themes include these basic "
+"Customizer controls:"
+msgstr ""
+"Kişiselleştiricideki mevcut seçenekler, şu anki temanızın desteklediği "
+"özelliklere bağlı olarak değişecektir.  Birçok tema aşağıda bulunan temel "
+"Kişiselleştiricileri içerir: "
+
+#: includes/class-wpem-customizer.php:155
+msgid "Site Identity"
+msgstr "Site Kimliği"
+
+#: includes/class-wpem-customizer.php:156
+msgid "Colors"
+msgstr "Renkler"
+
+#: includes/class-wpem-customizer.php:157
+msgid "Header and Background Images"
+msgstr "Üst Bilgi ve Arka Plan Resimleri"
+
+#: includes/class-wpem-customizer.php:158
+msgid "Navigation Menus"
+msgstr "Gezinti Menüleri"
+
+#: includes/class-wpem-customizer.php:159
+msgid "Widgets"
+msgstr "Modül"
+
+#: includes/class-wpem-customizer.php:161
+msgid ""
+"When you’re happy with your changes, click <strong>Save & Publish</strong> "
+"to keep these new settings. Or, simply close the Customizer by clicking the "
+"“X” in the top left-hand corner to discard your changes."
+msgstr ""
+"Değişikliklerden memnunsanız, bu yeni ayarları <strong>Kaydet ve Yayınla</"
+"strong> seçeneğine tıklayarak kaydedebilirsiniz. Ya da değişikliklerden "
+"vazgeçmek için sol üstteki \"X\" simgesini tıklayarak Kişiselleştiriciyi "
+"kapatabilirsiniz. "
 
 #: includes/class-wpem-done.php:66
 msgid "Primary Menu"
@@ -137,33 +223,33 @@ msgstr "Referanslar"
 msgid "testimonials"
 msgstr "referanslar"
 
-#: includes/class-wpem-done.php:415
+#: includes/class-wpem-done.php:424
 msgid "Recent Posts"
 msgstr "En Yeni Gönderiler"
 
-#: includes/class-wpem-done.php:424
+#: includes/class-wpem-done.php:433
 msgid "Archives"
 msgstr "Arşivler"
 
-#: includes/class-wpem-done.php:441
+#: includes/class-wpem-done.php:450
 msgid "Browse Products"
 msgstr "Ürünleri Tara"
 
-#: includes/class-wpem-done.php:472
+#: includes/class-wpem-done.php:481
 msgid "Contact Form"
 msgstr "İletişim Formu"
 
-#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+#: includes/class-wpem-done.php:482 includes/class-wpem-done.php:507
 msgid "Your form has been successfully submitted."
 msgstr "Bildiriminiz başarıyla gönderildi."
 
-#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+#: includes/class-wpem-done.php:483 includes/class-wpem-done.php:508
 msgid "Thank you so much for contacting us. We will get back to you shortly."
 msgstr ""
 "Bizimle iletişime geçtiğiniz için teşekkür ederiz. Size kısa sürede dönüş "
 "yapacağız. "
 
-#: includes/class-wpem-done.php:497
+#: includes/class-wpem-done.php:506
 msgid "Request A Quote Form"
 msgstr "Teklif Formu Talep Edin"
 
@@ -390,17 +476,10 @@ msgstr "Sürüm:"
 msgid "Collapse"
 msgstr "Daralt"
 
-#: includes/functions.php:189
+#: includes/functions.php:197
 msgid "Error: WP-CLI not found"
 msgstr "Hata: WP-CLI bulunamadı"
 
 #: templates/fullscreen.php:38
 msgid "WordPress"
 msgstr "WordPress"
-
-#~ msgid ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"
-#~ msgstr ""
-#~ "Evet, WordPress sitemi özelleştirmesi için bir profesyonel ile çalışmak "
-#~ "istiyorum"

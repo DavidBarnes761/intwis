@@ -74,7 +74,7 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 $gd_admin_page = new GD_System_Plugin_Admin_Page();
 
 // Load the purge helper
-$gd_cache_purge = new GD_System_Plugin_Cache_Purge();
+$GLOBALS['gd_cache_purge'] = new GD_System_Plugin_Cache_Purge();
 
 // Load the message helper
 $gd_messages = new GD_System_Plugin_Messages();
@@ -108,16 +108,30 @@ $gd_domain_changer = new GD_System_Plugin_Domain_Changer();
 // Support SSL integration
 $gd_ssl = new GD_System_Plugin_SSL();
 
-// Move users off the temp CNAME
-$gd_cname = new GD_System_Plugin_CName();
+// Urge users not to use a temporary CNAME (except on staging sites)
+if ( ! gd_is_staging_site() && gd_is_temp_domain() ) {
+
+	$gd_cname = new GD_System_Plugin_CName();
+
+}
 
 // Load any hotfixes
 $gd_hotfixes = new GD_System_Plugin_Hotfixes();
+
+// Pointers
+$gd_pointers = new GD_System_Plugin_Pointers();
+
+if ( gd_is_temp_domain() ) {
+
+	$gd_temp_domain = new GD_System_Plugin_Temp_Domain();
+
+}
 
 // Array of bundled plugins to load
 $bundled_plugins = array(
 	'limit-login-attempts/limit-login-attempts.php' => true,
 	'wp-easy-mode/wp-easy-mode.php' => gd_is_wpem_enabled(),
+	'gd-admin-color-scheme/gd-admin-color-scheme.php' => ( ! gd_is_reseller() && ! gd_is_mt() ),
 );
 
 // Load bundled plugins
@@ -274,7 +288,6 @@ function gd_system_auto_update_specific_plugins ( $update, $item ) {
 }
 add_filter( 'auto_update_plugin', 'gd_system_auto_update_specific_plugins', 10, 2 );
 
-
 /**
  * Localization hack
  * @param string $mofile
@@ -310,7 +323,15 @@ function gd_system_header( $header ) {
  */
 add_action( 'wpem_step_settings_after_content', function () {
 
-	if ( gd_is_reseller() || gd_is_mt() ) {
+	/**
+	 * Only display the Pro checkbox to customers that:
+	 *
+	 * 1. Are not resellers
+	 * 2. Are not MT
+	 * 3. Speak English
+	 * 4. Are located in the United States
+	 */
+	if ( gd_is_reseller() || gd_is_mt() || ! gd_is_english() || 'US' !== gd_wpem_country_code() ) {
 
 		return;
 
@@ -318,7 +339,7 @@ add_action( 'wpem_step_settings_after_content', function () {
 
 	?>
 	<p>
-		<input type="checkbox" id="wpem_pro_opt_in" name="wpem_pro_opt_in" value="1"> <label for="wpem_pro_opt_in"><?php _e( "Yes, I'm interested in hiring a professional to help customize my WordPress site", 'gd_system' ) ?></label>
+		<input type="checkbox" id="wpem_pro_opt_in" name="wpem_pro_opt_in" value="1"> <label for="wpem_pro_opt_in"><?php _e( 'I would be interested in hiring a professional to help me with my WordPress site.', 'gd_system' ) ?></label>
 	</p>
 	<?php
 
@@ -329,7 +350,7 @@ add_action( 'wpem_step_settings_after_content', function () {
  */
 add_filter( 'wpem_step_settings_options', function( $options ) {
 
-	if ( ! gd_is_reseller() && ! gd_is_mt() ) {
+	if ( ! gd_is_reseller() && ! gd_is_mt() && gd_is_english() && 'US' === gd_wpem_country_code() ) {
 
 		$options[] = array(
 			'name'      => 'wpem_pro_opt_in',
@@ -344,6 +365,22 @@ add_filter( 'wpem_step_settings_options', function( $options ) {
 } );
 
 /**
+ * Return the site created date
+ *
+ * @param string $format
+ *
+ * @return int|string
+ */
+function gd_site_created_date( $format = 'U' ) {
+
+	// Use when this constant was introduced as default (Tue, 22 Dec 2015 00:00:00 GMT)
+	$time = defined( 'GD_SITE_CREATED' ) ? (int) GD_SITE_CREATED : 1450742400;
+
+	return ( 'U' === $format ) ? $time : gmdate( $format, $time );
+
+}
+
+/**
  * Check if we are on a staging site
  *
  * @return bool
@@ -351,6 +388,47 @@ add_filter( 'wpem_step_settings_options', function( $options ) {
 function gd_is_staging_site() {
 
 	return ( defined( 'GD_STAGING_SITE' ) && GD_STAGING_SITE );
+
+}
+
+/**
+ * Check if we are on a temporary domain
+ */
+function gd_is_temp_domain() {
+
+	if ( gd_is_staging_site() ) {
+
+		return true;
+
+	}
+
+	global $gd_system_config;
+
+	if ( empty( $gd_system_config ) || $gd_system_config->missing_gd_config ) {
+
+		return false;
+
+	}
+
+	$config = $gd_system_config->get_config();
+
+	if ( ! isset( $config['cname_domains'] ) || ! is_array( $config['cname_domains'] ) ) {
+
+		return false;
+
+	}
+
+	foreach( $config['cname_domains'] as $domain ) {
+
+		if ( 0 === strcasecmp( substr( $_SERVER['HTTP_HOST'], 0 - strlen( $domain ) ), $domain ) ) {
+
+			return true;
+
+		}
+
+	}
+
+	return false;
 
 }
 
@@ -373,6 +451,17 @@ function gd_is_mt() {
 function gd_is_reseller() {
 
 	return ( defined( 'GD_RESELLER' ) && 1 !== GD_RESELLER && ! gd_is_mt() );
+
+}
+
+/**
+ * Check if this site's language is English
+ *
+ * @return bool
+ */
+function gd_is_english() {
+
+	return ( 'en' === substr( get_locale(), 0, 2 ) );
 
 }
 
@@ -406,5 +495,18 @@ function gd_has_used_wpem() {
 function gd_is_doing_wpem() {
 
 	return ( gd_is_wpem_enabled() && defined( 'WPEM_DOING_STEPS' ) && WPEM_DOING_STEPS );
+
+}
+
+/**
+ * Return the country code determined during WPEM
+ *
+ * @return string
+ */
+function gd_wpem_country_code() {
+
+	$wpem_log = json_decode( get_option( 'wpem_log' ) );
+
+	return ! empty( $wpem_log->geodata->country_code ) ? $wpem_log->geodata->country_code : null;
 
 }

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: System Plugin\n"
-"POT-Creation-Date: 2015-11-16 14:28-0600\n"
-"PO-Revision-Date: 2015-11-16 14:28-0600\n"
+"POT-Creation-Date: 2016-01-13 12:43-0600\n"
+"PO-Revision-Date: 2016-01-13 12:43-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb_NO\n"
@@ -21,79 +21,171 @@ msgstr ""
 "X-Poedit-SearchPath-1: gd-system-plugin\n"
 "X-Poedit-SearchPathExcluded-0: gd-system-plugin/plugins\n"
 
-#: gd-system-plugin.php:321
+#: gd-system-plugin.php:342
 msgid ""
-"Yes, I'm interested in hiring a professional to help customize my WordPress "
-"site"
+"I would be interested in hiring a professional to help me with my WordPress "
+"site."
 msgstr ""
-"Ja, jeg er interessert i å ansette en profesjonell til hjelpe med å "
-"skreddersy WordPress-nettstedet mitt"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:75
-msgid "Flush Cache"
-msgstr "Tøm cache"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:83
+msgid "Media Temple"
+msgstr "Media Temple"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:86
-msgid "GoDaddy Settings"
-msgstr "GoDaddy-innstillinger"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:90
+msgid "Managed WordPress"
+msgstr "Administrert WordPress"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:88
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:97
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:206
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:119
 msgid "Account Settings"
 msgstr "Kontoinnstillinger"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:128
+msgid "Flush Cache"
+msgstr "Tøm cache"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:186
 msgid "UserVoice"
 msgstr "UserVoice"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:151
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
 msgid "Hide the UserVoice feedback button from the Dashboard"
 msgstr "Skjul UserVoice-tilbakemeldingsknappen fra instrumentbordet"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:203
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:241
 msgid ""
 "For your security, we’ve disabled WordPress’ built-in file editor by default."
 msgstr ""
 "For din sikkerhet har vi deaktivert WordPress’ innebygde filredigering som "
 "standard."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:204
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:242
 msgid "If you enable editing, all plugin and theme files become editable."
 msgstr ""
 "Hvis du aktiverer redigering, vil alle pluginer og temafiler kunne redigeres."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:243
 msgid "Enable Editing"
 msgstr "Aktiver redigering"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:217
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:255
 msgid "File editing is not enabled on this site"
 msgstr "Filredigering er ikke aktivert på denne siden"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:269
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:320
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:307
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:358
 #, php-format
 msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
 msgstr "Beklager, men du må <a href=\"%s\">endre domenenavnet ditt her</a>."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:68
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:99
 msgid "FAQ &amp; Support"
 msgstr "Vanlige spørsmål &amp; støtte"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:83
-msgid "Messages"
-msgstr "Meldinger"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:100
+msgid "Hire A Pro"
+msgstr "Ansett en proff"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:113
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:114
-msgid "GoDaddy"
-msgstr "GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:101
+msgid "Plugin Partners"
+msgstr "Plugin-partnere"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:75
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:419
+msgid "Find A Freelancer"
+msgstr "Finn en frilanser."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:429
+msgid ""
+"Need a freelancer to design your website? GoDaddy Pro Connect filters "
+"through thousands of designers to put you in touch with the best ones for "
+"your site and budget."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:431
+msgid ""
+"We send you three on-budget quotes (no cost or obligation). You choose the "
+"best fit, and they get the job done."
+msgstr ""
+"Vi sender deg tre pristilbud innenfor budsjettet ditt (ingen kostnader eller "
+"forpliktelser). Du kan velge det som passer best, og så får de jobben gjort."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:435
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:568
+msgid "Learn More"
+msgstr "Finn ut mer"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:465
+msgid "Meet the plugins that meet our high standards."
+msgstr "Møt plugin-partnerne som innfrir de høye standardene våre."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:467
+msgid ""
+"We've partnered with the world’s top WordPress plugin authors to provide a "
+"list of plugins that work well with GoDaddy WordPress hosting."
+msgstr ""
+"Vi har inngått samarbeid med verdens beste WordPress plugin-forfattere for å "
+"gi en liste over plugin-moduler som fungerer bra med GoDaddy WordPress-"
+"hosting."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:477
+msgid "Plugins list"
+msgstr "Plugin-liste"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:485
+msgid ""
+"Whoops! There was a problem fetching the list of plugins, please try "
+"reloading this page."
+msgstr ""
+"Uff da! Det oppstod et problem under henting av plugin-listen, prøv å laste "
+"siden på nytt."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:530
+#, php-format
+msgid "More information about %s"
+msgstr "Mer informasjon om %s"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+#, php-format
+msgid "Install %s now"
+msgstr "Installer %s nå"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+msgid "Install Now"
+msgstr "Installer nå"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+#, php-format
+msgid "Update %s now"
+msgstr "Oppdater %s nå"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+msgid "Update Now"
+msgstr "Oppdater nå"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "This plugin is already installed and is up to date"
+msgstr "Denne plugin-modulen er allerede installert og oppdatert"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "Installed"
+msgstr "Installert"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:582
+#, php-format
+msgid "By %s"
+msgstr "Av %s"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:80
 #, php-format
 msgid "Unknown verb: %s. Try GET or POST"
 msgstr "Ukjent verb: %s. Prøv GET eller POST"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:110
+#: gd-system-plugin/class-gd-system-plugin-api.php:115
 #, php-format
 msgid "API returned bad status: %d: %s"
 msgstr "API returnert ugyldig status: %d: %s"
@@ -122,12 +214,12 @@ msgstr ""
 "Denne pluginen %s er ikke tillatt på vårt system. Den har blitt automatisk "
 "deaktivert."
 
-#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:286
+#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:295
 #: gd-system-plugin/class-gd-system-plugin-command-controller.php:66
 msgid "Cache cleared"
 msgstr "Cache tømt"
 
-#: gd-system-plugin/class-gd-system-plugin-cname.php:131
+#: gd-system-plugin/class-gd-system-plugin-cname.php:137
 #, php-format
 msgid ""
 "<strong>Note:</strong> You're using the temporary domain <strong>%s</"
@@ -144,9 +236,42 @@ msgstr "Filredigering aktivert"
 msgid "GoDaddy Garage"
 msgstr "GoDaddy-garasje"
 
-#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+#: gd-system-plugin/class-gd-system-plugin-messages.php:90
 msgid "System message"
 msgstr "Systemmelding"
 
-#~ msgid "Hire A Pro"
-#~ msgstr "Ansett en proff"
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:47
+msgid "Good news!"
+msgstr "Gode nyheter!"
+
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:48
+msgid ""
+"You can now access <strong>Flush Cache</strong> and other links directly "
+"from the admin bar using your desktop or mobile device."
+msgstr ""
+"Du har nå tilgang til <strong>Tøm hurtigbufferen</strong> og andre koblinger "
+"direkte fra administrasjonslinjen fra skrivebordet ditt eller din mobile "
+"enhet."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:87
+msgid "This setting is required on staging sites."
+msgstr "Denne innstillingen er påkrevd på visningsområder."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:91
+msgid "This setting is required on temporary domains."
+msgstr "Denne innstillingen er påkrevd på midlertidige domener."
+
+#~ msgid ""
+#~ "I would be interested in a professional helping me with my WordPress site."
+#~ msgstr ""
+#~ "Jeg ville være interessert i å få en proff til å hjelpe meg med WordPress-"
+#~ "nettstedet mitt."
+
+#~ msgid ""
+#~ "Need a freelancer to design your website? Pro Marketplace by GoDaddy "
+#~ "filters through thousands of designers to put you in touch with the best "
+#~ "ones for your site and budget."
+#~ msgstr ""
+#~ "Trender du en frilanser til å designe nettstedet ditt? Pro Marketplace "
+#~ "fra GoDaddy filtrerer gjennom tusenvis av designere for sette deg i "
+#~ "kontakt med de beste for ditt nettsted og budsjett."

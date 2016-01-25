@@ -22,6 +22,7 @@
 						<h1 class="speaker-name"><?php the_title(); ?></h1>
 						<hr>
 						<?php echo $speaker->field( 'speaker-biography' ); ?>
+						<?php echo the_content(); ?>
 					</div>
 				</div>
 				<div class="slider-title-wrapper row">
@@ -37,8 +38,8 @@
 											<a href="<?php echo get_permalink( $video['ID'] ); ?>" title="<?php echo get_the_title( $video['ID'] ); ?>">
 												<div class="thumbnail group">
 													<img data-lazy="http://img.youtube.com/vi/<?php echo get_post_meta( $video['ID'], 'video-id', true ); ?>/0.jpg" />
-													<span class="thumb-video-title"><?php echo get_the_title( $video['ID'] ); ?></span>
 												</div>
+												<p class="thumb-video-title"><?php echo get_the_title( $video['ID'] ); ?></p>
 											</a>
 										</li>
 									<?php endforeach;
@@ -48,21 +49,21 @@
 					</div>
 				</div>
 			</div>
-			<div class="speaker-sidebar large-3 large-offset-1 columns">
+			<div class="speaker-sidebar large-4 columns">
 				<h2><span>Additional Speakers</span></h2>
 				<div class="row">
 					<?php
 						if ( $otherSpeakers->total() > 0 ) {
 							while ( $otherSpeakers->fetch() ) : ?>
 								<div class="other-speaker-listing large-12 columns">
-									<a href="<?php echo get_permalink( $otherSpeakers->id() ); ?>">
 										<div class="other-speaker group">
-											<?php echo get_the_post_thumbnail( $otherSpeakers->id(), 'other-speakers-thumbnail' ); ?>
-											<span class="other-speaker-name"><?php echo get_the_title( $otherSpeakers->id() ); ?></span>
+											<a href="<?php echo get_permalink( $otherSpeakers->id() ); ?>">
+												<?php echo get_the_post_thumbnail( $otherSpeakers->id(), 'other-speakers-thumbnail' ); ?>
+												<span class="other-speaker-name"><?php echo get_the_title( $otherSpeakers->id() ); ?></span>
+											</a>
 											<hr>
 											<span class="other-speaker-blurb"><?php echo $otherSpeakers->field( 'speaker-blurb' ); ?></span>
 										</div>
-									</a>
 								</div>
 							<?php endwhile;
 						}

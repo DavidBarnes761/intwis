@@ -1,138 +1,152 @@
 <?php
 
-/**
- * Copyright 2013 Go Daddy Operating Company, LLC. All Rights Reserved.
- */
+if ( ! defined( 'ABSPATH' ) ) {
 
-// Make sure it's wordpress
-if ( !defined( 'ABSPATH' ) )
-    die( 'Forbidden' );
+	exit;
+
+}
 
 /**
  * Class GD_System_Plugin_CName
+ *
  * Urge the user not to stay on the temporary cname and to switch to
- * a permanent domain
- * @version 1.0
- * @author Kurt Payne <kpayne@godaddy.com>
+ * a permanent domain.
+ *
+ * @version 1.1.0
+ *
+ * @author Frankie Jarrett <fjarrett@godaddy.com>
+ * @author Jonathan Bardo <jbardo@godaddy.com>
  */
-class GD_System_Plugin_CName {
+final class GD_System_Plugin_CName {
 
 	/**
-	 * Constructor.
-	 * Hook any needed actions/filters
-	 * @return void
+	 * Transient key for domain changed
+	 *
+	 * @var string
+	 */
+	const TRANSIENT_KEY = 'gd_system_domain_changed';
+
+	/**
+	 * Class constructor
 	 */
 	public function __construct() {
-		if ( gd_is_staging_site() ) {
-			return;
-		}
 
 		add_action( 'admin_init', array( $this, 'init' ) );
+
 	}
 
 	/**
 	 * Initialize the script
+	 *
+	 * @action admin_init
 	 */
 	public function init() {
-		global $gd_system_config;
-		$config = $gd_system_config->get_config();
 
-		// Don't modify these parts of the UI when there's no reseller present
-		if ( true == $gd_system_config->missing_gd_config ) {
+		if ( ! current_user_can( 'activate_plugins' ) ) {
+
 			return;
+
 		}
 
-		// Only for admins
-		if ( current_user_can( 'activate_plugins' ) ) {
+		// Show a notice to the user if we're on a temporary domain
+		if ( gd_is_temp_domain() || ! $this->user_changed_domain() ) {
 
-			// See if we're on a temporary domain
-			$flag = false;
-			if ( isset( $config['cname_domains'] ) && is_array( $config['cname_domains'] ) ) {
-				foreach( $config['cname_domains'] as $domain ) {
-					if ( 0 === strcasecmp( substr( $_SERVER['HTTP_HOST'], 0 - strlen( $domain ) ), $domain ) ) {
-						$flag = true;
-						break;
-					}
-				}
-			}
-			$flag = ( $flag && !$this->_user_changed_domain() );
+			add_action( 'admin_notices', array( $this, 'show_notice'), -PHP_INT_MAX );
 
-			// If we're on a temporary domain, then show a notice to the user
-			if ( $flag ) {
-				add_action( 'admin_notices', array( $this, 'show_notice'), -PHP_INT_MAX );
-			}
 		}
+
 	}
 
 	/**
-	 * Check the API, see if the user has changed their domain, but it isn't reflected here yet because we're waiting on the DNS TTL to take effect.
+	 * Check the API
+	 *
+	 * See if the user has changed their domain,
+	 * but it isn't reflected here yet because we're
+	 * waiting on the DNS TTL to take effect.
+	 *
 	 * @return bool
 	 */
-	private function _user_changed_domain() {
-		global $gd_api, $gd_system_logger, $gd_system_config;
-		$config = $gd_system_config->get_config();
+	private function user_changed_domain() {
 
-		// See if we're on a temporary domain
-		$domain = '';
-		if ( isset( $config['cname_domains'] ) && is_array( $config['cname_domains'] ) ) {
-			foreach( $config['cname_domains'] as $domain ) {
-				if ( 0 === strcasecmp( substr( $_SERVER['HTTP_HOST'], 0 - strlen( $domain ) ), $domain ) ) {
-					$domain = $_SERVER['HTTP_HOST'];
-					break;
-				}
-			}
-		}
+		if ( false !== ( $transient = get_site_transient( static::TRANSIENT_KEY ) ) ) {
 
-		// If we didn't match a domain, then they're good
-		if ( empty( $domain ) ) {
-			return true;
-		}
-
-		// Check the transient
-		$transient = get_site_transient( 'gd_system_domain_changed' );
-		if ( false !== $transient ) {
 			return ( 'Y' === $transient );
+
 		}
 
-		// Check if the domain has been changed in the db, but dns hasn't propagated yet
-		$json = array();
-		$resp = $gd_api->domain_changed( $domain );
-		if ( is_wp_error( $resp ) ) {
-			$gd_system_logger->log( GD_SYSTEM_LOG_ERROR, 'Could not fetch response from api to check if domain was changed. Error [' . $resp->get_error_code() . ']: ' . $resp->get_error_message() );
+		// Check if the domain has been changed in the DB but DNS hasn't propagated yet
+		global $gd_api, $gd_system_logger;
+
+		$response = $gd_api->domain_changed( $_SERVER['HTTP_HOST'] );
+
+		if ( is_wp_error( $response ) ) {
+
+			$gd_system_logger->log( GD_SYSTEM_LOG_ERROR, 'Could not fetch response from API to check if domain was changed. Error [' . $response->get_error_code() . ']: ' . $response->get_error_message() );
+
 		} else {
-			$json = json_decode( $resp['body'], true );
+
+			$json = json_decode( $response['body'], true );
+
 			if ( null === $json ) {
-				$gd_system_logger->log( GD_SYSTEM_LOG_ERROR, 'Could not decode domain changed api response.' );
+
+				$gd_system_logger->log( GD_SYSTEM_LOG_ERROR, 'Could not decode domain changed API response.' );
+
 			}
+
 		}
 
-		// Done
-		$ret = false;
-		if ( isset( $json['domainChanged'] ) ) {
-			$ret = $json['domainChanged'];
-		}
-		set_site_transient( 'gd_system_domain_changed' , $ret ? 'Y' : 'N', isset( $conf['cname_timeout'] ) ? $conf['cname_timeout'] : 300 );
-		return $ret;
+		$domain_changed = ! empty( $json['domainChanged'] ) ? 'Y' : 'N';
+
+		$cname_timeout = isset( $conf['cname_timeout'] ) ? absint( $conf['cname_timeout'] ) : 300;
+
+		set_site_transient( static::TRANSIENT_KEY, $domain_changed, $cname_timeout );
+
+		return ( 'Y' === $domain_changed );
+
 	}
 
 	/**
-	 * Show a message prompting the customer to update change domain to not use a temporary CNAME
+	 * Show a message prompting the customer to update change domain
+	 * to not use a temporary CNAME.
+	 *
+	 * @action admin_notices
 	 */
 	public function show_notice() {
+
 		global $gd_system_config;
-		$config = $gd_system_config->get_config();
-		$url = '';
-		if ( isset( $config['cname_link'] ) ) {
-			$url = str_replace( '%domain%', $_SERVER['HTTP_HOST'], $config['cname_link'] );
-			$url = str_replace( '%pl_id%', defined( 'GD_RESELLER' ) ? GD_RESELLER : '', $url );
+
+		if ( empty( $gd_system_config ) || $gd_system_config->missing_gd_config ) {
+
+			return;
+
 		}
+
+		$config = $gd_system_config->get_config();
+
+		if ( empty( $config['cname_link'] ) ) {
+
+			return;
+
+		}
+
+		$url = str_replace( '%domain%', $_SERVER['HTTP_HOST'], $config['cname_link'] );
+
+		$url = str_replace( '%pl_id%', defined( 'GD_RESELLER' ) ? GD_RESELLER : '', $url );
+
+		$message = sprintf(
+			__( '<strong>Note:</strong> You\'re using the temporary domain <strong>%s</strong>. <a href="%s" target="_blank">Change domain</a>', 'gd_system' ),
+			$_SERVER['HTTP_HOST'],
+			esc_attr( $url )
+		);
+
 		?>
 		<div class="updated error">
-			<p><?php echo sprintf( __( '<strong>Note:</strong> You\'re using the temporary domain <strong>%s</strong>. <a href="%s" target="_blank">Change domain</a>', 'gd_system' ),
-				$_SERVER['HTTP_HOST'],
-				esc_attr( $url )
-			); ?></p>
+
+			<p><?php echo wp_kses_post( $message ) ?></p>
+
 		</div>
 		<?php
+
 	}
+
 }

@@ -3,11 +3,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: System Plugin\n"
-"POT-Creation-Date: 2015-11-16 14:26-0600\n"
-"PO-Revision-Date: 2015-11-16 14:49-0600\n"
+"POT-Creation-Date: 2016-01-13 12:44-0600\n"
+"PO-Revision-Date: 2016-01-13 12:44-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: el_GR\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,82 +21,175 @@ msgstr ""
 "X-Poedit-SearchPath-1: gd-system-plugin\n"
 "X-Poedit-SearchPathExcluded-0: gd-system-plugin/plugins\n"
 
-#: gd-system-plugin.php:321
+#: gd-system-plugin.php:342
 msgid ""
-"Yes, I'm interested in hiring a professional to help customize my WordPress "
-"site"
+"I would be interested in hiring a professional to help me with my WordPress "
+"site."
 msgstr ""
-"Ναι, ενδιαφέρομαι να προσλάβω έναν επαγγελματία για να βοηθήσει στην "
-"προσαρμογή του ιστότοπού μου WordPress"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:75
-msgid "Flush Cache"
-msgstr "Εκκαθάριση cache"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:83
+msgid "Media Temple"
+msgstr "Media Temple"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:86
-msgid "GoDaddy Settings"
-msgstr "Ρυθμίσεις GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:90
+msgid "Managed WordPress"
+msgstr "WordPress με διαχείριση"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:88
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:97
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:206
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:119
 msgid "Account Settings"
 msgstr "Ρυθμίσεις λογαριασμού"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:128
+msgid "Flush Cache"
+msgstr "Εκκαθάριση cache"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:186
 msgid "UserVoice"
 msgstr "UserVoice"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:151
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
 msgid "Hide the UserVoice feedback button from the Dashboard"
 msgstr "Απόκρυψη του κουμπιού ανατροφοδότησης UserVoice από τον Πίνακα Ελέγχου"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:203
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:241
 msgid ""
 "For your security, we’ve disabled WordPress’ built-in file editor by default."
 msgstr ""
 "Για τη δική σας ασφάλεια, απενεργοποιήσαμε ως προεπιλογή την ενσωματωμένη "
 "στο WordPress εφαρμογή επεξεργασίας αρχείων."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:204
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:242
 msgid "If you enable editing, all plugin and theme files become editable."
 msgstr ""
 "Αν ενεργοποιήσετε την επεξεργασία, όλα τα αρχεία plugin και θεμάτων θα "
 "αποκτήσουν τη δυνατότητα επεξεργασίας."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:243
 msgid "Enable Editing"
 msgstr "Ενεργοποίηση επεξεργασίας"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:217
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:255
 msgid "File editing is not enabled on this site"
 msgstr "Η επεξεργασία αρχείων δεν είναι ενεργοποιημένη για αυτό τον ιστότοπο"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:269
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:320
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:307
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:358
 #, php-format
 msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
 msgstr ""
 "Λυπούμαστε, αλλά πρέπει να <a href=\"%s\">αλλάξετε το όνομα τομέα σας εδώ</"
 "a>."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:68
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:99
 msgid "FAQ &amp; Support"
 msgstr "Συχνές ερωτήσεις και υποστήριξη"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:83
-msgid "Messages"
-msgstr "Μηνύματα"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:100
+msgid "Hire A Pro"
+msgstr "Χρησιμοποιήστε έναν επαγγελματία"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:113
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:114
-msgid "GoDaddy"
-msgstr "GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:101
+msgid "Plugin Partners"
+msgstr "Συνεργάτες προσθηκών"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:75
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:419
+msgid "Find A Freelancer"
+msgstr "Βρείτε έναν ελεύθερο επαγγελματία"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:429
+msgid ""
+"Need a freelancer to design your website? GoDaddy Pro Connect filters "
+"through thousands of designers to put you in touch with the best ones for "
+"your site and budget."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:431
+msgid ""
+"We send you three on-budget quotes (no cost or obligation). You choose the "
+"best fit, and they get the job done."
+msgstr ""
+"Σας στέλνουμε τρεις προσφορές εντός προϋπολογισμού (χωρίς κόστος ή "
+"υποχρέωση). Εσείς επιλέγετε τον επαγγελματία που σας ταιριάζει καλύτερα κι "
+"αυτός κάνει τη δουλειά."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:435
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:568
+msgid "Learn More"
+msgstr "Μάθετε περισσότερα"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:465
+msgid "Meet the plugins that meet our high standards."
+msgstr "Γνωρίστε τις προσθήκες που ικανοποιούν τα υψηλά μας πρότυπα."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:467
+msgid ""
+"We've partnered with the world’s top WordPress plugin authors to provide a "
+"list of plugins that work well with GoDaddy WordPress hosting."
+msgstr ""
+"Έχουμε συνεργαστεί με τους κορυφαίους συντάκτες προσθηκών  WordPress για να "
+"παρέχουμε έναν κατάλογο με προσθήκες που συνεργάζονται αρμονικά με τη "
+"φιλοξενία σας WordPress από την GoDaddy."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:477
+msgid "Plugins list"
+msgstr "Κατάλογος προσθηκών"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:485
+msgid ""
+"Whoops! There was a problem fetching the list of plugins, please try "
+"reloading this page."
+msgstr ""
+"Ωχ! Αντιμετωπίσαμε πρόβλημα με τη λήψη του καταλόγου των προσθηκών, "
+"παρακαλούμε δοκιμάστε να φορτώσετε ξανά τη σελίδα."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:530
+#, php-format
+msgid "More information about %s"
+msgstr "Περισσότερες πληροφορίες για το %s"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+#, php-format
+msgid "Install %s now"
+msgstr "Εγκατάσταση του %s τώρα"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+msgid "Install Now"
+msgstr "Εγκατάσταση τώρα"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+#, php-format
+msgid "Update %s now"
+msgstr "Ενημέρωση του %s τώρα"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+msgid "Update Now"
+msgstr "Ενημέρωση τώρα"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "This plugin is already installed and is up to date"
+msgstr "Αυτή η προσθήκη είναι ήδη εγκατεστημένη και ενημερωμένη"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "Installed"
+msgstr "Έχει εγκατασταθεί"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:582
+#, php-format
+msgid "By %s"
+msgstr "Από τον/την %s"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:80
 #, php-format
 msgid "Unknown verb: %s. Try GET or POST"
 msgstr "Άγνωστο ρήμα: %s. Δοκιμάστε με μέθοδο GET ή POST"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:110
+#: gd-system-plugin/class-gd-system-plugin-api.php:115
 #, php-format
 msgid "API returned bad status: %d: %s"
 msgstr "Το API επέστρεψε ακατάλληλη κατάσταση: %d: %s"
@@ -124,12 +217,12 @@ msgid ""
 msgstr ""
 "Αυτό το plugin %s δεν επιτρέπεται στο σύστημά μας. Απενεργοποιήθηκε αυτόματα."
 
-#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:286
+#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:295
 #: gd-system-plugin/class-gd-system-plugin-command-controller.php:66
 msgid "Cache cleared"
 msgstr "Έγινε εκκαθάριση της cache"
 
-#: gd-system-plugin/class-gd-system-plugin-cname.php:131
+#: gd-system-plugin/class-gd-system-plugin-cname.php:137
 #, php-format
 msgid ""
 "<strong>Note:</strong> You're using the temporary domain <strong>%s</"
@@ -146,9 +239,44 @@ msgstr "Η επεξεργασία αρχείων ενεργοποιήθηκε"
 msgid "GoDaddy Garage"
 msgstr "Γκαράζ GoDaddy"
 
-#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+#: gd-system-plugin/class-gd-system-plugin-messages.php:90
 msgid "System message"
 msgstr "Μήνυμα συστήματος"
 
-#~ msgid "Hire A Pro"
-#~ msgstr "Χρησιμοποιήστε έναν επαγγελματία"
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:47
+msgid "Good news!"
+msgstr "Καλά νέα!"
+
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:48
+msgid ""
+"You can now access <strong>Flush Cache</strong> and other links directly "
+"from the admin bar using your desktop or mobile device."
+msgstr ""
+"Τώρα μπορείτε να αποκτήσετε πρόσβαση στην <strong>Flush Cache</strong> και "
+"σε άλλους συνδέσμους απευθείας από τη γραμμή διαχείρισης χρησιμοποιώντας τον "
+"επιτραπέζιο υπολογιστή ή την κινητή συσκευή σας."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:87
+msgid "This setting is required on staging sites."
+msgstr ""
+"Η ρύθμιση αυτή είναι απαραίτητη στους ιστότοπους περιβάλλοντος δοκιμών."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:91
+msgid "This setting is required on temporary domains."
+msgstr "Η ρύθμιση αυτή είναι απαραίτητη στα προσωρινά domain."
+
+#~ msgid ""
+#~ "I would be interested in a professional helping me with my WordPress site."
+#~ msgstr ""
+#~ "Ενδιαφέρομαι να με βοηθήσει ένας επαγγελματίας με με τον ιστότοπό μου "
+#~ "WordPress."
+
+#~ msgid ""
+#~ "Need a freelancer to design your website? Pro Marketplace by GoDaddy "
+#~ "filters through thousands of designers to put you in touch with the best "
+#~ "ones for your site and budget."
+#~ msgstr ""
+#~ "Χρειάζεστε έναν ελεύθερο επαγγελματία για να σχεδιάσετε τον ιστότοπό σας; "
+#~ "Η Pro Marketplace από την GoDaddy φιλτράρει χιλιάδες σχεδιαστές για να "
+#~ "σας φέρει σε επαφή με τους καλύτερους για τον ιστότοπο και τον "
+#~ "προϋπολογισμό σας."

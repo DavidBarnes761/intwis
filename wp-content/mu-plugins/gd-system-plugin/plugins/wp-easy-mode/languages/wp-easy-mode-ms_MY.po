@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Easy Mode\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
-"POT-Creation-Date: 2015-11-16 14:57-0600\n"
-"PO-Revision-Date: 2015-11-16 14:57-0600\n"
+"POT-Creation-Date: 2015-12-21 13:51-0600\n"
+"PO-Revision-Date: 2015-12-21 13:51-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ms_MY\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
 "_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
 "esc_html_x;_c;_nc\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: content\n"
@@ -44,15 +45,98 @@ msgstr "Kembangkan Bar Sisi"
 msgid "Collapse Sidebar"
 msgstr "Runtuhkan Bar Sisi"
 
-#: includes/class-wpem-customizer.php:46
+#: includes/class-wpem-customizer.php:37
+msgid "Watch Video"
+msgstr "Tonton Video"
+
+#: includes/class-wpem-customizer.php:38
+msgid ""
+"You've just created your website! Click \"Watch Video\" to view a quick "
+"demonstration of how to customize your site."
+msgstr ""
+"Anda telah cipta laman web sendiri! Klik \"Tonton Video\" untuk melihat "
+"demonstrasi pantas cara menyesuaikan laman web anda."
+
+#: includes/class-wpem-customizer.php:42
+msgid "Learn More"
+msgstr "Ketahui Lebih Lanjut"
+
+#: includes/class-wpem-customizer.php:43
+msgid ""
+"You've just created your website! Click \"Learn More\" to view some tips on "
+"how to customize your site ."
+msgstr ""
+"Anda telah cipta laman web sendiri! Klik \"Ketahui Lagi\" untuk melihat "
+"beberapa tip tentang cara menyesuaikan laman web anda."
+
+#: includes/class-wpem-customizer.php:58
 msgid "Congratulations!"
 msgstr "Tahniah!"
 
-#: includes/class-wpem-customizer.php:47
+#: includes/class-wpem-customizer.php:149
+msgid "The Customizer"
+msgstr "Customizer"
+
+#: includes/class-wpem-customizer.php:151
 msgid ""
-"You've just created your website! Use the panel to the left to customize the "
-"look &amp; feel of your website's design."
+"You are now in the Customizer, a tool that enables you to make changes to "
+"your website’s appearance, and preview those changes before publishing them. "
+"We’ve created a few commonly-used pages and widgets to help you get started."
 msgstr ""
+"Anda sekarang berada di Customizer, alat yang membolehkan anda mengubah "
+"penampilan laman web, dan pratonton perubahan ini sebelum disiarkan. Kami "
+"telah mencipta beberapa halaman dan widget yang biasa digunakan untuk "
+"membantu anda bermula."
+
+#: includes/class-wpem-customizer.php:152
+msgid ""
+"The top of the Customizer indicates the name of the active theme you’ve "
+"selected. You can change the theme at any time, but doing so will change "
+"these options and reset any customizations you might have made here."
+msgstr ""
+"Bahagian atas Customizer menandakan nama tema aktif yang anda telah pilih. "
+"Anda boleh menukar tema ini pada bila-bila anda, tetapi ini akan menukar "
+"opsyen ini dan menetapkan semula sebarang penyesuaian yang anda telah buat."
+
+#: includes/class-wpem-customizer.php:153
+msgid ""
+"The options available in the Customizer will vary, depending on the features "
+"supported by your current theme. But most themes include these basic "
+"Customizer controls:"
+msgstr ""
+"Opsyen yang terdapat dalam Customizer akan berubah, bergantung pada ciri "
+"yang disokong oleh tema semasa anda. Tetapi kebanyakan tema mempunyai "
+"kawalan Customizer asas berikut:"
+
+#: includes/class-wpem-customizer.php:155
+msgid "Site Identity"
+msgstr "Identiti laman web"
+
+#: includes/class-wpem-customizer.php:156
+msgid "Colors"
+msgstr "Warna"
+
+#: includes/class-wpem-customizer.php:157
+msgid "Header and Background Images"
+msgstr "Imej Pengepala dan Latar Belakang"
+
+#: includes/class-wpem-customizer.php:158
+msgid "Navigation Menus"
+msgstr "Menu Navigasi"
+
+#: includes/class-wpem-customizer.php:159
+msgid "Widgets"
+msgstr "Widget"
+
+#: includes/class-wpem-customizer.php:161
+msgid ""
+"When you’re happy with your changes, click <strong>Save & Publish</strong> "
+"to keep these new settings. Or, simply close the Customizer by clicking the "
+"“X” in the top left-hand corner to discard your changes."
+msgstr ""
+"Selepas anda puas hati dengan perubahan, klik <strong>Simpan & Terbit</"
+"strong> untuk menyimpan tetapan baharu ini. Atau anda boleh tutup Customizer "
+"dengan mengklik “X” di sudut kiri sebelah atas untuk membung perubahan anda."
 
 #: includes/class-wpem-done.php:66
 msgid "Primary Menu"
@@ -138,33 +222,33 @@ msgstr "Testimonial"
 msgid "testimonials"
 msgstr "testimonial"
 
-#: includes/class-wpem-done.php:415
+#: includes/class-wpem-done.php:424
 msgid "Recent Posts"
 msgstr "Kiriman Terkini"
 
-#: includes/class-wpem-done.php:424
+#: includes/class-wpem-done.php:433
 msgid "Archives"
 msgstr "Arkib"
 
-#: includes/class-wpem-done.php:441
+#: includes/class-wpem-done.php:450
 msgid "Browse Products"
 msgstr "Semak Imbas Produk"
 
-#: includes/class-wpem-done.php:472
+#: includes/class-wpem-done.php:481
 msgid "Contact Form"
 msgstr "Borang Kontrak"
 
-#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+#: includes/class-wpem-done.php:482 includes/class-wpem-done.php:507
 msgid "Your form has been successfully submitted."
 msgstr "Borang anda telah berjaya diserahkan."
 
-#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+#: includes/class-wpem-done.php:483 includes/class-wpem-done.php:508
 msgid "Thank you so much for contacting us. We will get back to you shortly."
 msgstr ""
 "Terima kasih kerana menghubungi kami. Kami akan kemukakan jawapan kepada "
 "anda sebentar lagi."
 
-#: includes/class-wpem-done.php:497
+#: includes/class-wpem-done.php:506
 msgid "Request A Quote Form"
 msgstr "Minta Borang Sebut Harga"
 
@@ -175,7 +259,9 @@ msgstr "Tetapan"
 
 #: includes/class-wpem-step-settings.php:32
 msgid "Please tell us more about your website (all fields are required)"
-msgstr "Please tell us more about your website (all fields are required)"
+msgstr ""
+"Sila beritahu kami lebih lanjut tentang laman web anda (semua ruang perlu "
+"diisi)"
 
 #: includes/class-wpem-step-settings.php:35
 #: includes/class-wpem-step-settings.php:111
@@ -184,11 +270,11 @@ msgstr "Jenis"
 
 #: includes/class-wpem-step-settings.php:38
 msgid "- Select a type -"
-msgstr "- Select a type -"
+msgstr "- Pilih jenis -"
 
 #: includes/class-wpem-step-settings.php:39
 msgid "Standard (Recommended)"
-msgstr "Standard (Recommended)"
+msgstr "Standard (Disyorkan)"
 
 #: includes/class-wpem-step-settings.php:40
 msgid "Blog"
@@ -200,7 +286,7 @@ msgstr "Kedai Dalam Talian"
 
 #: includes/class-wpem-step-settings.php:43
 msgid "What type of website are you creating?"
-msgstr "What type of website are you creating?"
+msgstr "Apakah jenis laman web yang anda cipta?"
 
 #: includes/class-wpem-step-settings.php:47
 #: includes/class-wpem-step-settings.php:117
@@ -209,15 +295,15 @@ msgstr "Industri"
 
 #: includes/class-wpem-step-settings.php:50
 msgid "- Select an industry -"
-msgstr "- Select an industry -"
+msgstr "- Pilih industri -"
 
 #: includes/class-wpem-step-settings.php:51
 msgid "Business / Finance / Law"
-msgstr "Business / Finance / Law"
+msgstr "Perniagaan / Kewangan / Perundangan"
 
 #: includes/class-wpem-step-settings.php:52
 msgid "Design / Art / Portfolio"
-msgstr "Design / Art / Portfolio"
+msgstr "Rekaan / Seni / Portfolio"
 
 #: includes/class-wpem-step-settings.php:53
 msgid "Education"
@@ -225,19 +311,19 @@ msgstr "Pendidikan"
 
 #: includes/class-wpem-step-settings.php:54
 msgid "Health / Beauty"
-msgstr "Health / Beauty"
+msgstr "Kesihatan / Kecantikan"
 
 #: includes/class-wpem-step-settings.php:55
 msgid "Home Services / Construction"
-msgstr "Home Services / Construction"
+msgstr "Perkhidmatan Rumah / Pembinaan"
 
 #: includes/class-wpem-step-settings.php:56
 msgid "Music / Movies / Entertainment"
-msgstr "Music / Movies / Entertainment"
+msgstr "Muzik / Tayangan Filem / Hiburan"
 
 #: includes/class-wpem-step-settings.php:57
 msgid "Non-profit / Causes / Religious"
-msgstr "Non-profit / Causes / Religious"
+msgstr "Bukan Untung / Perjuangan / Agama"
 
 #: includes/class-wpem-step-settings.php:58
 msgid "Other"
@@ -245,7 +331,7 @@ msgstr "Lain-lain"
 
 #: includes/class-wpem-step-settings.php:59
 msgid "Personal / Family / Wedding"
-msgstr "Personal / Family / Wedding"
+msgstr "Peribadi / Keluarga / Perkahwinan"
 
 #: includes/class-wpem-step-settings.php:60
 msgid "Pets / Animals"
@@ -257,23 +343,23 @@ msgstr "Hartanah"
 
 #: includes/class-wpem-step-settings.php:62
 msgid "Restaurant / Food"
-msgstr "Restaurant / Food"
+msgstr "Restoran / Makanan"
 
 #: includes/class-wpem-step-settings.php:63
 msgid "Sports / Recreation"
-msgstr "Sports / Recreation"
+msgstr "Sukan / Rekreasi"
 
 #: includes/class-wpem-step-settings.php:64
 msgid "Transportation / Automotive"
-msgstr "Transportation / Automotive"
+msgstr "Pengangkutan / Automotif"
 
 #: includes/class-wpem-step-settings.php:65
 msgid "Travel / Hospitality / Leisure"
-msgstr "Travel / Hospitality / Leisure"
+msgstr "Pelancongan / Layanan / Masa Lapang"
 
 #: includes/class-wpem-step-settings.php:67
 msgid "What will your website be about?"
-msgstr "What will your website be about?"
+msgstr "Apakah bidang laman web anda?"
 
 #: includes/class-wpem-step-settings.php:71
 #: includes/class-wpem-step-settings.php:123
@@ -282,7 +368,7 @@ msgstr "Tajuk"
 
 #: includes/class-wpem-step-settings.php:73
 msgid "Enter your website title here"
-msgstr "Enter your website title here"
+msgstr "Masukkan tajuk laman anda di sini"
 
 #: includes/class-wpem-step-settings.php:74
 msgid ""
@@ -299,7 +385,7 @@ msgstr "Cogan kata"
 
 #: includes/class-wpem-step-settings.php:80
 msgid "Enter your website tagline here"
-msgstr "Enter your website tagline here"
+msgstr "Masukkan slogan laman web anda di sini"
 
 #: includes/class-wpem-step-settings.php:81
 msgid ""
@@ -316,7 +402,7 @@ msgstr "Teruskan"
 
 #: includes/class-wpem-step-settings.php:170
 msgid "All fields are required"
-msgstr "All fields are required"
+msgstr "Semua ruang perlu diisi"
 
 #: includes/class-wpem-step-start.php:18
 msgid "Start"
@@ -349,13 +435,13 @@ msgstr "Tema"
 
 #: includes/class-wpem-step-theme.php:19
 msgid "Choose a Theme"
-msgstr "Choose a Theme"
+msgstr "Pilih Tema"
 
 #: includes/class-wpem-step-theme.php:32
 msgid ""
 "Choose a design for your website (don't worry, you can change this later)"
 msgstr ""
-"Choose a design for your website (don't worry, you can change this later)"
+"Pilih rekabentuk laman web anda (jangan risau, anda boleh tukar kemudian)"
 
 #: includes/class-wpem-step-theme.php:43
 msgid "Preview"
@@ -389,17 +475,10 @@ msgstr "Versi:"
 msgid "Collapse"
 msgstr "Runtuhkan"
 
-#: includes/functions.php:189
+#: includes/functions.php:197
 msgid "Error: WP-CLI not found"
 msgstr "Ralat: WP-CLI tidak dijumpai"
 
 #: templates/fullscreen.php:38
 msgid "WordPress"
 msgstr "WordPress"
-
-#~ msgid ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"
-#~ msgstr ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"

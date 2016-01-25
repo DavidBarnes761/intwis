@@ -1,0 +1,387 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Tweet This"
+msgstr ""
+
+#. Short description.
+msgid ""
+"Tweet This offers easily embedded, stylish tweetable content boxes in your\n"
+"posts and pages. Get your visitors sharing on Twitter today!"
+msgstr ""
+
+#. Screenshot description.
+msgid "Shortcode creator for WordPress' TinyMCE editor."
+msgstr ""
+
+#. Screenshot description.
+msgid "Result of shortcode from first screenshot using default theme."
+msgstr ""
+
+#. Screenshot description.
+msgid "Result of shortcode from first screenshot using dark theme."
+msgstr ""
+
+#. Screenshot description.
+msgid "Send tweet popup seen by users when they \"Tweet This.\""
+msgstr ""
+
+#. Screenshot description.
+msgid "Settings page. Lots of customization options available."
+msgstr ""
+
+#. Found in description header.
+msgid "Getting Readers Active"
+msgstr ""
+
+#. Found in description header.
+msgid "How Does It Work?"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"All the pros agree. Sharing your content on Twitter is an immensely powerful, and\n"
+"essential, marketing tool for modern websites and blogs."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"But do you know what is 100 times more effective than you sharing your stuff?\n"
+"Your <em>readers</em> sharing it!  Not only does word of mouth vastly increase your\n"
+"market reach, but your authority and the power of your message explodes\n"
+"exponentially."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"But there's a problem.  The standard \"share\" methods are impersonal\n"
+"and difficult for your readers.  Those share buttons at the bottom of your page?\n"
+"They don't send anything inspiring!  Just a lifeless message and ugly link.\n"
+"What you need is Tweet This!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"Tweet This is the perfect tool for encouraging your readers to share.  You get to\n"
+"write a short message.  This message gets embedded into your post or page in an\n"
+"attractive manner.  When a reader clicks your embedded content, they are given an\n"
+"opportunity to send the message as a tweet along with a link back to your post."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"All you have to do is pick your most engaging quotes or content, load them into a\n"
+"Tweet This box, and watch your readers spread it to the far corners of the globe!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"Tweet This works using shortcodes.  Simply use the shortcode to embed your text\n"
+"anywhere you like.  When viewed, the shortcode displays either a beautiful box containing\n"
+"your message, as well as subtle encouragement for your readers to tweet it, or a simple\n"
+"inline link.  It's your choice how to display it."
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"When they decide to tweet it and click the box/link, the message will automatically be filled into\n"
+" a Twitter post box for them, as well as a link back to your content and your Twitter account if so desired."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Check out the <a href=\"./screenshots\">screenshots</a> to get a better idea of how it works!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid ""
+"Tweet This is immensely customizable.  You can change the look of your Tweet\n"
+"This boxes.  Setup the use of shortlinks in place of long URLs.  And much more!"
+msgstr ""
+
+#. Found in installation header.
+msgid "Using WordPress.org's Plugin Repository (recommended)"
+msgstr ""
+
+#. Found in installation header.
+msgid "Manually"
+msgstr ""
+
+#. Found in installation header.
+msgid "From Source"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Search for \"Tweet This\" in your WordPress \"Add New\" plugin section of your dashboard."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Install and activate the \"<a href=\"http://wordpress.org/plugins/tweetthis/\">Tweet This</a>\" plugin by John Morris."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the \"Plugins\" menu in your WordPress admin section."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Visit the plugin's <a href=\"https://github.com/jtmorris/tweet-this\">GitHub repository</a>."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Select the branch you want to download (leaving the default master branch is highly recommended)."
+msgstr ""
+
+#. Found in installation list item.
+msgid "Click the download ZIP button on the lower right side of the page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix plus signs showing instead of spaces when sending tweet with Twitter on iPhones (changed URL encoding behavior)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove temporary debugging code used to test last update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added tweet templating capability. Read more about this here: <a href=\"http://tweetthis.jtmorris.net/posts/introducing-the-tweet-element-template/\">http://tweetthis.jtmorris.net/posts/introducing-the-tweet-element-template/</a>."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Circumvented jQuery UI interference from Express Curate plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed PHP notices interfering with AJAX calls when WP_DEBUG is enabled."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added display mode override option to Shortcode Creator Dialog box."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Moved generation of previews in Shortcode Creator Dialog box to the same method that generates resulting tweet, thus reducing potential for bugs and simplifying future extensability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix jQuery UI theme scope issues introduced in last update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added \"Insert Shortcode Behavior\" setting which allows users to choose to copy and paste resultant shortcode from Shortcode Creator dialog rather than have it automatically inserted. Serves as a last resort fallback for users reporting plugin conflicts (notably with OptimizePress), and those with the dreaded tinyMCE == undefined bug that keeps persisting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Changed behavior of \"Disable URLs?\" setting.  This now only stops automatic URLs.  Overridden URLs will still display."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Restricted jQuery UI theme scope to Tweet This content instead of globally in dashboard."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added editor button placement options to advanced settings."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Preliminary fix for editor==null exception."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Manual fallback if automatic shortcode insertion from the shortcode creator fails."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Bug &amp; typo fixes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix detection and usage of shortlinks created by the Shortn.It plugin."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix wide button bug in WordPress editor's Text tab. (https://wordpress.org/support/topic/this-plug-in-has-messed-up-my-websites-edit-functions-after-the-last-update?replies=4)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix jQuery dialog loading behind overlay (https://wordpress.org/support/topic/plugin-not-workinggrey-page)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Massive shortcode creator dialog box retooling. Removed the intermittently problematic dependence on TinyMCE's window manager."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed broken removal of \"hidden URLs\" on a per-shortcode basis."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved error handling and reporting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Visual enchancements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Performance improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Further refinements to error reporting and editor bug workarounds from previous updates."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix excess spaces in resultant Tweets when no defaults set."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix order of items in shortcode creator dialog box to match resultant tweet."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Further refinements to error reporting."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Additional workarounds for rare WordPress editor bug."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add workaround for rare WordPress editor bug where it doesn't provide arguments to dialog box."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve any error reporting when the aforementioned bug is encoutered and eliminate JavaScript exceptions."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix unnecessary and undesired hard coding of default shortcode parameters when using shortcode creation dialog box."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix Tweet This box mode display problem for some themes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Code cleanup."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Adds hidden URL feature. Similar to hidden hashtags, but for URLs.  Now you can specify a link that will be appended to your user's tweets, but does not display in the Tweet This box."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Cleans up and reogranizes the shorcode creator dialog box."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix SSL/HTTPS security errors due to unsecure font imports."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Add requested feature: hidden hashtags. Now you can specify hashtags that will be appended to your tweet when tweeted, but do not show to the user.  Just like the Twitter handles and URL, but with hashtags."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improve the behavior of the \"remove _____\" checkboxes. Before, they only affected the preview in the shortcode creation dialog box.  Now, they affect the tweet users will send.  This behavior is far more logical and useful.  It will not be applied retroactively.  It will only work on new Tweet This shortcodes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix some code styling and less than optimal syntax."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix support for older versions of PHP by removing usage of PHP 5.3+ only function array_merge()."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option for custom alt attribute for Twitter icon (user request).  New setting is located in \"Advanced Settings\" section in Tweet This settings page."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix plugin update."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix broken shortcode creation dialog."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix layout conflict with some themes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix plugin update errors."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Restored missing setting \"Remove Byline\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added new inline link capability."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New shortcode creator dialog box options."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Settings page tidying."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Three new themes."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added the ability to remove auto-generated URL from post completely by default, and on a case-by-case basis."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fix character encoding issues on some versions of PHP."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Implement workaround for obscure jQuery bug in Firefox."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin listing improvements."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial version. No changes to report."
+msgstr ""
+
+#. Found in faq header.
+msgid "I'm not sure how to use this plugin. Where can I get help?"
+msgstr ""
+
+#. Found in faq header.
+msgid "Can I include graphical content in tweets?"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Usage guides and information for this plugin are available on the <a href=\"http://tweetthis.jtmorris.net\">plugin's website</a>. \n"
+"I recommend beginning with the <a href=\"http://tweetthis.jtmorris.net/posts/using-tweet-this/\">Getting Started Guide</a> \n"
+"You can also find links to other helpful articles on the plugin's settings page in your WordPress admin."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"I strive to make this plugin easy to use.  But, it is easy for me, as the plugin developer, to miss something.\n"
+"Feedback from users if <em>very</em> helpful in improving this product.  If something is confusing, difficult, or illogical,\n"
+"let me know along with any suggestions for making it better.  You can use the support forum on WordPress.org,\n"
+"or you can find other methods for contacting me <a href=\"http://tweetthis.jtmorris.net/contact/\">here</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid ""
+"Sort of.  Twitter does not allow the posting of images on behalf of other users, like this\n"
+"plugin does for text.  However, there are a few tricks you can use to work around this and\n"
+"get graphical content included.  There is a detailed guide for how to do this on the plugin's website:\n"
+"<a href=\"http://tweetthis.jtmorris.net/posts/including-graphics-and-images-in-a-tweet/\">Including Graphics and Images in a Tweet</a>"
+msgstr ""

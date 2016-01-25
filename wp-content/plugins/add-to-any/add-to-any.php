@@ -3,13 +3,17 @@
 Plugin Name: AddToAny Share Buttons
 Plugin URI: https://www.addtoany.com/
 Description: Share buttons for your pages including AddToAny's universal sharing button, Facebook, Twitter, Google+, Pinterest, WhatsApp and many more.  [<a href="options-general.php?page=add-to-any.php">Settings</a>]
-Version: 1.6.7
+Version: 1.6.10
 Author: AddToAny
 Author URI: https://www.addtoany.com/
 Text Domain: add-to-any
 Domain Path: /languages
 */
-	
+
+// Explicitly globalize to support bootstrapped WordPress
+global $_addtoany_counter, $_addtoany_init, $_addtoany_targets, $A2A_locale, $A2A_FOLLOW_services, $A2A_SHARE_SAVE_auto_placement_ready,
+	$A2A_SHARE_SAVE_plugin_basename, $A2A_SHARE_SAVE_options, $A2A_SHARE_SAVE_plugin_dir, $A2A_SHARE_SAVE_plugin_url_path, $A2A_SHARE_SAVE_services;
+
 $A2A_SHARE_SAVE_plugin_basename = plugin_basename( dirname( __FILE__ ) );
 $A2A_SHARE_SAVE_plugin_dir = untrailingslashit( plugin_dir_path( __FILE__ ) );
 $A2A_SHARE_SAVE_plugin_url_path = untrailingslashit( plugin_dir_url( __FILE__ ) );
@@ -47,7 +51,7 @@ function A2A_SHARE_SAVE_link_vars( $linkname = false, $linkurl = false ) {
 	// Set linkname
 	if ( ! $linkname ) {
 		if ( isset( $post ) ) {
-			$linkname = html_entity_decode( strip_tags( get_the_title( $post->ID, ENT_QUOTES, 'UTF-8' ) ) );
+			$linkname = html_entity_decode( strip_tags( get_the_title( $post->ID ) ), ENT_QUOTES, 'UTF-8' );
 		}
 		else {
 			$linkname = '';
@@ -282,7 +286,7 @@ function ADDTOANY_SHARE_SAVE_ICONS( $args = array() ) {
 			// AddToAny counter enabled?
 			$counter_enabled = ( ! $is_follow // Disable counters on Follow Kits
 				&& ! isset( $is_floating ) // Disable counters on floating buttons for now
-				&& in_array( $active_service, array( 'facebook', 'twitter', 'pinterest', 'linkedin', 'reddit' ) )
+				&& in_array( $active_service, array( 'facebook', 'pinterest', 'linkedin', 'reddit' ) )
 				&& isset( $options['special_' . $active_service . '_options'] )
 				&& isset( $options['special_' . $active_service . '_options']['show_count'] ) 
 				&& $options['special_' . $active_service . '_options']['show_count'] == '1' 
@@ -414,6 +418,10 @@ function ADDTOANY_SHARE_SAVE_BUTTON( $args = array() ) {
 			$button	= '<img src="' . $button_src . '"' . $button_width . $button_height . ' alt="Share"/>';
 		}
 		
+		if ( isset( $options['button_show_count'] ) && $options['button_show_count'] == '1' ) {
+			$button_class .= ' a2a_counter';
+		}
+		
 		$button_html = $html_container_open . $html_wrap_open . '<a class="a2a_dd' . $button_class . ' addtoany_share_save" href="https://www.addtoany.com/share' .$button_href_querystring . '"' . $button_id
 			. $style . $button_target
 			. '>' . $button . '</a>';
@@ -469,7 +477,7 @@ function ADDTOANY_SHARE_SAVE_BUTTON( $args = array() ) {
 		
 		if ( ! $_addtoany_init ) {
 			$javascript_load_early = "\n<script type=\"text/javascript\"><!--\n"
-				. "wpa2a.script_load();"
+				. "if(wpa2a)wpa2a.script_load();"
 				. "\n//--></script>\n";
 		} else {
 			$javascript_load_early = "";
@@ -513,7 +521,6 @@ function ADDTOANY_SHARE_SAVE_SPECIAL( $special_service_code, $args = array() ) {
 	}
 	
 	elseif ( $special_service_code == 'twitter_tweet' ) {
-		$custom_attributes .= ( $options['special_twitter_tweet_options']['show_count'] == '1' ) ? ' data-count="horizontal"' : ' data-count="none"';
 		$custom_attributes .= ' data-url="' . $linkurl . '"';
 		$custom_attributes .= ' data-text="' . $linkname . '"';
 		$special_html = sprintf( $special_anchor_template, $special_service_code, $custom_attributes );
@@ -767,6 +774,7 @@ function A2A_SHARE_SAVE_head_script() {
 		
 		. "a2a_config.callbacks=a2a_config.callbacks||[];"
 		. "a2a_config.callbacks.push({ready:wpa2a.script_onready});"
+		. "a2a_config.templates=a2a_config.templates||{};"
 		. A2A_menu_locale()
 		. $script_configs
 		
@@ -955,7 +963,7 @@ function A2A_SHARE_SAVE_stylesheet() {
 	// Use stylesheet?
 	if ( ! isset( $options['inline_css'] ) || $options['inline_css'] != '-1' && ! is_admin() ) {
 	
-		wp_enqueue_style( 'A2A_SHARE_SAVE', $A2A_SHARE_SAVE_plugin_url_path . '/addtoany.min.css', false, '1.11' );
+		wp_enqueue_style( 'A2A_SHARE_SAVE', $A2A_SHARE_SAVE_plugin_url_path . '/addtoany.min.css', false, '1.12' );
 	
 		// wp_add_inline_style requires WP 3.3+
 		if ( '3.3' <= get_bloginfo( 'version' ) ) {
@@ -1054,7 +1062,10 @@ function A2A_SHARE_SAVE_refresh_cache() {
 			$file_name = substr( strrchr( $file_url, '/' ), 1, 99 );
 			
 			// Place files in uploads/addtoany directory
-			wp_get_http( $file_url, $upload_dir['basedir'] . '/addtoany/' . $file_name );
+			wp_remote_get( $file_url, array(
+				'filename' => $upload_dir['basedir'] . '/addtoany/' . $file_name,
+				'stream'   => true, // Required to use `filename` arg
+			) );
 		}
 	}
 }

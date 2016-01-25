@@ -14,7 +14,7 @@
 			<div class="site-footer row">
 				<div class="email-signup-wrapper medium-12 large-6 columns">
 					<div class="email-signup">
-						<h2>Subscribe to Email List</h2>
+						<h2>Get Wisdom in your Inbox</h2>
 						<p>Please enter your email address to be notified when new videos are added.</p>
 						<?php echo do_shortcode( '[contact-form-7 id="202" title="Email Signup"]' ); ?>
 					</div>
@@ -29,9 +29,10 @@
 				</div>
 			</div>
 		</footer>
-		<div class="site-info-wrapper">
-			<div class="site-info row">
-				<span class="copyright large-12 columns">&copy; <?php echo date('Y'); ?> Integrative Wisdom. All rights reserved.</span>
+		<div class="site-info row">
+			<div class="copyright-wrapper large-12 columns">
+				<a href="http://www.integrativepro.com/" title="Integrative Therapeutics Homepage"><img src="<?php echo get_template_directory_uri(); ?>/img/footerLogo.png" alt="Integrative Therapeutics Logo" /></a>
+				<span class="copyright">&copy; <?php echo date('Y'); ?> Integrative Wisdom. All rights reserved.</span>
 			</div>
 		</div>
 	</div>

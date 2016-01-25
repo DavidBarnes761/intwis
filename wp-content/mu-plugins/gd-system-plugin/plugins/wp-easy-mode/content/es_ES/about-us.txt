@@ -1,0 +1,5 @@
+﻿<strong>NOMBRE DE LA COMPAÑÍA</strong> ha estado cumpliendo con lo prometido desde que abrimos en <strong>AÑO</strong>. Nuestro objetivo es ofrecer una experiencia al cliente superior y un enorme valor para nuestros clientes.
+
+<strong>NOMBRE DEL PROPIETARIO</strong> tiene más de <strong>CANTIDAD</strong> años de experiencia en <strong>NOMBRE DE LA INDUSTRIA</strong> y está totalmente comprometido a superar tus expectativas.
+
+Apreciamos a nuestros clientes y agradecemos tus comentarios y sugerencias. Usa nuestra página <a href="/contact/" title="Contáctanos">Contáctanos</a> para decirnos qué es lo que estamos haciendo bien y qué es lo que podemos mejorar.

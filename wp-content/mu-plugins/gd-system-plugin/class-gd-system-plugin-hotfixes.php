@@ -19,20 +19,32 @@ class GD_System_Plugin_Hotfixes {
 	/**
 	 * Constructor.
 	 * Hook any needed actions/filters
-	 * @return void
 	 */
 	public function __construct() {
 
 		// Enable sampling for WP Popular Posts, this makes it perform much better especially on high traffic sites
 		add_filter( 'wpp_data_sampling', '__return_true' );
-		
+
 		// Clean up limit login attempts
 		$flag = ( mt_rand( 0, 50 ) == 47 );
+
 		if ( apply_filters( 'gd_system_clean_limit_login_attempts', $flag ) ) {
-			add_action( 'muplugins_loaded', array( $this, 'clean_limit_login_attempts' ) );
+
+			add_action( 'muplugins_loaded', [ $this, 'clean_limit_login_attempts' ] );
+
 		}
+
+		// Prevent jetpack from validating siteurl and home option on staging
+		if ( gd_is_staging_site() ) {
+
+			add_filter( 'jetpack_has_identity_crisis', '__return_false' );
+
+		}
+
+		add_filter( 'option_jetpack_options', [ $this, 'remove_jetpack_nag' ] );
+
 	}
-	
+
 	/**
 	 * Clean up limit login attempts options.  On social sites, these can get to be
 	 * huge arrays that turn into huge strings and break MySQL because of packet size
@@ -71,4 +83,24 @@ class GD_System_Plugin_Hotfixes {
 			}
 		}
 	}
+
+	/**
+	 * Hide the updates screen nag from Jetpack
+	 *
+	 * @param array $value
+	 *
+	 * @return array
+	 */
+	public function remove_jetpack_nag( $value ) {
+
+		if ( $value && empty( $value['hide_jitm']['manage'] ) || 'hide' !== $value['hide_jitm']['manage'] ) {
+
+			$value['hide_jitm']['manage'] = 'hide';
+
+		}
+
+		return $value;
+
+	}
+
 }

@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Easy Mode\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
-"POT-Creation-Date: 2015-11-16 14:56-0600\n"
-"PO-Revision-Date: 2015-11-16 14:56-0600\n"
+"POT-Creation-Date: 2015-12-21 13:51-0600\n"
+"PO-Revision-Date: 2015-12-21 13:51-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_MX\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
 "_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
 "esc_html_x;_c;_nc\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: content\n"
@@ -43,15 +44,100 @@ msgstr "Ampliar la barra lateral"
 msgid "Collapse Sidebar"
 msgstr "Disminuir la barra latera"
 
-#: includes/class-wpem-customizer.php:46
+#: includes/class-wpem-customizer.php:37
+msgid "Watch Video"
+msgstr "Mirar video"
+
+#: includes/class-wpem-customizer.php:38
+msgid ""
+"You've just created your website! Click \"Watch Video\" to view a quick "
+"demonstration of how to customize your site."
+msgstr ""
+"¡Acabas de crear tu sitio web! Haz clic en \"Ver video\" para ver una breve "
+"demostración de cómo personalizar tu sitio."
+
+#: includes/class-wpem-customizer.php:42
+msgid "Learn More"
+msgstr "Más información"
+
+#: includes/class-wpem-customizer.php:43
+msgid ""
+"You've just created your website! Click \"Learn More\" to view some tips on "
+"how to customize your site ."
+msgstr ""
+"¡Acabas de crear tu sitio web! Haz clic en \"Más información\" para ver "
+"algunos consejos sobre cómo personalizar tu sitio."
+
+#: includes/class-wpem-customizer.php:58
 msgid "Congratulations!"
 msgstr "Felicitaciones!"
 
-#: includes/class-wpem-customizer.php:47
+#: includes/class-wpem-customizer.php:149
+msgid "The Customizer"
+msgstr "Customizer"
+
+#: includes/class-wpem-customizer.php:151
 msgid ""
-"You've just created your website! Use the panel to the left to customize the "
-"look &amp; feel of your website's design."
+"You are now in the Customizer, a tool that enables you to make changes to "
+"your website’s appearance, and preview those changes before publishing them. "
+"We’ve created a few commonly-used pages and widgets to help you get started."
 msgstr ""
+"Ahora te encuentras en Customizer, una herramienta que te permite realizar "
+"cambios en la apariencia de tu sitio web y previsualizarlos antes de su "
+"publicación. Hemos creado algunas páginas y widgets usados frecuentemente "
+"para ayudarte a comenzar."
+
+#: includes/class-wpem-customizer.php:152
+msgid ""
+"The top of the Customizer indicates the name of the active theme you’ve "
+"selected. You can change the theme at any time, but doing so will change "
+"these options and reset any customizations you might have made here."
+msgstr ""
+"La parte superior de Customizer indica el nombre del tema activo que has "
+"seleccionado. Puedes cambiar el tema en cualquier momento, pero al hacerlo "
+"cambiarán estas opciones y se restablecerán todas las personalizaciones que "
+"pudieras haber realizado."
+
+#: includes/class-wpem-customizer.php:153
+msgid ""
+"The options available in the Customizer will vary, depending on the features "
+"supported by your current theme. But most themes include these basic "
+"Customizer controls:"
+msgstr ""
+"Las opciones disponibles en Customizer varían dependiendo de las "
+"características compatibles con el tema actual. Sin embargo, la mayoría de "
+"los temas incluye los siguientes controles básicos de Customizer:"
+
+#: includes/class-wpem-customizer.php:155
+msgid "Site Identity"
+msgstr "Identidad del sitio"
+
+#: includes/class-wpem-customizer.php:156
+msgid "Colors"
+msgstr "Colores"
+
+#: includes/class-wpem-customizer.php:157
+msgid "Header and Background Images"
+msgstr "Imágenes de encabezado y fondo"
+
+#: includes/class-wpem-customizer.php:158
+msgid "Navigation Menus"
+msgstr "Menús de navegación"
+
+#: includes/class-wpem-customizer.php:159
+msgid "Widgets"
+msgstr "Widgets"
+
+#: includes/class-wpem-customizer.php:161
+msgid ""
+"When you’re happy with your changes, click <strong>Save & Publish</strong> "
+"to keep these new settings. Or, simply close the Customizer by clicking the "
+"“X” in the top left-hand corner to discard your changes."
+msgstr ""
+"Cuando estés satisfecho con los cambios, haz clic en <strong>Guardar y "
+"publicar</strong> para mantener la nueva configuración. O bien, cierra "
+"Customizer haciendo clic en la \"X\" ubicada en la esquina superior "
+"izquierda para descartar los cambios."
 
 #: includes/class-wpem-done.php:66
 msgid "Primary Menu"
@@ -137,32 +223,32 @@ msgstr "TESTIMONIOS"
 msgid "testimonials"
 msgstr "Testimonios"
 
-#: includes/class-wpem-done.php:415
+#: includes/class-wpem-done.php:424
 msgid "Recent Posts"
 msgstr "Publicaciones recientes"
 
-#: includes/class-wpem-done.php:424
+#: includes/class-wpem-done.php:433
 msgid "Archives"
 msgstr "Archivos"
 
-#: includes/class-wpem-done.php:441
+#: includes/class-wpem-done.php:450
 msgid "Browse Products"
 msgstr "Examinar productos"
 
-#: includes/class-wpem-done.php:472
+#: includes/class-wpem-done.php:481
 msgid "Contact Form"
 msgstr "Formulario de contacto"
 
-#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+#: includes/class-wpem-done.php:482 includes/class-wpem-done.php:507
 msgid "Your form has been successfully submitted."
 msgstr "Tu formulario se ha enviado correctamente"
 
-#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+#: includes/class-wpem-done.php:483 includes/class-wpem-done.php:508
 msgid "Thank you so much for contacting us. We will get back to you shortly."
 msgstr ""
 "Muchas gracias por contactarnos. Nos comunicaremos contigo a la brevedad."
 
-#: includes/class-wpem-done.php:497
+#: includes/class-wpem-done.php:506
 msgid "Request A Quote Form"
 msgstr "Formulario para solicitar una cotización"
 
@@ -389,17 +475,10 @@ msgstr "Versión:"
 msgid "Collapse"
 msgstr "Contraer"
 
-#: includes/functions.php:189
+#: includes/functions.php:197
 msgid "Error: WP-CLI not found"
 msgstr "Error: No se encontró WP-CLI"
 
 #: templates/fullscreen.php:38
 msgid "WordPress"
 msgstr "WordPress"
-
-#~ msgid ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"
-#~ msgstr ""
-#~ "Sí, me interesa contratar a un profesional para ayudarme a personalizar "
-#~ "mi sitio WordPress"

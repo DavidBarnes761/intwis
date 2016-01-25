@@ -131,12 +131,20 @@ function wpem_mark_as_done() {
 
 	update_option( 'wpem_done', 1 );
 
+	wp_easy_mode()->self_destruct();
+
+	wp_easy_mode()->deactivate();
+
 }
 
 /**
  * Quit the wizard
  */
 function wpem_quit() {
+
+	update_option( 'wpem_opt_out', 1 );
+
+	wpem_mark_as_done();
 
 	if ( ! function_exists( 'get_plugins' ) ) {
 
@@ -149,21 +157,21 @@ function wpem_quit() {
 	 *
 	 * @var array
 	 */
-	$plugins = (array) apply_filters( 'wpem_deactivate_plugins_on_quit', array_keys( get_plugins() ) );
+	$plugins = apply_filters( 'wpem_deactivate_plugins_on_quit', array_keys( get_plugins() ) );
 
-	if ( $plugins ) {
+	if ( is_array( $plugins ) ) {
 
 		deactivate_plugins( $plugins );
 
 	}
 
-	update_option( 'wpem_opt_out', 1 );
+	if ( function_exists( 'wp_safe_redirect' ) ) {
 
-	wpem_mark_as_done();
+		wp_safe_redirect( self_admin_url() );
 
-	wp_safe_redirect( self_admin_url() );
+		exit;
 
-	exit;
+	}
 
 }
 

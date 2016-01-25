@@ -1,0 +1,18 @@
+/**
+ * Color name taken from GoDaddy brand guidelines
+ */
+$GoDaddyGreen: #77C043;
+$CasualGreen: #008A32;
+$CasualGreenHover: #009938;
+$PrettyMuchOrange: #EF6C0F;
+$GoDaddyBackground: #333;
+$GoDaddy7gray: #ededee;
+
+$base-color: $GoDaddyBackground;
+$highlight-color: $CasualGreen;
+$notification-color: $PrettyMuchOrange;
+$button-color: $PrettyMuchOrange;
+$menu-submenu-focus-text: $GoDaddyGreen;
+$menu-icon: $GoDaddy7gray;
+
+@import "admin";

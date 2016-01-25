@@ -171,7 +171,7 @@ final class WPEM_Done {
 				'site_types'        => array( 'store' ),
 				'post_title'        => __( 'My Account', 'wp-easy-mode' ),
 				'post_name'         => esc_html_x( 'account', 'Page slug name used in URL, must be URL safe', 'wp-easy-mode' ),
-				'post_content_path' => $this->get_sample_content_path( 'account.txt' ),
+				'post_content_path' => $this->get_sample_content_path( 'my-account.txt' ),
 				'nav_menu'          => $this->menu_id,
 			),
 			'about-me' => array(
@@ -230,6 +230,14 @@ final class WPEM_Done {
 
 	}
 
+	/**
+	 * Get the path for sample page content
+	 *
+	 * @param  string $file
+	 * @param  string $locale
+	 *
+	 * @return string
+	 */
 	private function get_sample_content_path( $file, $locale = '' ) {
 
 		$locale = ! empty( $locale ) ? $locale : get_locale();
@@ -238,7 +246,8 @@ final class WPEM_Done {
 
 		if ( ! is_readable( $path ) ) {
 
-			return;
+			// Fallback to en_US
+			$path = WPEM_DIR . sprintf( 'content/en_US/%s', $file );
 
 		}
 

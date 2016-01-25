@@ -19,14 +19,19 @@ final class WPEM_CLI extends WP_CLI_Command {
 	 * [--yes]
 	 * : Answer yes to the confirmation message.
 	 *
-	 * [--codeception]
-	 * : Activate codeception if it wasn't already active
-	 *
 	 * ## EXAMPLES
 	 *
 	 *     wp easy-mode reset [--yes]
 	 */
 	public function reset( $args, $assoc_args ) {
+
+		global $wpdb;
+
+		if ( ! defined( 'WP_DEBUG' ) || ! WP_DEBUG ) {
+
+			WP_CLI::error( 'WP_DEBUG must be enabled to reset WP Easy Mode.' );
+
+		}
 
 		/**
 		 * Confirm
@@ -35,70 +40,6 @@ final class WPEM_CLI extends WP_CLI_Command {
 		if ( ! isset( $assoc_args['yes'] ) ) {
 
 			WP_CLI::confirm( 'Are you sure you want to reset the plugin? This cannot be undone.' );
-
-		}
-
-		/**
-		 * Settings
-		 */
-
-		WP_CLI::line( 'Restoring default settings ...' );
-
-		global $wpdb;
-
-		$wpdb->query( "DELETE FROM {$wpdb->options} WHERE ( option_name LIKE 'wpem_%' ) OR ( option_name LIKE '%_transient_%' ) OR ( option_name LIKE 'theme_mods_%' );" );
-
-		update_option( 'blogname', 'My Site' );
-
-		update_option( 'blogdescription', 'Just another WordPress site' );
-
-		$wpdb->query( "DELETE FROM {$wpdb->usermeta} WHERE ( meta_key = 'sk_ignore_notice' ) OR ( meta_key = 'dismissed_wp_pointers' AND meta_value LIKE '%wpem_%' );" );
-
-		WP_CLI::line( 'Deleting all sidebar widgets ...' );
-
-		delete_option( 'sidebars_widgets' );
-
-		/**
-		 * Nav menus
-		 */
-
-		WP_CLI::line( 'Deleting all nav menus ...' );
-
-		$term_ids = get_terms(
-			'nav_menu',
-			array(
-				'fields'     => 'ids',
-				'hide_empty' => 0,
-			)
-		);
-
-		foreach ( $term_ids as $term_id ) {
-
-			wp_delete_term( $term_id, 'nav_menu' );
-
-		}
-
-		/**
-		 * Pages and nav menu items
-		 */
-
-		WP_CLI::line( 'Deleting all pages and nav menu items ...' );
-
-		$query = new WP_Query(
-			array(
-				'posts_per_page' => 999,
-				'post_type'      => array( 'page', 'nav_menu_item' ),
-				'post_status'    => 'any',
-			)
-		);
-
-		if ( $query->have_posts() ) {
-
-			foreach ( $query->posts as $post ) {
-
-				wp_delete_post( $post->ID, true );
-
-			}
 
 		}
 
@@ -121,16 +62,17 @@ final class WPEM_CLI extends WP_CLI_Command {
 		WP_CLI::line( 'Dropping custom database tables ...' );
 
 		$mysql = $wpdb->get_results(
-			"SELECT CONCAT( 'DROP TABLE ', GROUP_CONCAT( table_name ) , ';' )
-			AS query FROM INFORMATION_SCHEMA.TABLES
-			WHERE ( table_name LIKE '{$wpdb->prefix}nf_%' )
-			OR ( table_name LIKE '{$wpdb->prefix}ninja_forms_%' )
-			OR ( table_name LIKE '{$wpdb->prefix}woocommerce_%' );"
+			"SELECT GROUP_CONCAT( table_name ) AS query FROM INFORMATION_SCHEMA.TABLES
+				WHERE ( table_name LIKE '{$wpdb->prefix}nf_%' )
+					OR ( table_name LIKE '{$wpdb->prefix}ninja_forms_%' )
+					OR ( table_name LIKE '{$wpdb->prefix}woocommerce_%' );"
 		);
 
 		if ( isset( $mysql[0]->query ) ) {
 
-			$wpdb->query( $mysql[0]->query );
+			$tables = implode( ',', array_unique( explode( ',', $mysql[0]->query ) ) );
+
+			$wpdb->query( "DROP TABLE IF EXISTS {$tables};" );
 
 		}
 
@@ -159,6 +101,58 @@ final class WPEM_CLI extends WP_CLI_Command {
 		$inactive = implode( "\n", array_diff( $inactive, $default_themes ) );
 
 		WP_CLI::launch_self( "theme delete {$inactive}", [], [], false );
+
+		/**
+		 * Users
+		 */
+
+		WP_CLI::line( 'Removing all users except main admin ...' );
+
+		$wpdb->query( "DELETE FROM {$wpdb->users} WHERE ID > 1" );
+
+		/**
+		 * Settings
+		 */
+
+		WP_CLI::line( 'Restoring default settings ...' );
+
+		$wpdb->query(
+			"DELETE FROM {$wpdb->options}
+			WHERE ( option_name LIKE 'wpem_%' )
+			OR ( option_name LIKE '%_transient_%' )
+			OR ( option_name LIKE 'theme_mods_%' );"
+		);
+
+		update_option( 'WPLANG', '' );
+
+		update_option( 'blogname', 'My Site' );
+
+		update_option( 'blogdescription', 'Just another WordPress site' );
+
+		$wpdb->query(
+			"DELETE FROM {$wpdb->usermeta}
+			WHERE ( meta_key = 'sk_ignore_notice' )
+			OR ( meta_key = 'dismissed_wp_pointers'
+			AND meta_value
+			LIKE '%wpem_%' );"
+		);
+
+		WP_CLI::line( 'Deleting all sidebar widgets ...' );
+
+		update_option( 'sidebars_widgets', array( 'wp_inactive_widgets' => array() ) );
+
+		/**
+		 * Site content
+		 */
+
+		WP_CLI::line( 'Resetting site content ...' );
+
+		$wpdb->query( "TRUNCATE TABLE {$wpdb->posts}" );
+		$wpdb->query( "TRUNCATE TABLE {$wpdb->postmeta}" );
+		$wpdb->query( "TRUNCATE TABLE {$wpdb->terms}" );
+		$wpdb->query( "TRUNCATE TABLE {$wpdb->term_taxonomy}" );
+		$wpdb->query( "TRUNCATE TABLE {$wpdb->term_relationships}" );
+		$wpdb->query( "TRUNCATE TABLE {$wpdb->termmeta}" );
 
 		/**
 		 * Success

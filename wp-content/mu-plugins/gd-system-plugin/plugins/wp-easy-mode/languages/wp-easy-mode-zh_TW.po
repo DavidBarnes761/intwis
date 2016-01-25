@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Easy Mode\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
-"POT-Creation-Date: 2015-11-16 14:59-0600\n"
-"PO-Revision-Date: 2015-11-16 14:59-0600\n"
+"POT-Creation-Date: 2015-12-21 13:50-0600\n"
+"PO-Revision-Date: 2015-12-21 13:50-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_TW\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
 "_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
 "esc_html_x;_c;_nc\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: content\n"
@@ -43,15 +44,89 @@ msgstr "展開資訊看板"
 msgid "Collapse Sidebar"
 msgstr "摺疊資訊看板"
 
-#: includes/class-wpem-customizer.php:46
+#: includes/class-wpem-customizer.php:37
+msgid "Watch Video"
+msgstr "觀看影片"
+
+#: includes/class-wpem-customizer.php:38
+msgid ""
+"You've just created your website! Click \"Watch Video\" to view a quick "
+"demonstration of how to customize your site."
+msgstr "您的網站已建立完成！ 按一下「觀賞影片」，查看如何自訂網站的快速示範。"
+
+#: includes/class-wpem-customizer.php:42
+msgid "Learn More"
+msgstr "瞭解更多"
+
+#: includes/class-wpem-customizer.php:43
+msgid ""
+"You've just created your website! Click \"Learn More\" to view some tips on "
+"how to customize your site ."
+msgstr "您的網站已建立完成！ 按一下「深入瞭解」以查看如何自訂網站的秘訣。"
+
+#: includes/class-wpem-customizer.php:58
 msgid "Congratulations!"
 msgstr "恭喜您！"
 
-#: includes/class-wpem-customizer.php:47
+#: includes/class-wpem-customizer.php:149
+msgid "The Customizer"
+msgstr "自訂工具"
+
+#: includes/class-wpem-customizer.php:151
 msgid ""
-"You've just created your website! Use the panel to the left to customize the "
-"look &amp; feel of your website's design."
+"You are now in the Customizer, a tool that enables you to make changes to "
+"your website’s appearance, and preview those changes before publishing them. "
+"We’ve created a few commonly-used pages and widgets to help you get started."
 msgstr ""
+"您現在正在使用「自訂工具」，本工具可讓您變更網站外觀，並在發佈前預覽這些變"
+"更。 我們已建立一些常用的網頁和小工具，協助您快速開始。"
+
+#: includes/class-wpem-customizer.php:152
+msgid ""
+"The top of the Customizer indicates the name of the active theme you’ve "
+"selected. You can change the theme at any time, but doing so will change "
+"these options and reset any customizations you might have made here."
+msgstr ""
+"「自訂工具」上方會顯示您所選擇的可用主題名稱。 您可以隨時變更主題，但在變更主"
+"題的同時也會變更相關的選項，也會重設您在此進行的自訂項目。"
+
+#: includes/class-wpem-customizer.php:153
+msgid ""
+"The options available in the Customizer will vary, depending on the features "
+"supported by your current theme. But most themes include these basic "
+"Customizer controls:"
+msgstr ""
+"「自訂工具」中可用的選項會依您目前主題所支援的功能而有所不同。 但大部分主題都"
+"會包含以下基本的「自訂工具」控制項目："
+
+#: includes/class-wpem-customizer.php:155
+msgid "Site Identity"
+msgstr "網站身分識別"
+
+#: includes/class-wpem-customizer.php:156
+msgid "Colors"
+msgstr "顏色"
+
+#: includes/class-wpem-customizer.php:157
+msgid "Header and Background Images"
+msgstr "標題和背景影像"
+
+#: includes/class-wpem-customizer.php:158
+msgid "Navigation Menus"
+msgstr "導覽主選單"
+
+#: includes/class-wpem-customizer.php:159
+msgid "Widgets"
+msgstr "小工具"
+
+#: includes/class-wpem-customizer.php:161
+msgid ""
+"When you’re happy with your changes, click <strong>Save & Publish</strong> "
+"to keep these new settings. Or, simply close the Customizer by clicking the "
+"“X” in the top left-hand corner to discard your changes."
+msgstr ""
+"確認變更之後，按一下<strong>「儲存 & 發佈」</strong>以保留新設定。 或者按一下"
+"左上角的「Ｘ」關閉「自訂工具」，捨棄您的變更。"
 
 #: includes/class-wpem-done.php:66
 msgid "Primary Menu"
@@ -137,31 +212,31 @@ msgstr "感言"
 msgid "testimonials"
 msgstr "見證"
 
-#: includes/class-wpem-done.php:415
+#: includes/class-wpem-done.php:424
 msgid "Recent Posts"
 msgstr "最新貼文"
 
-#: includes/class-wpem-done.php:424
+#: includes/class-wpem-done.php:433
 msgid "Archives"
 msgstr "封存檔"
 
-#: includes/class-wpem-done.php:441
+#: includes/class-wpem-done.php:450
 msgid "Browse Products"
 msgstr "瀏覽產品"
 
-#: includes/class-wpem-done.php:472
+#: includes/class-wpem-done.php:481
 msgid "Contact Form"
 msgstr "聯絡表格"
 
-#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+#: includes/class-wpem-done.php:482 includes/class-wpem-done.php:507
 msgid "Your form has been successfully submitted."
 msgstr "您的表格已成功提交。"
 
-#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+#: includes/class-wpem-done.php:483 includes/class-wpem-done.php:508
 msgid "Thank you so much for contacting us. We will get back to you shortly."
 msgstr "非常感謝您聯絡我們。 我們會盡快回覆您。"
 
-#: includes/class-wpem-done.php:497
+#: includes/class-wpem-done.php:506
 msgid "Request A Quote Form"
 msgstr "要求報價表格"
 
@@ -172,7 +247,7 @@ msgstr "設定"
 
 #: includes/class-wpem-step-settings.php:32
 msgid "Please tell us more about your website (all fields are required)"
-msgstr "Please tell us more about your website (all fields are required)"
+msgstr "請告訴我們更多您網站的相關資訊（所有欄位均為必填）"
 
 #: includes/class-wpem-step-settings.php:35
 #: includes/class-wpem-step-settings.php:111
@@ -181,11 +256,11 @@ msgstr "類型"
 
 #: includes/class-wpem-step-settings.php:38
 msgid "- Select a type -"
-msgstr "- Select a type -"
+msgstr "- 選擇類型 -"
 
 #: includes/class-wpem-step-settings.php:39
 msgid "Standard (Recommended)"
-msgstr "Standard (Recommended)"
+msgstr "標準 (建議)"
 
 #: includes/class-wpem-step-settings.php:40
 msgid "Blog"
@@ -197,7 +272,7 @@ msgstr "網路商店"
 
 #: includes/class-wpem-step-settings.php:43
 msgid "What type of website are you creating?"
-msgstr "What type of website are you creating?"
+msgstr "您要建立哪種類型的網站？"
 
 #: includes/class-wpem-step-settings.php:47
 #: includes/class-wpem-step-settings.php:117
@@ -206,15 +281,15 @@ msgstr "產業"
 
 #: includes/class-wpem-step-settings.php:50
 msgid "- Select an industry -"
-msgstr "- Select an industry -"
+msgstr "- 選擇產業 -"
 
 #: includes/class-wpem-step-settings.php:51
 msgid "Business / Finance / Law"
-msgstr "Business / Finance / Law"
+msgstr "商業/金融/法律"
 
 #: includes/class-wpem-step-settings.php:52
 msgid "Design / Art / Portfolio"
-msgstr "Design / Art / Portfolio"
+msgstr "設計/藝術/投資組合"
 
 #: includes/class-wpem-step-settings.php:53
 msgid "Education"
@@ -222,19 +297,19 @@ msgstr "教育"
 
 #: includes/class-wpem-step-settings.php:54
 msgid "Health / Beauty"
-msgstr "Health / Beauty"
+msgstr "健康/美容"
 
 #: includes/class-wpem-step-settings.php:55
 msgid "Home Services / Construction"
-msgstr "Home Services / Construction"
+msgstr "家政服務/工程"
 
 #: includes/class-wpem-step-settings.php:56
 msgid "Music / Movies / Entertainment"
-msgstr "Music / Movies / Entertainment"
+msgstr "音樂/電影/娛樂"
 
 #: includes/class-wpem-step-settings.php:57
 msgid "Non-profit / Causes / Religious"
-msgstr "Non-profit / Causes / Religious"
+msgstr "非盈利性/事業/宗教"
 
 #: includes/class-wpem-step-settings.php:58
 msgid "Other"
@@ -242,7 +317,7 @@ msgstr "其他"
 
 #: includes/class-wpem-step-settings.php:59
 msgid "Personal / Family / Wedding"
-msgstr "Personal / Family / Wedding"
+msgstr "個人/家庭/婚禮"
 
 #: includes/class-wpem-step-settings.php:60
 msgid "Pets / Animals"
@@ -254,23 +329,23 @@ msgstr "房地產"
 
 #: includes/class-wpem-step-settings.php:62
 msgid "Restaurant / Food"
-msgstr "Restaurant / Food"
+msgstr "餐廳/飲食"
 
 #: includes/class-wpem-step-settings.php:63
 msgid "Sports / Recreation"
-msgstr "Sports / Recreation"
+msgstr "運動/娛樂"
 
 #: includes/class-wpem-step-settings.php:64
 msgid "Transportation / Automotive"
-msgstr "Transportation / Automotive"
+msgstr "運輸/汽車"
 
 #: includes/class-wpem-step-settings.php:65
 msgid "Travel / Hospitality / Leisure"
-msgstr "Travel / Hospitality / Leisure"
+msgstr "旅遊/飯店/休閒"
 
 #: includes/class-wpem-step-settings.php:67
 msgid "What will your website be about?"
-msgstr "What will your website be about?"
+msgstr "您的網站想納入哪些內容？"
 
 #: includes/class-wpem-step-settings.php:71
 #: includes/class-wpem-step-settings.php:123
@@ -279,7 +354,7 @@ msgstr "主題"
 
 #: includes/class-wpem-step-settings.php:73
 msgid "Enter your website title here"
-msgstr "Enter your website title here"
+msgstr "在此輸入您的網站標題"
 
 #: includes/class-wpem-step-settings.php:74
 msgid ""
@@ -294,7 +369,7 @@ msgstr "標語"
 
 #: includes/class-wpem-step-settings.php:80
 msgid "Enter your website tagline here"
-msgstr "Enter your website tagline here"
+msgstr "在此輸入您的網站標語"
 
 #: includes/class-wpem-step-settings.php:81
 msgid ""
@@ -311,7 +386,7 @@ msgstr "繼續"
 
 #: includes/class-wpem-step-settings.php:170
 msgid "All fields are required"
-msgstr "All fields are required"
+msgstr "所有欄位皆為必填欄位"
 
 #: includes/class-wpem-step-start.php:18
 msgid "Start"
@@ -343,13 +418,12 @@ msgstr "主題"
 
 #: includes/class-wpem-step-theme.php:19
 msgid "Choose a Theme"
-msgstr "Choose a Theme"
+msgstr "選擇主題"
 
 #: includes/class-wpem-step-theme.php:32
 msgid ""
 "Choose a design for your website (don't worry, you can change this later)"
-msgstr ""
-"Choose a design for your website (don't worry, you can change this later)"
+msgstr "選擇網站設計（別擔心，您可以稍後回來變更）"
 
 #: includes/class-wpem-step-theme.php:43
 msgid "Preview"
@@ -383,17 +457,10 @@ msgstr "版本："
 msgid "Collapse"
 msgstr "收起"
 
-#: includes/functions.php:189
+#: includes/functions.php:197
 msgid "Error: WP-CLI not found"
 msgstr "錯誤： 找不到 WP-CLI"
 
 #: templates/fullscreen.php:38
 msgid "WordPress"
 msgstr "WordPress"
-
-#~ msgid ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"
-#~ msgstr ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"

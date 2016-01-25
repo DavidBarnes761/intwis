@@ -30,14 +30,26 @@
 	font-style: normal;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic  );
 
-*, h1, h2, h3, h4, h5, h6 {
+*, p, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+a, a:link, a:visited, a:hover, a:active {
+	color: #4c4c4c;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"],
+button:hover, input[type="button"]:hover, input[type="reset"]:hover,
+input[type="submit"]:hover, button:focus, .button:hover, .button:focus {
+	border-style: none;
+	font-weight: bold;
+	text-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 	background-color: #fec630;
 	color: #4c4c4c;
 }
@@ -116,11 +128,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 	ul li {
 		display: inline-block;
 		float: none;
-		font-size: 12px;
-
-		a:link, a:visited, a:active {
-			color: #4c4c4c;
-		}
+		font-size: 14px;
 	}
 }
 
@@ -135,7 +143,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 		border-bottom: 2px solid #ffffff;
 
 		a {
-			font-weight: 400;
+			font-weight: 700;
 		}
 
 		@include breakpoint(medium) {
@@ -147,10 +155,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 			line-height: 1.6;
 			background: transparent;
 			border-bottom: inherit;
-
-			a {
-				font-weight: 300;
-			}
 
 			&.current-menu-item {
 				border-color: #fec630;
@@ -245,6 +249,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 		}
 	}
 	.main-navigation {
+		margin: 0 auto;
+
 		@include breakpoint(medium) {
 			clear: none;
 			width: auto;
@@ -288,14 +294,20 @@ hr {
 
 .full-bio-link {
 	&:link, &:visited, &:active {
-		font-weight: 400;
+		font-weight: 700;
 		color: #4c4c4c;
 	}
 }
 
 form {
+	//margin-bottom: 35px;
+
+	p {
+		margin: 0;
+	}
+
 	.your-email {
-		width: 75%;
+		width: 55%;
 		display: block;
 		float: left;
 
@@ -306,12 +318,15 @@ form {
 	}
 
 	.wpcf7-submit {
-		background: #fec630;
-		color: #4c4c4c;
-		width: 23%;
-		display: block;
+		width: 43%;
 		float: right;
 		height: 26px;
+		font-size: 13px;
+		padding: 0;
+	}
+
+	.wpcf7-response-output {
+		margin: 0;
 	}
 }
 
@@ -320,8 +335,6 @@ form {
 }
 
 .site-main {
-	//padding: 50px 0;
-
 	.title-wrapper {
 		padding-bottom: 35px;
 
@@ -432,8 +445,7 @@ form {
 		.thumb-speaker-name {
 			bottom: 0;
 			font-size: 15px;
-			font-weight: 400;
-			//background: rgba(76, 76, 76, 0.8);
+			font-weight: 700;
 
 			&.small {
 				font-size: 12px;
@@ -447,7 +459,7 @@ form {
 	.thumb-video-title {
 		bottom: 0;
 		font-size: 14px;
-		font-weight: 400;
+		font-weight: 700;
 		padding: 15px 14px;
 		color: #4c4c4c;
 	}
@@ -469,10 +481,6 @@ form {
 	}
 }
 
-.video-slider .thumbnail {
-	//margin: 0 0.9375rem;
-}
-
 /* Home Page */
 .page.home {
 	.hero-wrapper {
@@ -485,7 +493,7 @@ form {
 		h1 {
 			color: #ffffff;
 			font-size: 16px;
-			font-weight: 400;
+			font-weight: 700;
 			margin-top: 25px;
 
 			@include breakpoint(medium) {
@@ -562,7 +570,7 @@ form {
 
 		.cta-button {
 			text-align: center;
-			font-weight: bold;
+			font-weight: 700;
 			color: #4c4c4c;
 			background: #fec630;
 			width: 174px;
@@ -611,6 +619,7 @@ form {
 				.speaker-name {
 					clear: none;
 					font-size: 25px;
+					font-weight: 700;
 					margin-top: 68px;
 					display: block;
 				}
@@ -625,7 +634,11 @@ form {
 	}
 
 	.speaker-sidebar {
-		padding-bottom: 35px;
+		padding: 0 0 35px;
+
+		@include breakpoint(large) {
+			padding-left: 50px;
+		}
 
 		h2 {
 			line-height: 18px;
@@ -645,29 +658,29 @@ form {
 
 		.other-speaker {
 			border-bottom: 3px double #4c4c4c;
-			padding: 35px 0;
+			padding: 25px 0;
 
 			hr {
 				clear: none;
 				border-color: #4c4c4c;
 				width: 40%;
+				margin: 14px 0;
 			}
 
 			img {
 				float: left;
-				margin: 0 10px 5px 0;
+				margin-right: 10px;
 			}
 
 			.other-speaker-name {
 				display: block;
 				font-size: 14px;
-				color: #4c4c4c;
+				font-weight: 700;
 			}
 
 			.other-speaker-blurb {
-				font-size: 11px;
-				line-height: 11px;
-				color: #4c4c4c;
+				font-size: 13px;
+				line-height: 13px;
 			}
 		}
 	}
@@ -680,14 +693,14 @@ form {
 
 		.video-title {
 			font-size: 25px;
-			font-weight: 400;
+			font-weight: 700;
 			text-transform: uppercase;
 			margin-top: 0;
 		}
 
 		.video-speaker {
 			font-size: 17px;
-			font-weight: 400;
+			font-weight: 700;
 			margin-bottom: 0;
 		}
 
@@ -709,7 +722,7 @@ form {
 
 			h3 {
 				font-size: 17px;
-				font-weight: 400;
+				font-weight: 700;
 			}
 
 			form {
@@ -739,9 +752,7 @@ form {
 
 /* Why Wisdom Matters Page */
 .why-wisdom {
-	background: transparent url('/wp-content/themes/integrative-wisdom/img/WhyWisdomMatters.png') no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+
 }
 
 /* Speakers Page */
@@ -751,7 +762,6 @@ form {
 	}
 	.speaker-listing {
 		margin-bottom: 50px;
-		padding-bottom: 50px;
 		border-bottom: 3px double #4c4c4c;
 
 		.attachment-speaker-bio-image {
@@ -761,7 +771,7 @@ form {
 		.speaker-summary {
 			h1 {
 				font-size: 20px;
-				font-weight: 400;
+				font-weight: 700;
 				margin-top: 0;
 			}
 		}
@@ -779,7 +789,7 @@ form {
 
 			span {
 				font-size: 16px;
-				font-weight: 400;
+				font-weight: 700;
 			}
 		}
 	}
@@ -798,7 +808,7 @@ form {
 			width: 100%;
 			text-align: center;
 			line-height: 30px;
-			font-weight: 400;
+			font-weight: 700;
 
 			a:link, a:visited {
 				color: #ffffff;
@@ -818,6 +828,12 @@ form {
 }
 
 .page-template-list-videos, .page-template-page-videos {
+	p {
+		a:link, a:visited, a:active {
+			color: #4c4c4c;
+			font-weight: 700;
+		}
+	}
 	.video-thumb {
 		margin: 10px 0;
 
@@ -831,7 +847,7 @@ form {
 			p.thumb-video-title {
 				margin: 0;
 				padding: 5px 0;
-				font-weight: 400;
+				font-weight: 700;
 			}
 		}
 	}
@@ -886,12 +902,17 @@ form {
 }
 
 /* Sub-footer */
-.site-info-wrapper {
+.site-info {
 	background: #ffffff;
 
-	.site-info {
-		.copyright {
-			text-align: right;
+	.copyright-wrapper {
+		padding: 15px;
+
+		img, .copyright {
+			margin: 10px auto;
+			display: block;
+			clear: both;
+			text-align: center;
 		}
 	}
 }

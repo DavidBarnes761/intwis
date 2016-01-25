@@ -69,6 +69,11 @@ class GD_System_Plugin_API {
 		}
 
 		$config = $gd_system_config->get_config();
+
+		if ( ! isset( $config['api_url'] ) ) {
+			return;
+		}
+
 		$max_retries = 1;
 		$retries     = 0;
 		if ( !in_array( $verb, array( 'GET', 'POST' ) ) ) {

@@ -1,0 +1,3 @@
+﻿Xin chào, Tôi là <strong>YOUR NAME</strong>. Cảm ơn bạn đã ghé thăm.
+
+<strong>INSERT BIO HERE</strong>

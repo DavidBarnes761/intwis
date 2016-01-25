@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: System Plugin\n"
-"POT-Creation-Date: 2015-11-16 14:30-0600\n"
-"PO-Revision-Date: 2015-11-16 14:30-0600\n"
+"POT-Creation-Date: 2016-01-13 12:43-0600\n"
+"PO-Revision-Date: 2016-01-13 12:43-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: tr_TR\n"
@@ -21,80 +21,172 @@ msgstr ""
 "X-Poedit-SearchPath-1: gd-system-plugin\n"
 "X-Poedit-SearchPathExcluded-0: gd-system-plugin/plugins\n"
 
-#: gd-system-plugin.php:321
+#: gd-system-plugin.php:342
 msgid ""
-"Yes, I'm interested in hiring a professional to help customize my WordPress "
-"site"
+"I would be interested in hiring a professional to help me with my WordPress "
+"site."
 msgstr ""
-"Evet, WordPress sitemi özelleştirmesi için bir profesyonel ile çalışmak "
-"istiyorum"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:75
-msgid "Flush Cache"
-msgstr "Önbelleği Temizle"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:83
+msgid "Media Temple"
+msgstr "Media Temple"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:86
-msgid "GoDaddy Settings"
-msgstr "GoDaddy Ayarları"
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:90
+msgid "Managed WordPress"
+msgstr "Yönetilebilir WordPress"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:88
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:97
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:206
+msgid "GoDaddy"
+msgstr "GoDaddy"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:119
 msgid "Account Settings"
 msgstr "Hesap Ayarları"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:148
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:128
+msgid "Flush Cache"
+msgstr "Önbelleği Temizle"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:186
 msgid "UserVoice"
 msgstr "UserVoice"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:151
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:189
 msgid "Hide the UserVoice feedback button from the Dashboard"
 msgstr "UserVoice geribildirim düğmesini Panodan sakla"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:203
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:241
 msgid ""
 "For your security, we’ve disabled WordPress’ built-in file editor by default."
 msgstr ""
 "Güvenliğiniz için WordPress yerleşik dosya düzenleyicisini varsayılan olarak "
 "devre dışı bıraktık."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:204
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:242
 msgid "If you enable editing, all plugin and theme files become editable."
 msgstr ""
 "Düzenlemeyi etkinleştirirseniz, tüm eklenti ve tema dosyaları düzenlenebilir "
 "hale gelir."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:205
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:243
 msgid "Enable Editing"
 msgstr "Düzenlemeyi Etkinleştir"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:217
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:255
 msgid "File editing is not enabled on this site"
 msgstr "Bu sitede dosya düzenleme etkin değildir"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:269
-#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:320
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:307
+#: gd-system-plugin/class-gd-system-plugin-admin-menu.php:358
 #, php-format
 msgid "Sorry, but you have to <a href=\"%s\">change your domain name here</a>."
 msgstr "Maalesef <a href=\"%s\">burada alan adınızı değiştirmeniz</a> gerekir."
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:68
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:99
 msgid "FAQ &amp; Support"
 msgstr "SSS &amp; Destek"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:83
-msgid "Messages"
-msgstr "Mesajlar"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:100
+msgid "Hire A Pro"
+msgstr "Bir Profesyonel ile Çalışın"
 
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:113
-#: gd-system-plugin/class-gd-system-plugin-admin-page.php:114
-msgid "GoDaddy"
-msgstr "GoDaddy"
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:101
+msgid "Plugin Partners"
+msgstr "Ortak Eklentiler"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:75
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:419
+msgid "Find A Freelancer"
+msgstr "Serbest Çalışan Bul"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:429
+msgid ""
+"Need a freelancer to design your website? GoDaddy Pro Connect filters "
+"through thousands of designers to put you in touch with the best ones for "
+"your site and budget."
+msgstr ""
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:431
+msgid ""
+"We send you three on-budget quotes (no cost or obligation). You choose the "
+"best fit, and they get the job done."
+msgstr ""
+"Sizin için bütçenize uygun üç fiyat seçeneği sunuyoruz (teklif için ödeme "
+"veya satın alma zorunluluğuz yoktur). Size en uygun olanını seçin ve "
+"tasarımınızı tamamlayın. "
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:435
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:568
+msgid "Learn More"
+msgstr "Daha Fazla Bilgi Edinin"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:465
+msgid "Meet the plugins that meet our high standards."
+msgstr "Yüksek standartları karşılayan eklentilere kavuşun."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:467
+msgid ""
+"We've partnered with the world’s top WordPress plugin authors to provide a "
+"list of plugins that work well with GoDaddy WordPress hosting."
+msgstr ""
+"GoDaddy WordPress barındırma ile iyi çalışan eklenti listelerini sunmak "
+"adına dünyanın en iyi WordPress eklenti yazarlarıyla birlikte çalışıyoruz. "
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:477
+msgid "Plugins list"
+msgstr "Eklenti listeleri"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:485
+msgid ""
+"Whoops! There was a problem fetching the list of plugins, please try "
+"reloading this page."
+msgstr ""
+"Hoppala! Eklenti listelerinde bir problem varsa, lütfen sayfayı tekrar "
+"yükleyin."
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:530
+#, php-format
+msgid "More information about %s"
+msgstr "%s hakkında ayrıntılı bilgi alın"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+#, php-format
+msgid "Install %s now"
+msgstr "Şu an %s yükleniyor"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:554
+msgid "Install Now"
+msgstr "Şu an yüklendi"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+#, php-format
+msgid "Update %s now"
+msgstr "Şu an %s güncelleniyor"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:558
+msgid "Update Now"
+msgstr "Şu an güncellendi"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "This plugin is already installed and is up to date"
+msgstr "Bu eklenti zaten yüklenmiş ve güncel"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:562
+msgid "Installed"
+msgstr "Kuruldu"
+
+#: gd-system-plugin/class-gd-system-plugin-admin-page.php:582
+#, php-format
+msgid "By %s"
+msgstr "%s tamamlandı"
+
+#: gd-system-plugin/class-gd-system-plugin-api.php:80
 #, php-format
 msgid "Unknown verb: %s. Try GET or POST"
 msgstr "Bilinmeyen fiil: %s. AL ya da PAYLAŞ fiillerini deneyin"
 
-#: gd-system-plugin/class-gd-system-plugin-api.php:110
+#: gd-system-plugin/class-gd-system-plugin-api.php:115
 #, php-format
 msgid "API returned bad status: %d: %s"
 msgstr "API hatalı duruma geçti: %d: %s"
@@ -123,12 +215,12 @@ msgstr ""
 "Bu eklentiye %s sisteminizde izin verilmiyor. Otomatik olarak devre dışı "
 "bırakıldı."
 
-#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:286
+#: gd-system-plugin/class-gd-system-plugin-cache-purge.php:295
 #: gd-system-plugin/class-gd-system-plugin-command-controller.php:66
 msgid "Cache cleared"
 msgstr "Önbellek temizlendi"
 
-#: gd-system-plugin/class-gd-system-plugin-cname.php:131
+#: gd-system-plugin/class-gd-system-plugin-cname.php:137
 #, php-format
 msgid ""
 "<strong>Note:</strong> You're using the temporary domain <strong>%s</"
@@ -145,9 +237,41 @@ msgstr "Dosya düzenleme etkinleştirildi"
 msgid "GoDaddy Garage"
 msgstr "GoDaddy Garaj"
 
-#: gd-system-plugin/class-gd-system-plugin-messages.php:83
+#: gd-system-plugin/class-gd-system-plugin-messages.php:90
 msgid "System message"
 msgstr "Sistem mesajı"
 
-#~ msgid "Hire A Pro"
-#~ msgstr "Bir Profesyonel ile Çalışın"
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:47
+msgid "Good news!"
+msgstr "Size iyi bir haberimiz var!"
+
+#: gd-system-plugin/class-gd-system-plugin-pointers.php:48
+msgid ""
+"You can now access <strong>Flush Cache</strong> and other links directly "
+"from the admin bar using your desktop or mobile device."
+msgstr ""
+"Artık bilgisayarınızı ya da mobil cihazınızı kullanarak yönetici çubuğundan "
+"doğrudan <strong>Önbelleği Temizle</strong> seçeneğine ve diğer bağlantılara "
+"erişebilirsiniz."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:87
+msgid "This setting is required on staging sites."
+msgstr "Bu ayar, tüm evreleme sitelerinde gereklidir."
+
+#: gd-system-plugin/class-gd-system-plugin-temp-domain.php:91
+msgid "This setting is required on temporary domains."
+msgstr "Bu ayar, tüm geçici alan adlarında gereklidir."
+
+#~ msgid ""
+#~ "I would be interested in a professional helping me with my WordPress site."
+#~ msgstr ""
+#~ "WordPress sitemle ilgili olarak bir profesyonelden yardım almak isterim. "
+
+#~ msgid ""
+#~ "Need a freelancer to design your website? Pro Marketplace by GoDaddy "
+#~ "filters through thousands of designers to put you in touch with the best "
+#~ "ones for your site and budget."
+#~ msgstr ""
+#~ "Web sitesi tasarımınız için serbest çalışana mı ihtiyacınız var? GoDaddy "
+#~ "Profesyonel Pazar Yeri, site ve bütçenize uygun, binlerce tasarımcının "
+#~ "içinden en iyilerini sizlerle buluşturuyor. "

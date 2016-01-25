@@ -66,12 +66,12 @@ class AcceptanceHelper extends \Codeception\Module {
 	}
 
 	/**
-	 * Validate that a certain page contains a ninja form
+	 * Validate that a certain WPEM page contains a shortcode
 	 *
 	 * @param $page
-	 * @param $form_shortcode
+	 * @param $shortcode
 	 */
-	public function canSeePageWithForm( $page, $form_shortcode ) {
+	public function canSeePageWithShortcode( $page, $shortcode ) {
 
 		if ( ! function_exists( 'wpem_get_page_id_by_meta_name' ) ) {
 
@@ -79,15 +79,15 @@ class AcceptanceHelper extends \Codeception\Module {
 
 		}
 
-		$post_id = wpem_get_page_id_by_meta_name( $page );
+		$post = get_post( absint( wpem_get_page_id_by_meta_name( $page ) ) );
 
-		$post = get_post( $post_id );
+		$post_content = ! empty( $post->post_content ) ? $post->post_content : '';
 
-		$message = sprintf( "The page %s doesn't contain %s", $page, $form_shortcode );
+		$message = sprintf( 'The "%s" page does not contain "%s"', $page, $shortcode );
 
-		$string_contains_shortcode = strpos( $post->post_content, $form_shortcode );
+		$string_contains_shortcode = strpos( $post_content, $shortcode );
 
-		$this->assertNotEquals( false, $string_contains_shortcode, $message );
+		$this->assertNotEquals( false, is_numeric( $string_contains_shortcode ), $message );
 
 	}
 

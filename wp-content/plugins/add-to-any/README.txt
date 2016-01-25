@@ -1,9 +1,9 @@
 === AddToAny Share Buttons ===
 Contributors: micropat, addtoany
-Tags: AddToAny, sharing, share, social, share button, share buttons, social media, media, marketing, bookmark, bookmarks, save, post, posts, page, pages, images, image, admin, analytics, statistics, stats, links, plugin, shortcode, sidebar, widget, responsive, email, e-mail, print, seo, button, woocommerce, ecommerce, e-commerce, amazon, delicious, google, tumblr, linkedin, digg, reddit, facebook, facebook share, facebook like, like, twitter, twitter button, twitter share, tweet, tweet button, google plus, pinterest, pin, pin it, pinit, wanelo, buffer, stumbleupon, bitly, whatsapp, instagram, behance, flickr, foursquare, vimeo, youtube, feed, rss, lockerz, addthis, sociable, share this, sharethis, shareaholic, icon, icons, vector, SVG, floating, floating buttons, wpml, wpmu, Add to Any
+Tags: AddToAny, sharing, share, social, share button, share buttons, share links, social media, media, marketing, bookmark, bookmarks, save, post, posts, page, pages, images, image, admin, analytics, statistics, stats, links, plugin, shortcode, sidebar, widget, responsive, email, e-mail, print, seo, button, woocommerce, ecommerce, e-commerce, amazon, delicious, google, tumblr, linkedin, digg, reddit, facebook, facebook share, facebook like, like, twitter, twitter button, twitter share, tweet, tweet button, google plus, pinterest, pin, pin it, pinit, wanelo, buffer, stumbleupon, bitly, whatsapp, instagram, behance, flickr, foursquare, vimeo, youtube, feed, rss, lockerz, addthis, sociable, share this, sharethis, shareaholic, icon, icons, vector, SVG, floating, floating buttons, wpml, wpmu, Add to Any
 Requires at least: 2.8
 Tested up to: 4.4
-Stable tag: 1.6.7
+Stable tag: 1.6.10
 
 Share buttons for WordPress including the AddToAny sharing button, Facebook, Twitter, Google+, Pinterest, WhatsApp, many more, and follow icons too.
 
@@ -68,7 +68,7 @@ AddToAny is the universal sharing platform, and AddToAny's plugin is the most po
 
 This plugin always strives to be the best WordPress plugin for sharing. Development is fueled by your praise and feedback.
 
-<a href="https://www.addtoany.com/share_save" title="Share">Share</a> this plugin
+<a href="https://www.addtoany.com/share" title="Share">Share</a> this plugin
 
 See also:
 
@@ -119,17 +119,17 @@ Yes, you can place your sharing buttons exactly where you want them by inserting
 `[addtoany]`
 
 You can also customize the shared URL like so:
-`[addtoany url="http://www.example.com/page.html" title="Some Example Page"]`
+`[addtoany url="https://www.example.com/page.html" title="Some Example Page"]`
 
 = For Facebook sharing, how can I set the thumbnail image and description Facebook uses? =
 
 Facebook does link sharing differently than most other services. Facebook expects the Title, Description, and Thumbnail of a shared page to be defined in the actual HTML code of a shared page. Unlike other services that accept common parameters, Facebook only accepts a URL, then Facebook scans the actual page for details. To change the title, description or image on Facebook, you will need to modify your theme or use another plugin that filters your theme.
 
-Try running Facebook's <a href="https://developers.facebook.com/tools/debug">URL Debugger</a> on your pages to see how Facebook reads your site. "Fetch new scrape information" to test site changes and clear Facebook's cache of a page.
+Try running Facebook's <a href="https://developers.facebook.com/tools/debug/">URL Debugger</a> on your pages to see how Facebook reads your site. "Fetch new scrape information" to test site changes and clear Facebook's cache of a page.
 
-To change the title, description and/or image on Facebook, your theme's header file should be modified according to <a href="https://developers.facebook.com/docs/opengraph/">Facebook's OpenGraph specification</a>. With WordPress, this can be accomplished with plugins such as the <a href="https://wordpress.org/plugins/wordpress-seo/">WordPress SEO by Yoast</a> or the <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>.  Please see those plugins for details, and post in the WordPress or plugin author's forums for more support.
+To change the title, description and/or image on Facebook, your theme's header file should be modified according to <a href="https://developers.facebook.com/docs/sharing/opengraph">Facebook's OpenGraph specification</a>. With WordPress, this can be accomplished with plugins such as the <a href="https://wordpress.org/plugins/wordpress-seo/">Yoast SEO</a> or the <a href="https://wordpress.org/plugins/all-in-one-seo-pack/">All in One SEO Pack</a>.  Please see those plugins for details, and post in the WordPress or plugin author's forums for more support.
 
-For more technical information on setting your pages up for Facebook sharing, see "Facebook Sharing Checklist" in <a href="https://developers.facebook.com/docs/plugins/checklist/">Facebook's documentation</a>.
+For more technical information on setting your pages up for Facebook sharing, see "Sharing Best Practices for Websites" in <a href="https://developers.facebook.com/docs/sharing/best-practices">Facebook's documentation</a>.
 
 = Why do share links route through AddToAny? =
 
@@ -146,7 +146,7 @@ In the Theme Editor, place this code block where you want the button and individ
 
 If you want to customize the shared URL and title, use the following code as a template:
 `<?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { 
-	ADDTOANY_SHARE_SAVE_KIT( array( 'linkname' => 'Example Page', 'linkurl' => 'http://example.com/page.html' ) );
+	ADDTOANY_SHARE_SAVE_KIT( array( 'linkname' => 'Example Page', 'linkurl' => 'https://example.com/page.html' ) );
 } ?>`
 
 If you want to share the current URL and title (detected on the client-side), use the following code:
@@ -297,6 +297,25 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 == Changelog ==
 
+= 1.6.10 =
+* Enable simpler syntax when using multiple share message templates
+* Override box shadow on buttons caused by CSS such as the default Twenty Sixteen theme's
+* Replace deprecated WP function used for the local cache option
+
+= 1.6.9 =
+* Fix decoding of HTML entities in shared titles when the default character encoding is not UTF-8
+* Update packaged languages
+* Use Romanian language pack (thanks Adrian Pop)
+* Use Swedish language pack (thanks Piani)
+
+= 1.6.8 =
+* Universal share counter is now available
+* Tweet counters have been removed because <a href="https://www.addtoany.com/blog/twitter-share-count/">Twitter no longer provides counts</a>
+* Official buttons (Facebook Like, etc.) have been moved to the bottom of the available services list
+* Support WP-CLI v0.21.0+ (thanks Compute and Daniel Bachhuber)
+* Support bootstrapped WordPress
+* Support for other script loading methods
+
 = 1.6.7 =
 * New Additional CSS box for AddToAny CSS customizations
 * Rename Additional Options box to Additional JavaScript box
@@ -371,7 +390,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Remove Springpad
 
 = 1.5.6 =
-* Bulgarian translation (by <a href="http://melleum.com/">Artem Delik</a>)
+* Bulgarian translation (by Artem Delik)
 * Update French translation to resolve missing placement options
 
 = 1.5.5 =
@@ -462,7 +481,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Point to additional placement options and information
 * Remove old placement instructions for hardcoding
 * Remove old error reporting suppression in admin
-* Ukrainian translation (by Michael Yunat, <a href="http://getvoip.com">http://getvoip.com</a>)
+* Ukrainian translation (by Michael Yunat, http://getvoip.com)
 
 = 1.3.2 =
 * Avoid loading button script in admin, especially for visual editor plugins
@@ -593,7 +612,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = 1.2.3 =
 * Adjust CSS to improve icon and text alignment
-* Add <a href="http://wordpress.org/plugins/add-to-any/faq/">FAQ</a> for removing sharing button(s) from Archive pages (including Category, Tag, Author, Date, and Search pages)
+* Add FAQ for removing sharing button(s) from Archive pages (including Category, Tag, Author, Date, and Search pages)
 
 = 1.2.2 =
 * Fix code formatting (indents, newlines)
@@ -674,7 +693,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = 1.0.2 =
 * Add new Google+ Share button
-* Update <a href="http://wordpress.org/plugins/add-to-any/faq/">FAQ</a> for resizing advanced 3rd party buttons
+* Update FAQ for resizing advanced 3rd party buttons
 
 = 1.0.1 =
 * Fix markup output for advanced 3rd party buttons when displayed as WordPress widget
@@ -684,7 +703,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Load advanced 3rd party buttons faster (Facebook Like, Twitter Tweet, Google +1)
  * Use A2A Kit for speed, extensibility, measurability
 * Adjust CSS to accommodate external resources for advanced 3rd party buttons
-* Lithuanian translation (by Vincent G. from <a href="http://www.host1free.com/">Host1Free</a>)
+* Lithuanian translation (by Vincent G.)
 
 = .9.9.9.9 =
 * Fix hardcoded fallbacks for sharing endpoints
@@ -730,12 +749,12 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 = .9.9.9.4 =
 * Fix Google +1 Button (Google changed the URL)
 * Fix Irish translation filename
-* Russian translation update (by <a href="http://fweb.org.ru/">Elvis</a>)
+* Russian translation update (by Elvis)
 
 = .9.9.9.3 =
 * W3C XHTML validation fix for the Google +1 Button iframe (thanks bobpeers)
 * Remove condition for displaying target attribute on standalone services so that custom service links open in a new window (thanks kg69design)
-* Irish translation (by <a href="http://letsbefamous.com/">Ray</a>)
+* Irish translation (by Ray)
 
 = .9.9.9.2 =
 * Facebook Like Button can be changed to Facebook Recommend Button (verb/action)
@@ -752,7 +771,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Asynchronous loading (faster, non-blocking, major new feature!)
  * Supports most themes and additionally works around buggy themes that improperly process content for excerpts, featured/related posts, etc.
  * Improperly-coded themes may prevent AddToAny from fully loading
- * If your theme is coded improperly, you can switch to the previous plugin version (<a href="">download version .9.9.8.3</a>) until you switch to a working theme or your theme author fixes the issue
+ * If your theme is coded improperly, you can switch to the previous plugin version until you switch to a working theme or your theme author fixes the issue
   * See the FAQ entry for "Why isn't the drop-down menu appearing?" for more information
 * Google +1 button
 * HTTPS support for Facebook Like & Twitter Tweet buttons (Google +1 button always uses HTTPS)
@@ -785,7 +804,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
  * The widget will share the current page 
 * Shortcode for sharing
  * Usage for sharing current post or page: `[addtoany]`
- * Usage for sharing a specific URL: `[addtoany url="http://www.example.com/page.html" title="Some Example Page"]`
+ * Usage for sharing a specific URL: `[addtoany url="https://www.example.com/page.html" title="Some Example Page"]`
 * Add use_current_page boolean argument to PHP template code (default is false)
 
 = .9.9.7.14 =
@@ -799,7 +818,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Fix IE conditional comment bug that affects Facebook Like button & Twitter Tweet button iframes in some browsers
 
 = .9.9.7.12 =
-* Update Tumblr icon (thanks <a href="http://blog.mattalgren.com/">Matt</a>)
+* Update Tumblr icon (thanks Matt)
 * Reduce icon filesizes
  * blip.png
  * box.png
@@ -824,7 +843,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = .9.9.7.11 =
 * Turkish translation (by Fatih Aker)
-* Russian translation update (by <a href="http://fweb.org.ru/">Elvis</a>)
+* Russian translation update (by Elvis)
 
 = .9.9.7.10 =
 * Fix initial button text for 16px icons in admin
@@ -843,10 +862,10 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Rename VK to the more recognized Vkontakte
 
 = .9.9.7.7 =
-* Fix <a href="http://wordpress.org/support/topic/plugin-addtoany-sharebookmarkemail-button-white-space-around-twitter-icon">IE iframe transparency issue</a> for Facebook Like & Twitter Tweet buttons
+* Fix IE iframe transparency issue for Facebook Like & Twitter Tweet buttons
  * Note: Extra IE conditional markup added to maintain W3C validity  
 * Remove stray colon character appended to Twitter Tweet button URL
-* Italian translation update (by <a href="http://gidibao.net/">Gianni</a>)
+* Italian translation update (by Gianni)
 
 = .9.9.7.6 =
 * Add option: Display at the top of posts
@@ -883,14 +902,14 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Remove Windows Live Favorites
 * Remove Windows Live Spaces
 * Remove Propeller
-* German translation (by Richard Laufenberg of <a href="http://www.portavision.de/">MediaCenter Laufenberg</a>)
+* German translation (by Richard Laufenberg of MediaCenter Laufenberg)
 
 = .9.9.7 =
 * W3C XHTML validation fix for the Twitter Tweet iframe
 * Remove non-standard allowtransparency attribute on Like & Tweet iframes
  * Note that Like & Tweet (both require iframes) will not validate for themes that use a Strict doctype because XHTML Strict does not support frames
 * Update standalone Twitter icon
-* Persian translation (by <a href="http://www.najeekurd.net/">Najeekurd</a>)
+* Persian translation (by Najeekurd)
 
 = .9.9.6.9 =
 * Facebook Like button
@@ -900,7 +919,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = .9.9.6.8 =
 * A2A Kit is now inline again for backwards compatibility with manual placements
-* Container (used for the default auto-placement) now clears floats to fix <a href="http://wordpress.org/support/topic/plugin-addtoany-sharebookmarkemail-button-button-not-at-bottom-of-post">position issue when an image is aligned left or right</a>
+* Container (used for the default auto-placement) now clears floats to fix position issue when an image is aligned left or right
 
 = .9.9.6.7 =
 * Major overhaul of CSS stylesheet again
@@ -919,7 +938,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 = .9.9.6.5 =
 * Add class-names to use official <a href="https://www.addtoany.com/buttons/customize/wordpress/standalone_services">Standalone Services Kit</a>
  * Google Analytics stats for individual services
-* Dutch translation (by Rene from <a href="http://wpwebshop.com/premium-wordpress-plugins/">WordPress Webshop</a>)
+* Dutch translation (by Rene from WordPress Webshop)
 
 = .9.9.6.4 =
 * Option to toggle displaying at the bottom of excerpts
@@ -945,11 +964,11 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = .9.9.6.1 =
 * Fix critical bug introduced in last release that caused an empty shared item to be used on non-single post pages 
- * Thanks to <a href="http://www.macmanx.com/">James</a> for the report!
+ * Thanks to <a href="https://macmanx.com/">James</a> for the report!
 
 = .9.9.6 =
 * Require WordPress 2.8
- * For WordPress versions 2.0 through 2.7.1 use version .9.9.5.9 (<a href="http://downloads.wordpress.org/plugin/add-to-any.0.9.9.5.9.zip">download .zip</a>) or <a href="http://wordpress.org/plugins/add-to-any/download/">earlier</a>
+ * For WordPress versions 2.0 through 2.7.1 use version .9.9.5.9 or earlier
 * Fix validation problem caused by WordPress' lack of support for CDATA sections in posts
  * http://core.trac.wordpress.org/ticket/3670 - WordPress fix slated for 3.1, then @todo reevaluate 
 * Replace deprecated functions
@@ -976,7 +995,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = .9.9.5.6 =
 * Fix PHP warnings when there are no arguments from functions ADDTOANY_SHARE_SAVE_BUTTON or ADDTOANY_SHARE_SAVE_ICONS
-* Italian translation update (by <a href="http://gidibao.net/">Gianni</a>)
+* Italian translation update (by Gianni)
 
 = .9.9.5.5 =
 * Fix notices when in debug mode
@@ -993,7 +1012,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
  * Avoids premature calling from miscellaneous the_content filters from themes and other plugins
  * Thesis theme workaround
 * French translation (by Julien)
-* Belarusian translation update (by <a href="http://pc.de/">Marcis G</a>)
+* Belarusian translation update (by Marcis G)
 
 = .9.9.5.2 =
 * W3C XHTML validation fix (invalid from .9.9.5)
@@ -1006,7 +1025,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Updated template code in admin
 * Switched API URL to customize URL in admin
 * Fixed unbracketed noscript tag in admin
-* Brazilian Portuguese translation (by <a href="http://www.raocubo.com.br/">Rodolfo Rodrigues</a>)
+* Brazilian Portuguese translation (by Rodolfo Rodrigues)
 
 = .9.9.5.1 =
 * Fixed issue with excerpts (JavaScript text output within excerpts since .9.9.5)
@@ -1053,7 +1072,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
  * diHITT
 * Removed standalone service
  * Global Grind
-* Japanese translation (by <a href="http://wpxtreme.jp/">kz</a>)
+* Japanese translation (by kz)
 
 = .9.9.4.7 =
 * Just a slight rename
@@ -1099,8 +1118,8 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 
 = .9.9.4.1 =
 * Twitter icon included in standard sharing button
-* Albanian translation (by <a href="http://www.romeolab.com/">Romeo Shuka</a>)
-* Romanian translation (by <a href="http://www.stefandes.com/">Stefan</a>)
+* Albanian translation (by Romeo Shuka)
+* Romanian translation (by Stefan)
 
 = .9.9.4 =
 * Custom standalone service support
@@ -1177,7 +1196,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Alt attribute added to standalone service image
 * Title attribute added to standalone service link
 * Selected standalone services in admin are more distinguishable
-* Italian translation (by <a href="http://gidibao.net/">Gianni</a>)
+* Italian translation (by Gianni)
 * i18n folder renamed to languages due to a problem with the CodeStyling Localization plugin
 * Contrast improvements to Open Share Icon
 
@@ -1191,7 +1210,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 * Fixed display when all standalone services are removed in admin
 * Services label renamed Standalone Services for clarity
 * Updates to Danish translation
-* Added Belarusian translation (by <a href="http://pc.de/">Marcis G</a>)
+* Added Belarusian translation (by Marcis G)
 
 = .9.9.2.1 =
 * Feed icons shown inline, no longer displayed in unordered list
@@ -1220,7 +1239,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 = .9.8.9 =
 * wp_footer() detection
 * Replaced short form of PHP's open tags with long form to work around configurations with shortopentag disabled
-* Spanish translation (by <a href="http://pablo.poo.cl/">Pablo</a>)
+* Spanish translation (by Pablo)
 
 = .9.8.8.4 =
 * Settings panel submits to current page instead of unreliable REQUEST_URI which can omit querystring on IIS
@@ -1235,7 +1254,7 @@ Upload (or move) the `add-to-any` plugin directory into the `/wp-content/mu-plug
 = .9.8.8.1 =
 * Refine conditionals
 * Highlight admin notices
-* Danish translation (by <a href="http://wordpress.blogos.dk/">Georg</a>)
+* Danish translation (by Georg)
 
 = .9.8.8 =
 * Now customize the optional text next to the 16 x 16px icons

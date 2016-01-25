@@ -8,6 +8,7 @@
 	$video = pods( 'video', pods_v_sanitized( 'last', 'url' ) );
 	$otherVideos = pods( 'video', ['where' => 'id != ' . $video->id()]);
 	$speaker = $video->field( 'video-speaker' );
+	add_post_meta($video->id, 'description', $video->field( 'video-description' ));
 ?>
 <?php get_header(); ?>
 	<div class="hero-wrapper dark">
@@ -25,6 +26,7 @@
 					<h1 class="video-title"><?php echo get_the_title( $video->id() ); ?></h1>
 					<hr class="short double" />
 					<?php echo $video->field( 'video-description' ); ?>
+					<?php echo the_content(); ?>
 				</div>
 				<aside class="video-aside large-3 large-offset-1 columns">
 					<div class="row">
@@ -36,7 +38,7 @@
 					<div class="row">
 						<div class="email-signup-form large-12 columns">
 							<h3>Subscribe to Email List</h3>
-							<?php echo do_shortcode( '[contact-form-7 id="202" title="Email Signup"]' ); ?>
+							<?php echo do_shortcode( '[contact-form-7 id="380" title="Email Signup 2"]' ); ?>
 						</div>
 					</div>
 					<div class="row">
@@ -61,7 +63,7 @@
 									<li class="video-thumb">
 										<a href="<?php echo get_permalink( $otherVideos->id() ); ?>">
 											<div class="thumbnail group">
-												<img src="http://img.youtube.com/vi/<?php echo $otherVideos->field( 'video-id' ); ?>/0.jpg" />
+												<img src="http://img.youtube.com/vi/<?php echo $otherVideos->field( 'video-id' ); ?>/0.jpg" alt="<?php echo get_the_title( $speaker['ID'] ); ?>" />
 												<span class="thumb-speaker-name"><?php echo get_the_title( $speaker['ID'] ); ?></span>
 											</div>
 											<p class="thumb-video-title"><?php echo get_the_title( $otherVideos->id() ); ?></p>

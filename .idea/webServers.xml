@@ -1,14 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="WebServers">
-    <option name="servers">
-      <webServer id="d3607e84-cd45-442c-9a98-b209509bd56f" name="Integrative Wisdom" url="http://integrativewisdom.net">
-        <fileTransfer host="d32.4f0.myftpupload.com" port="22" rootFolder="/home/d3242947807525/html" accessType="SFTP" password="dfd3dfd7dfeddfe8df93dfc9df84dfeadfe7dfd7df86" username="d3242947807525">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-    </option>
-  </component>
-</project>
+<project version="4" />

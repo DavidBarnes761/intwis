@@ -1,0 +1,7 @@
+﻿Để thuận tiện cho bạn, chúng tôi sẽ trả lời những câu hỏi mà khách hàng hay hỏi nhất ngay tại đây.
+
+Không tìm thấy nội dung mà bạn muốn? Hãy liên hệ trực tiếp với chúng tôi qua trang <a href="/contact/" title="Liên hệ với chúng tôi">Liên hệ với chúng tôi</a>.
+
+<strong>Hỏi:</strong> <em>Thêm câu hỏi ở đây.</em>
+
+<strong>Đáp:</strong> Thêm câu trả lời ở đây.

@@ -32,10 +32,10 @@ class GD_System_Plugin_404 {
 	 */
 	public function stop_infinite_404_loops() {
 		global $wp_query;
-		if ( is_404() && preg_match( '/^[^?&=]+\.(css|gif|jpeg|jpg|js|png)(\?|&)?(.*)?$/i', $wp_query->query['pagename'] ) ) {
+		if ( is_404() && isset( $wp_query->query['pagename'] ) && preg_match( '/^[^?&=]+\.(css|gif|jpeg|jpg|js|png)(\?|&)?(.*)?$/i', $wp_query->query['pagename'] ) ) {
 			status_header( 404 );
 
-			switch ( strtolower( pathinfo( $wp_query->query['pagename'], PATHINFO_EXTENSION ) ) ) { 
+			switch ( strtolower( pathinfo( $wp_query->query['pagename'], PATHINFO_EXTENSION ) ) ) {
 				case 'gif' :
 					gd_system_header( 'Content-type: image/gif' );
 					include( GD_SYSTEM_PLUGIN_DIR . '/images/404.gif' );

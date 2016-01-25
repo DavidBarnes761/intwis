@@ -58,10 +58,6 @@ final class WPEM_Step_Start extends WPEM_Step {
 
 		$log = new WPEM_Log;
 
-		$geodata = new WPEM_Geodata;
-
-		$this->log_site_info( $log, $geodata );
-
 		$log->add_step_field( 'wpem_continue', $continue );
 
 		if ( 'no' === $continue ) {
@@ -72,30 +68,13 @@ final class WPEM_Step_Start extends WPEM_Step {
 
 		}
 
-		new WPEM_Smart_Defaults( $geodata->data );
+		if ( isset( $log->geodata ) ) {
+
+			new WPEM_Smart_Defaults( $log->geodata );
+
+		}
 
 		wpem_mark_as_started();
-
-	}
-
-	/**
-	 * Save to log
-	 *
-	 * @param WPEM_Log     $log
-	 * @param WPEM_Geodata $geodata
-	 */
-	private function log_site_info( $log, $geodata ) {
-
-		global $wp_version;
-
-		$log->add( 'datetime', gmdate( 'c' ) );
-		$log->add( 'fqdn', gethostname() );
-		$log->add( 'site_url', get_option( 'siteurl' ) );
-		$log->add( 'account_id', exec( 'whoami' ) );
-		$log->add( 'user_email', get_userdata( 1 )->user_email );
-		$log->add( 'locale', ( $locale = get_option( 'WPLANG' ) ) ? $locale : 'en_US' );
-		$log->add( 'wp_version', $wp_version );
-		$log->add( 'geodata', $geodata->data );
 
 	}
 

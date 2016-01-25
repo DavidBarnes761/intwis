@@ -1,0 +1,7 @@
+﻿Para sa iyong kaginhawaan, sinasagot dito ang aming mga pinakamadalas itanong ng customer.
+
+Hindi mo ba nakikita kung ano ang hinahanap mo? Makipag-ugnayan nang direkta gamit ang page na <a href="/contact/" title="Makipag-ugnayan Sa Amin">Makipag-ugnayan sa Amin</a>.
+
+<strong>Q:</strong> <em>Magdagdag ng mga tanong dito.</em>
+
+<strong>A:</strong> Magdagdag ng mga tanong dito.

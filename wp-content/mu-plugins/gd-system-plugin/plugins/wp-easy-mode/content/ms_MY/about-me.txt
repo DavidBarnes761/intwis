@@ -1,0 +1,3 @@
+﻿Hai! Nama saya <strong>NAMA ANDA</strong>. Terima kasih kerana singgah di sini.
+
+<strong>INSERT BIO HERE</strong>

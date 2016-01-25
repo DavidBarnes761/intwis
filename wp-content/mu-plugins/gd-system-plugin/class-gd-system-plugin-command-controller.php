@@ -64,7 +64,7 @@ class GD_System_Plugin_Command_Controller {
 		$gd_cache_purge->ban_cache();
 		$gd_cache_purge->flush_transients();
 		$gd_messages->add_message( __( 'Cache cleared', 'gd_system' ) );
-		@wp_safe_redirect( esc_url( remove_query_arg( 'GD_COMMAND' ) ) );
+		@wp_safe_redirect( esc_url_raw( remove_query_arg( [ 'GD_COMMAND', 'GD_NONCE' ] ) ) );
 		add_filter( 'wp_die_handler', 'gd_system_die_handler', 10, 1 );
 		wp_die();
 	}
@@ -115,7 +115,7 @@ class GD_System_Plugin_Command_Controller {
 		}
 
 		// Redirect to the dashboard
-		@wp_safe_redirect( admin_url() );
+		@wp_safe_redirect( self_admin_url() );
 		add_filter( 'wp_die_handler', 'gd_system_die_handler', 10, 1 );
 		wp_die();
 	}
@@ -161,7 +161,7 @@ class GD_System_Plugin_Command_Controller {
 		}
 
 		$gd_messages->add_message( __( 'File editing enabled', 'gd_system' ) );
-		@wp_safe_redirect( esc_url( remove_query_arg( 'GD_COMMAND' ) ) );
+		@wp_safe_redirect( esc_url_raw( remove_query_arg( [ 'GD_COMMAND', 'GD_NONCE' ] ) ) );
 		add_filter( 'wp_die_handler', 'gd_system_die_handler', 10, 1 );
 		wp_die();
 	}

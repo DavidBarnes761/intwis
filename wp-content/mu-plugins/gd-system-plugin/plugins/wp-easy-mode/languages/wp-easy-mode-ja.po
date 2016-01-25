@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WP Easy Mode\n"
 "Report-Msgid-Bugs-To: https://github.com/godaddy/wp-easy-mode/issues\n"
-"POT-Creation-Date: 2015-11-16 14:57-0600\n"
-"PO-Revision-Date: 2015-11-16 14:57-0600\n"
+"POT-Creation-Date: 2015-12-21 13:51-0600\n"
+"PO-Revision-Date: 2015-12-21 13:51-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja\n"
@@ -17,6 +17,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;__ngettext;_n;__ngettext_noop;_n_noop;_x;_nx;"
 "_nx_noop;_ex;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;"
 "esc_html_x;_c;_nc\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: assets\n"
 "X-Poedit-SearchPathExcluded-1: content\n"
@@ -43,15 +44,97 @@ msgstr "サイドバーを展開"
 msgid "Collapse Sidebar"
 msgstr "サイドバーを隠す"
 
-#: includes/class-wpem-customizer.php:46
+#: includes/class-wpem-customizer.php:37
+msgid "Watch Video"
+msgstr "ビデオを見ましょう"
+
+#: includes/class-wpem-customizer.php:38
+msgid ""
+"You've just created your website! Click \"Watch Video\" to view a quick "
+"demonstration of how to customize your site."
+msgstr ""
+"Webサイトが出来上がりました！ サイトをカスタマイズする方法の簡単なデモを見る"
+"には、「ビデオを見る」をクリックしてください。"
+
+#: includes/class-wpem-customizer.php:42
+msgid "Learn More"
+msgstr "詳細"
+
+#: includes/class-wpem-customizer.php:43
+msgid ""
+"You've just created your website! Click \"Learn More\" to view some tips on "
+"how to customize your site ."
+msgstr ""
+"Webサイトが出来上がりました！ サイトをカスタマイズする方法のヒントを表示する"
+"には、「詳細」をクリックしてください。"
+
+#: includes/class-wpem-customizer.php:58
 msgid "Congratulations!"
 msgstr "おめでとうございます！"
 
-#: includes/class-wpem-customizer.php:47
+#: includes/class-wpem-customizer.php:149
+msgid "The Customizer"
+msgstr "カスタマイザ"
+
+#: includes/class-wpem-customizer.php:151
 msgid ""
-"You've just created your website! Use the panel to the left to customize the "
-"look &amp; feel of your website's design."
+"You are now in the Customizer, a tool that enables you to make changes to "
+"your website’s appearance, and preview those changes before publishing them. "
+"We’ve created a few commonly-used pages and widgets to help you get started."
 msgstr ""
+"これはカスタマイザの画面です。カスタマイザを使用すると、Webサイトの外観に変更"
+"を加えたり、サイトを公開する前に変更をプレビューしたりできます。 お客様のため"
+"に、よく使われるいくつかのページとウィジェットをご用意いたしました。"
+
+#: includes/class-wpem-customizer.php:152
+msgid ""
+"The top of the Customizer indicates the name of the active theme you’ve "
+"selected. You can change the theme at any time, but doing so will change "
+"these options and reset any customizations you might have made here."
+msgstr ""
+"カスタマイザの上部には、選択されたアクティブなテーマの名前が示されています。 "
+"テーマはいつでも変更できますが、テーマを変更するとこれらのオプションも変更さ"
+"れ、ここで行ったカスタム設定がリセットされます。"
+
+#: includes/class-wpem-customizer.php:153
+msgid ""
+"The options available in the Customizer will vary, depending on the features "
+"supported by your current theme. But most themes include these basic "
+"Customizer controls:"
+msgstr ""
+"カスタマイザで使用できるオプションは、現在のテーマでサポートされている機能に"
+"応じて異なります。 しかし、ほとんどのテーマには、以下の基本的なカスタマイザコ"
+"ントロールが含まれています："
+
+#: includes/class-wpem-customizer.php:155
+msgid "Site Identity"
+msgstr "サイトアイデンティティ"
+
+#: includes/class-wpem-customizer.php:156
+msgid "Colors"
+msgstr "カラー"
+
+#: includes/class-wpem-customizer.php:157
+msgid "Header and Background Images"
+msgstr "ヘッダーと背景画像"
+
+#: includes/class-wpem-customizer.php:158
+msgid "Navigation Menus"
+msgstr "ナビゲーションメニュー"
+
+#: includes/class-wpem-customizer.php:159
+msgid "Widgets"
+msgstr "ウィジェット"
+
+#: includes/class-wpem-customizer.php:161
+msgid ""
+"When you’re happy with your changes, click <strong>Save & Publish</strong> "
+"to keep these new settings. Or, simply close the Customizer by clicking the "
+"“X” in the top left-hand corner to discard your changes."
+msgstr ""
+"変更内容に満足したら、「<strong>保存して公開</strong>」をクリックすると新しい"
+"設定が維持されます。 または、左上にある「X」をクリックしてカスタマイザを閉じ"
+"れば、変更が破棄されます。"
 
 #: includes/class-wpem-done.php:66
 msgid "Primary Menu"
@@ -137,33 +220,33 @@ msgstr "証明書"
 msgid "testimonials"
 msgstr "証明書"
 
-#: includes/class-wpem-done.php:415
+#: includes/class-wpem-done.php:424
 msgid "Recent Posts"
 msgstr "最近の投稿"
 
-#: includes/class-wpem-done.php:424
+#: includes/class-wpem-done.php:433
 msgid "Archives"
 msgstr "アーカイブ"
 
-#: includes/class-wpem-done.php:441
+#: includes/class-wpem-done.php:450
 msgid "Browse Products"
 msgstr "商品の閲覧"
 
-#: includes/class-wpem-done.php:472
+#: includes/class-wpem-done.php:481
 msgid "Contact Form"
 msgstr "連絡先フォーム"
 
-#: includes/class-wpem-done.php:473 includes/class-wpem-done.php:498
+#: includes/class-wpem-done.php:482 includes/class-wpem-done.php:507
 msgid "Your form has been successfully submitted."
 msgstr "フォームが正常に送信されました。"
 
-#: includes/class-wpem-done.php:474 includes/class-wpem-done.php:499
+#: includes/class-wpem-done.php:483 includes/class-wpem-done.php:508
 msgid "Thank you so much for contacting us. We will get back to you shortly."
 msgstr ""
 "弊社にお問い合わせいただき、ありがとうございます。 すぐに折り返しご連絡いたし"
 "ます。"
 
-#: includes/class-wpem-done.php:497
+#: includes/class-wpem-done.php:506
 msgid "Request A Quote Form"
 msgstr "見積りフォームのリクエスト"
 
@@ -174,7 +257,8 @@ msgstr "設定"
 
 #: includes/class-wpem-step-settings.php:32
 msgid "Please tell us more about your website (all fields are required)"
-msgstr "Please tell us more about your website (all fields are required)"
+msgstr ""
+"お客様のWebサイトについて説明してください（すべてのフィールドが必須です）"
 
 #: includes/class-wpem-step-settings.php:35
 #: includes/class-wpem-step-settings.php:111
@@ -183,11 +267,11 @@ msgstr "タイプ"
 
 #: includes/class-wpem-step-settings.php:38
 msgid "- Select a type -"
-msgstr "- Select a type -"
+msgstr "- タイプを選択 -"
 
 #: includes/class-wpem-step-settings.php:39
 msgid "Standard (Recommended)"
-msgstr "Standard (Recommended)"
+msgstr "標準（推奨）"
 
 #: includes/class-wpem-step-settings.php:40
 msgid "Blog"
@@ -199,7 +283,7 @@ msgstr "オンラインストア"
 
 #: includes/class-wpem-step-settings.php:43
 msgid "What type of website are you creating?"
-msgstr "What type of website are you creating?"
+msgstr "どのようなタイプのWebサイトを作成するのですか？"
 
 #: includes/class-wpem-step-settings.php:47
 #: includes/class-wpem-step-settings.php:117
@@ -208,15 +292,15 @@ msgstr "産業"
 
 #: includes/class-wpem-step-settings.php:50
 msgid "- Select an industry -"
-msgstr "- Select an industry -"
+msgstr "- 業種を選択 -"
 
 #: includes/class-wpem-step-settings.php:51
 msgid "Business / Finance / Law"
-msgstr "Business / Finance / Law"
+msgstr "ビジネス／ファイナンス／法律"
 
 #: includes/class-wpem-step-settings.php:52
 msgid "Design / Art / Portfolio"
-msgstr "Design / Art / Portfolio"
+msgstr "デザイン／アート／ポートフォリオ"
 
 #: includes/class-wpem-step-settings.php:53
 msgid "Education"
@@ -224,19 +308,19 @@ msgstr "教育"
 
 #: includes/class-wpem-step-settings.php:54
 msgid "Health / Beauty"
-msgstr "Health / Beauty"
+msgstr "健康／美容"
 
 #: includes/class-wpem-step-settings.php:55
 msgid "Home Services / Construction"
-msgstr "Home Services / Construction"
+msgstr "住宅サービス／建築"
 
 #: includes/class-wpem-step-settings.php:56
 msgid "Music / Movies / Entertainment"
-msgstr "Music / Movies / Entertainment"
+msgstr "音楽／映画／エンターテイメント"
 
 #: includes/class-wpem-step-settings.php:57
 msgid "Non-profit / Causes / Religious"
-msgstr "Non-profit / Causes / Religious"
+msgstr "非営利／慈善／宗教"
 
 #: includes/class-wpem-step-settings.php:58
 msgid "Other"
@@ -244,7 +328,7 @@ msgstr "その他"
 
 #: includes/class-wpem-step-settings.php:59
 msgid "Personal / Family / Wedding"
-msgstr "Personal / Family / Wedding"
+msgstr "個人／家族／結婚式"
 
 #: includes/class-wpem-step-settings.php:60
 msgid "Pets / Animals"
@@ -256,23 +340,23 @@ msgstr "不動産"
 
 #: includes/class-wpem-step-settings.php:62
 msgid "Restaurant / Food"
-msgstr "Restaurant / Food"
+msgstr "レストラン／食品"
 
 #: includes/class-wpem-step-settings.php:63
 msgid "Sports / Recreation"
-msgstr "Sports / Recreation"
+msgstr "スポーツ／レクリエーション"
 
 #: includes/class-wpem-step-settings.php:64
 msgid "Transportation / Automotive"
-msgstr "Transportation / Automotive"
+msgstr "輸送／自動車"
 
 #: includes/class-wpem-step-settings.php:65
 msgid "Travel / Hospitality / Leisure"
-msgstr "Travel / Hospitality / Leisure"
+msgstr "旅行／おもてなし／レジャー"
 
 #: includes/class-wpem-step-settings.php:67
 msgid "What will your website be about?"
-msgstr "What will your website be about?"
+msgstr "何についてのWebサイトですか？"
 
 #: includes/class-wpem-step-settings.php:71
 #: includes/class-wpem-step-settings.php:123
@@ -281,7 +365,7 @@ msgstr "タイトル"
 
 #: includes/class-wpem-step-settings.php:73
 msgid "Enter your website title here"
-msgstr "Enter your website title here"
+msgstr "ここにWebサイトのタイトルを入力"
 
 #: includes/class-wpem-step-settings.php:74
 msgid ""
@@ -296,7 +380,7 @@ msgstr "キャッチコピー"
 
 #: includes/class-wpem-step-settings.php:80
 msgid "Enter your website tagline here"
-msgstr "Enter your website tagline here"
+msgstr "ここにWebサイトのキャッチコピーを入力"
 
 #: includes/class-wpem-step-settings.php:81
 msgid ""
@@ -313,7 +397,7 @@ msgstr "続行"
 
 #: includes/class-wpem-step-settings.php:170
 msgid "All fields are required"
-msgstr "All fields are required"
+msgstr "すべてのフィールドが必須です"
 
 #: includes/class-wpem-step-start.php:18
 msgid "Start"
@@ -346,13 +430,12 @@ msgstr "テーマ"
 
 #: includes/class-wpem-step-theme.php:19
 msgid "Choose a Theme"
-msgstr "Choose a Theme"
+msgstr "テーマを選択してください"
 
 #: includes/class-wpem-step-theme.php:32
 msgid ""
 "Choose a design for your website (don't worry, you can change this later)"
-msgstr ""
-"Choose a design for your website (don't worry, you can change this later)"
+msgstr "Webサイトのデザインを選択してください（後で変更できます）"
 
 #: includes/class-wpem-step-theme.php:43
 msgid "Preview"
@@ -386,17 +469,10 @@ msgstr "バージョン："
 msgid "Collapse"
 msgstr "折りたたむ"
 
-#: includes/functions.php:189
+#: includes/functions.php:197
 msgid "Error: WP-CLI not found"
 msgstr "エラー： WP-CLI が見つかりません"
 
 #: templates/fullscreen.php:38
 msgid "WordPress"
 msgstr "WordPress"
-
-#~ msgid ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"
-#~ msgstr ""
-#~ "Yes, I'm interested in hiring a professional to help customize my "
-#~ "WordPress site"

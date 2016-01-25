@@ -16,10 +16,11 @@ if ( !defined( 'ABSPATH' ) )
  */
 class GD_System_Plugin_Admin_Menu {
 
+	const ADMIN_MENU_SLUG = 'wppass';
+
 	/**
 	 * Constructor.
 	 * Hook any needed actions/filters
-	 * @return void
 	 */
 	public function __construct() {
 		global $gd_system_config;
@@ -27,9 +28,9 @@ class GD_System_Plugin_Admin_Menu {
 		// Don't modify these parts of the UI when there's no reseller present
 		if ( false == $gd_system_config->missing_gd_config ) {
 
-			// Add a "Flush cache" button to the admin bar
-			add_action( 'admin_bar_menu', array( $this, 'admin_menu' ), 100 );
-			add_action( 'admin_bar_menu', array( $this, 'add_uservoice' ), 100 );
+			// Add a top level menu button button to the admin bar
+			add_action( 'admin_bar_menu', array( $this, 'admin_bar_menu' ), 100 );
+			//add_action( 'admin_bar_menu', array( $this, 'add_uservoice' ), 100 );
 		}
 
 		// Propagate 'nocache' throughout wp_enqueued* resources for a smoother
@@ -52,8 +53,8 @@ class GD_System_Plugin_Admin_Menu {
 		add_action( 'admin_print_footer_scripts', array( $this, 'file_editor_safety_net' ) );
 
 		// Let users turn off UserVoice for themselves
-		add_action( 'personal_options', array( $this, 'add_uservoice_profile_entry' ), 10, 1 );
-		add_action( 'personal_options_update', array( $this, 'save_uservoice_profile_setting' ), 10, 1 );
+		//add_action( 'personal_options', array( $this, 'add_uservoice_profile_entry' ), 10, 1 );
+		//add_action( 'personal_options_update', array( $this, 'save_uservoice_profile_setting' ), 10, 1 );
 	}
 
 	/**
@@ -61,41 +62,81 @@ class GD_System_Plugin_Admin_Menu {
 	 * @param WP_Admin_Bar $admin_bar
 	 * @return void
 	 */
-	public function admin_menu( $admin_bar ) {
+	public function admin_bar_menu( $admin_bar ) {
+
 		global $gd_system_config;
-		$config = $gd_system_config->get_config();
+
+		$config      = $gd_system_config->get_config();
+		$gateway_url = isset( $config['gateway_url'] ) ? $config['gateway_url'] : '';
 
 		// Only show to admin users
-		if ( is_user_logged_in() && current_user_can( 'activate_plugins' ) ) {
+		if ( ! current_user_can( 'activate_plugins' ) ) {
 
-			// Flush cache
-			$admin_bar->add_menu( array(
-				'parent' => false,
-				'id'     => 'gd-system-flush-cache',
-				'title'  => __( 'Flush Cache', 'gd_system' ),
-				'href'   => esc_url( add_query_arg( array(
+			return;
+
+		}
+
+		switch ( true ) {
+
+			case gd_is_mt() :
+
+				$top_menu_label      = __( 'Media Temple', 'gd_system' );
+				$top_menu_icon_class = 'media-temple';
+
+				break;
+
+			case gd_is_reseller() :
+
+				$top_menu_label      = __( 'Managed WordPress', 'gd_system' );
+				$top_menu_icon_class = 'admin-generic';
+
+				break;
+
+			default:
+
+				$top_menu_label      = __( 'GoDaddy', 'gd_system' );
+				$top_menu_icon_class = 'godaddy-alt';
+
+				break;
+
+		}
+
+		$admin_bar->add_menu( [
+			'id'    => static::ADMIN_MENU_SLUG,
+			'title' => sprintf(
+				'<span class="ab-icon dashicons dashicons-%s"></span><span class="ab-label">%s</span>',
+				$top_menu_icon_class,
+				$top_menu_label
+			),
+		] );
+
+		// Settings menu
+		$admin_bar->add_menu( [
+			'parent' => static::ADMIN_MENU_SLUG,
+			'id'     => static::ADMIN_MENU_SLUG . '-control-panel',
+			'title'  =>  sprintf(
+				'%s<span class="dashicons dashicons-external"></span>',
+				__( 'Account Settings', 'gd_system' )
+			),
+			'href'   => str_replace( '%pl_id%', defined( 'GD_RESELLER' ) ? GD_RESELLER : '', $gateway_url ),
+			'meta'   => array(
+				'target' => '_blank',
+			),
+		] );
+
+		// Flush cache menu
+		$admin_bar->add_menu( [
+			'parent' => static::ADMIN_MENU_SLUG,
+			'id'     => static::ADMIN_MENU_SLUG . '-flush-cache',
+			'title'  => __( 'Flush Cache', 'gd_system' ),
+			'href'   => esc_url( add_query_arg(
+				[
 					'GD_COMMAND' => 'FLUSH_CACHE',
 					'GD_NONCE'   => wp_create_nonce( 'GD_FLUSH_CACHE' ),
-				) ) ),
-				'meta'   => array()
-			) );
+				]
+			) ),
+		] );
 
-			// Gateway / control panel
-			// Untestable ... can't reset a constant
-			// @codeCoverageIgnoreStart
-			$label = __( 'GoDaddy Settings', 'gd_system' );
-			if ( 1 !== intval( GD_RESELLER ) ) {
-				$label = __( 'Account Settings', 'gd_system' );
-			}
-			// @codeCoverageIgnoreEnd
-			$admin_bar->add_menu( array(
-				'parent' => false,
-				'id'     => 'gd-system-control-panel',
-				'title'  =>  $label,
-				'href'   => str_replace( '%pl_id%', defined( 'GD_RESELLER' ) ? GD_RESELLER : '', $config['gateway_url'] ),
-				'meta'   => array()
-			) );
-		}
 	}
 
 	/**

@@ -13,14 +13,14 @@ final class WPEM_Geodata {
 	 *
 	 * @var string
 	 */
-	const API_URL = 'https://freegeoip.net/json/';
+	const API_URL = 'https://freegeoip.net/json/%s';
 
 	/**
 	 * Alternate GeoIP API URL
 	 *
 	 * @var string
 	 */
-	const ALT_API_URL = 'https://telize.com/geoip/';
+	const ALT_API_URL = 'http://geoip.nekudo.com/api/%s/full';
 
 	/**
 	 * Array of geodata
@@ -43,11 +43,29 @@ final class WPEM_Geodata {
 	 */
 	public function __construct() {
 
-		$ip = filter_input( INPUT_SERVER, 'REMOTE_ADDR', FILTER_VALIDATE_IP );
+		if ( ! empty( $this->data ) ) {
 
-		if ( $this->is_public_ip( $ip ) ) {
+			return;
 
-			$this->data = $this->get_geodata( $ip );
+		}
+
+		$log = new WPEM_Log;
+
+		try {
+
+			$this->data = $log->geodata;
+
+		} catch ( Exception $e ) {
+
+			$ip = filter_input( INPUT_SERVER, 'REMOTE_ADDR', FILTER_VALIDATE_IP );
+
+			if ( $this->is_public_ip( $ip ) ) {
+
+				$this->data = $this->get_geodata( $ip );
+
+			}
+
+			$log->add( 'geodata', $this->data );
 
 		}
 
@@ -120,9 +138,27 @@ final class WPEM_Geodata {
 	 */
 	private function normalize( $geodata ) {
 
+		if ( isset( $geodata['city']['names']['en'] ) ) {
+
+			$geodata['city'] = $geodata['city']['names']['en'];
+
+		}
+
+		if ( isset( $geodata['country']['iso_code'] ) ) {
+
+			$geodata['country_code'] = $geodata['country']['iso_code'];
+
+		}
+
 		if ( isset( $geodata['country'] ) ) {
 
 			$geodata['country_name'] = $geodata['country'];
+
+		}
+
+		if ( isset( $geodata['country']['names']['en'] ) ) {
+
+			$geodata['country_name'] = $geodata['country']['names']['en'];
 
 		}
 
@@ -132,9 +168,39 @@ final class WPEM_Geodata {
 
 		}
 
+		if ( isset( $geodata['location']['latitude'] ) ) {
+
+			$geodata['latitude'] = wpem_round( $geodata['location']['latitude'] );
+
+		}
+
 		if ( isset( $geodata['longitude'] ) ) {
 
 			$geodata['longitude'] = wpem_round( $geodata['longitude'] );
+
+		}
+
+		if ( isset( $geodata['location']['longitude'] ) ) {
+
+			$geodata['longitude'] = wpem_round( $geodata['location']['longitude'] );
+
+		}
+
+		if ( isset( $geodata['zip_code'] ) ) {
+
+			$geodata['postal_code'] = $geodata['zip_code'];
+
+		}
+
+		if ( isset( $geodata['postal']['code'] ) ) {
+
+			$geodata['postal_code'] = $geodata['postal']['code'];
+
+		}
+
+		if ( isset( $geodata['subdivisions'][0]['iso_code'] ) ) {
+
+			$geodata['region_code'] = $geodata['subdivisions'][0]['iso_code'];
 
 		}
 
@@ -144,15 +210,21 @@ final class WPEM_Geodata {
 
 		}
 
+		if ( isset( $geodata['subdivisions'][0]['names']['en'] ) ) {
+
+			$geodata['region_name'] = $geodata['subdivisions'][0]['names']['en'];
+
+		}
+
 		if ( isset( $geodata['time_zone'] ) ) {
 
 			$geodata['timezone'] = $geodata['time_zone'];
 
 		}
 
-		if ( isset( $geodata['zip_code'] ) ) {
+		if ( isset( $geodata['location']['time_zone'] ) ) {
 
-			$geodata['postal_code'] = $geodata['zip_code'];
+			$geodata['timezone'] = $geodata['location']['time_zone'];
 
 		}
 
@@ -214,7 +286,7 @@ final class WPEM_Geodata {
 	 */
 	private function request( $url, $ip ) {
 
-		$url = esc_url_raw( trailingslashit( $url ) . $ip );
+		$url = esc_url_raw( sprintf( $url, $ip ) );
 
 		$response = wp_remote_get( $url, array( 'timeout' => $this->request_timeout ) );
 
